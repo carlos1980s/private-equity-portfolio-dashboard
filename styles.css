@@ -171,6 +171,12 @@ h2 {
 .fund-summary { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; text-align: right; }
 .fund-summary span { color: var(--quiet); font-size: .74rem; }
 .fund-summary strong { color: var(--positive); font-size: .92rem; }
+.market-assumption { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; margin-top: 24px; border: 1px solid var(--line); border-radius: 16px; overflow: hidden; background: var(--line); }
+.market-assumption div { padding: 16px 18px; background: rgba(7, 16, 29, .82); }
+.market-assumption span, .market-assumption strong, .market-assumption small { display: block; }
+.market-assumption span { margin-bottom: 8px; color: var(--quiet); font-size: .65rem; letter-spacing: .08em; text-transform: uppercase; }
+.market-assumption strong { color: var(--ink); font-size: 1.2rem; font-weight: 640; }
+.market-assumption small { margin-top: 5px; color: var(--muted); font-size: .68rem; }
 .fund-table-wrap { margin-top: 26px; overflow-x: auto; }
 .fund-table { width: 100%; border-collapse: collapse; min-width: 900px; }
 .fund-table th { padding: 0 14px 12px; color: var(--quiet); font-size: .66rem; font-weight: 650; letter-spacing: .08em; text-align: right; text-transform: uppercase; }
@@ -262,6 +268,7 @@ footer p:last-child { text-align: right; white-space: nowrap; }
   .company-row { grid-template-columns: 42px 1fr; }
   .company-value { grid-column: 2; text-align: left; }
   .fund-summary { align-items: flex-start; text-align: left; }
+  .market-assumption { grid-template-columns: 1fr; width: 100%; }
   .method-strip { grid-template-columns: 1fr; }
   footer p:last-child { text-align: left; }
 }

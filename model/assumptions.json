@@ -1,5 +1,5 @@
 {
-  "version": "2026-07-19-full-portfolio",
+  "version": "2026-07-19-spx-central-case",
   "seed": 20260719,
   "paths": 500000,
   "usd_sgd": 1.2908,
@@ -12,13 +12,21 @@
     [0.2, 0.25, 1.0]
   ],
   "liquid_fund_model": {
+    "equity_market": {
+      "reference_level": 7457.69,
+      "reference_date": "2026-07-17",
+      "central_2026": 8150.0,
+      "central_2027": 9300.0,
+      "annual_volatility": 0.18,
+      "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=SP500"
+    },
     "market_correlation_to_o": 0.55,
     "return_assumptions": {
-      "SLBGLEP": {"annual_return": 0.065, "annual_volatility": 0.16, "market_loading": 0.76, "risk_group": "global"},
-      "NEB5CSA": {"annual_return": 0.075, "annual_volatility": 0.22, "market_loading": 0.84, "risk_group": "connectivity"},
-      "FTTASH1": {"annual_return": 0.085, "annual_volatility": 0.28, "market_loading": 0.9, "risk_group": "technology"},
-      "ALGAATU": {"annual_return": 0.09, "annual_volatility": 0.3, "market_loading": 0.94, "risk_group": "artificial_intelligence"},
-      "AGATH2S": {"annual_return": 0.09, "annual_volatility": 0.3, "market_loading": 0.94, "risk_group": "artificial_intelligence"}
+      "SLBGLEP": {"equity_beta": 0.85, "idiosyncratic_volatility": 0.05, "risk_group": "global"},
+      "NEB5CSA": {"equity_beta": 1.1, "idiosyncratic_volatility": 0.1, "risk_group": "connectivity"},
+      "FTTASH1": {"equity_beta": 1.35, "idiosyncratic_volatility": 0.14, "risk_group": "technology"},
+      "ALGAATU": {"equity_beta": 1.45, "idiosyncratic_volatility": 0.15, "risk_group": "artificial_intelligence"},
+      "AGATH2S": {"equity_beta": 1.45, "idiosyncratic_volatility": 0.15, "risk_group": "artificial_intelligence"}
     }
   },
   "positions": {

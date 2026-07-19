@@ -209,6 +209,7 @@
 
   function renderFunds() {
     const portfolio = state.model.liquid_portfolio;
+    const market = state.model.equity_market;
     const body = document.getElementById("fund-rows");
     body.replaceChildren(...portfolio.funds.map(fund => {
       const row = document.createElement("tr");
@@ -227,6 +228,12 @@
     }));
     setText("funds-as-of", `NAVs through ${formatDate(portfolio.as_of)}`);
     setText("funds-total-gain", `${money(portfolio.unrealized_gain_sgd / state.model.currency.usd_sgd)} total gain`);
+    setText("spx-reference", new Intl.NumberFormat("en-SG", { maximumFractionDigits: 2 }).format(market.reference_level));
+    setText("spx-reference-date", `Close · ${formatDate(market.reference_date)}`);
+    setText("spx-2026", new Intl.NumberFormat("en-SG").format(market.central_2026));
+    setText("spx-2026-upside", `${percent(market.upside_to_2026)} from reference`);
+    setText("spx-2027", new Intl.NumberFormat("en-SG").format(market.central_2027));
+    setText("spx-2027-upside", `${percent(market.upside_to_2027)} from reference`);
   }
 
   function renderCapacity() {

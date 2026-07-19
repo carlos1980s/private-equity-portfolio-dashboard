@@ -6,7 +6,7 @@
   <meta name="description" content="A live probability monitor for private-equity positions O, G and V plus five liquid funds.">
   <title>Full Portfolio Probability Monitor</title>
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
-  <link rel="stylesheet" href="styles.css?v=20260719-3">
+  <link rel="stylesheet" href="styles.css?v=20260719-4">
 </head>
 <body>
   <div class="ambient ambient-one" aria-hidden="true"></div>
@@ -59,6 +59,11 @@
           <strong id="funds-total-gain">—</strong>
         </div>
       </div>
+      <div class="market-assumption" aria-label="S&P 500 central assumptions">
+        <div><span>S&amp;P 500 reference</span><strong id="spx-reference">—</strong><small id="spx-reference-date">—</small></div>
+        <div><span>Central · YE 2026</span><strong id="spx-2026">8,150</strong><small id="spx-2026-upside">—</small></div>
+        <div><span>Central · YE 2027</span><strong id="spx-2027">9,300</strong><small id="spx-2027-upside">—</small></div>
+      </div>
       <div class="fund-table-wrap">
         <table class="fund-table">
           <thead>
@@ -74,7 +79,7 @@
           <tbody id="fund-rows"></tbody>
         </table>
       </div>
-      <p class="fund-model-note">Liquid funds use correlated total-return paths. Both Allianz AI share classes share one underlying risk factor; SGD-hedged and USD classes remain distinct holdings.</p>
+      <p class="fund-model-note">Fund paths are beta-linked to the central S&amp;P 500 case above, with fund-specific residual risk. Both Allianz AI share classes share one underlying factor; SGD-hedged and USD classes remain distinct holdings.</p>
     </section>
 
     <section class="surface-section" aria-labelledby="surface-heading">
@@ -169,6 +174,6 @@
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/plotly.js-dist-min@2.35.2/plotly.min.js"></script>
-  <script src="app.js?v=20260719-3"></script>
+  <script src="app.js?v=20260719-4"></script>
 </body>
 </html>

@@ -3,6 +3,8 @@
 
 from __future__ import annotations
 
+import csv
+import io
 import json
 import math
 import urllib.request
@@ -49,6 +51,32 @@ def current_fx(base: str, fallback: float) -> tuple[float, str]:
         return float(payload["rates"]["SGD"]), str(payload.get("date", ""))
     except Exception:
         return fallback, "fallback"
+
+
+def sp500_history(fallback_level: float, fallback_date: str) -> tuple[dict[date, float], str]:
+    try:
+        request = urllib.request.Request(
+            "https://fred.stlouisfed.org/graph/fredgraph.csv?id=SP500",
+            headers={"User-Agent": "portfolio-probability-monitor/2.0"},
+        )
+        with urllib.request.urlopen(request, timeout=15) as response:
+            text = response.read().decode("utf-8")
+        history = {
+            date.fromisoformat(row.get("observation_date") or row["DATE"]): float(row["SP500"])
+            for row in csv.DictReader(io.StringIO(text))
+            if row.get("SP500") not in (None, "", ".")
+        }
+        if not history:
+            raise ValueError("S&P 500 history was empty")
+        return history, "FRED"
+    except Exception:
+        return {date.fromisoformat(fallback_date): fallback_level}, "fallback"
+
+
+def market_level_on_or_before(history: dict[date, float], target: date) -> tuple[date, float]:
+    eligible = [observation_date for observation_date in history if observation_date <= target]
+    observation_date = max(eligible) if eligible else min(history)
+    return observation_date, history[observation_date]
 
 
 def value_in_usd(amount: float | np.ndarray, currency: str, usd_sgd: float, gbp_sgd: float):
@@ -108,6 +136,17 @@ def main() -> None:
     retention = rng.choice(g["retention"]["values"], paths, p=g["retention"]["probabilities"])
 
     liquid_model = assumptions["liquid_fund_model"]
+    equity_market = liquid_model["equity_market"]
+    market_history, market_source_status = sp500_history(
+        float(equity_market["reference_level"]), str(equity_market["reference_date"])
+    )
+    market_reference_date = max(market_history)
+    market_reference_level = market_history[market_reference_date]
+    central_sp500 = np.exp(
+        (1 - PRIVATE_TIMES) * np.log(float(equity_market["central_2026"]))
+        + PRIVATE_TIMES * np.log(float(equity_market["central_2027"]))
+    )
+    market_volatility = float(equity_market["annual_volatility"])
     return_assumptions = liquid_model["return_assumptions"]
     market_rho = float(liquid_model["market_correlation_to_o"])
     market_z = market_rho * z[:, 0] + math.sqrt(1 - market_rho**2) * rng.standard_normal(paths)
@@ -116,8 +155,7 @@ def main() -> None:
         fund_assumption = return_assumptions[fund["id"]]
         group = fund_assumption["risk_group"]
         if group not in group_shocks:
-            loading = float(fund_assumption["market_loading"])
-            group_shocks[group] = loading * market_z + math.sqrt(1 - loading**2) * rng.standard_normal(paths)
+            group_shocks[group] = rng.standard_normal(paths)
 
     nav_dates = [date.fromisoformat(fund["nav_as_of"]) for fund in funds]
     liquid_as_of = max(nav_dates)
@@ -133,16 +171,20 @@ def main() -> None:
         cost_local = float(fund["shares"]) * cost_unit
         current_usd = float(value_in_usd(current_local, fund["currency"], usd_sgd, gbp_sgd))
         cost_usd = float(value_in_usd(cost_local, fund["currency"], usd_sgd, gbp_sgd))
-        annual_return = float(fund_assumption["annual_return"])
-        volatility = float(fund_assumption["annual_volatility"])
+        beta = float(fund_assumption["equity_beta"])
+        idiosyncratic_volatility = float(fund_assumption["idiosyncratic_volatility"])
         shock = group_shocks[fund_assumption["risk_group"]]
         fund_as_of = date.fromisoformat(fund["nav_as_of"])
+        sp500_date, sp500_reference = market_level_on_or_before(market_history, fund_as_of)
         fund_forecast_years = [max((target - fund_as_of).days / 365.25, 0.0) for target in HORIZON_DATES]
-        for years in fund_forecast_years:
-            projected = current_usd * np.exp(
-                (annual_return - 0.5 * volatility**2) * years + volatility * math.sqrt(years) * shock
+        central_values = []
+        for index, years in enumerate(fund_forecast_years):
+            sp500_projected = central_sp500[index] * np.exp(market_volatility * math.sqrt(years) * market_z)
+            projected = current_usd * (sp500_projected / sp500_reference) ** beta * np.exp(
+                idiosyncratic_volatility * math.sqrt(years) * shock
             )
             liquid_values[fund["id"]].append(projected)
+            central_values.append(current_usd * (central_sp500[index] / sp500_reference) ** beta)
         current_sgd = current_usd * usd_sgd
         cost_sgd = cost_usd * usd_sgd
         liquid_summaries.append({
@@ -163,8 +205,14 @@ def main() -> None:
             "cost_value_sgd": round(cost_sgd, 2),
             "unrealized_gain_sgd": round(current_sgd - cost_sgd, 2),
             "unrealized_gain_percent": round(current_sgd / cost_sgd - 1, 6),
-            "annual_return_assumption": annual_return,
-            "annual_volatility_assumption": volatility,
+            "equity_beta_assumption": beta,
+            "annual_volatility_assumption": round(
+                math.sqrt((beta * market_volatility) ** 2 + idiosyncratic_volatility**2), 6
+            ),
+            "sp500_reference_level": round(sp500_reference, 2),
+            "sp500_reference_date": sp500_date.isoformat(),
+            "central_2026_usd": round(float(central_values[0]), 2),
+            "central_2027_usd": round(float(central_values[-1]), 2),
             "expected_2026_usd": round(float(liquid_values[fund["id"]][0].mean()), 2),
             "expected_2027_usd": round(float(liquid_values[fund["id"]][-1].mean()), 2),
             "source_label": fund.get("source_label", ""),
@@ -266,6 +314,19 @@ def main() -> None:
             "density_per_100k_usd": [round_list(np.asarray(values), 5) for values in densities],
         },
         "companies": company_summary,
+        "equity_market": {
+            "index": "S&P 500",
+            "reference_level": round(float(market_reference_level), 2),
+            "reference_date": market_reference_date.isoformat(),
+            "central_2026": float(equity_market["central_2026"]),
+            "central_2027": float(equity_market["central_2027"]),
+            "upside_to_2026": round(float(equity_market["central_2026"]) / market_reference_level - 1, 6),
+            "upside_to_2027": round(float(equity_market["central_2027"]) / market_reference_level - 1, 6),
+            "annual_volatility": market_volatility,
+            "central_horizons": round_list(central_sp500, 2),
+            "source_status": market_source_status,
+            "source_url": equity_market["source_url"],
+        },
         "liquid_portfolio": {
             "as_of": liquid_as_of.isoformat(),
             "refresh_status": funds_payload.get("refresh_status", "unknown"),
@@ -294,7 +355,7 @@ def main() -> None:
             "paths": paths,
             "seed": assumptions["seed"],
             "central_surface_probability": 0.995,
-            "liquid_fund_method": "Correlated lognormal total-return paths; the two Allianz AI share classes share one underlying risk factor.",
+            "liquid_fund_method": "Fund returns are beta-linked to the owner-approved S&P 500 central path, with correlated market and fund-specific residual risk. The two Allianz AI share classes share one underlying factor.",
         },
     }
     OUTPUT_PATH.write_text(json.dumps(output, indent=2) + "\n")

@@ -10,6 +10,8 @@ Public GitHub Pages dashboard for an approved full-portfolio probability model c
 - News never changes valuation assumptions automatically; fund refreshes may update only verified public NAVs.
 - Share counts, cost basis, private-company labels and subjective return assumptions remain owner-controlled.
 - Company labels remain O, G, and V in the public interface.
+- Liquid-fund paths are beta-linked to the approved S&P 500 central case: 8,150 at YE 2026 and 9,300 at YE 2027.
+- The current S&P 500 reference close is refreshed from the Federal Reserve Economic Data series before each model run.
 
 ## Required encrypted secret
 
