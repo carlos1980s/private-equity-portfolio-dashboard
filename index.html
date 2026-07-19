@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A live probability monitor for a three-position private-equity portfolio.">
+  <title>O / G / V Probability Monitor</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <main class="page-shell">
+    <header class="site-header">
+      <div>
+        <p class="eyebrow">Private equity · probability monitor</p>
+        <h1>Portfolio probability,<br><span>kept current.</span></h1>
+        <p class="lede">A review-controlled model for O, G and V. News refreshes in the background; valuation assumptions move only after approval.</p>
+      </div>
+      <div class="status-stack" aria-label="Dashboard status">
+        <span class="status-pill"><i class="status-dot" aria-hidden="true"></i><span id="refresh-status">Loading data</span></span>
+        <span class="status-pill status-pill-muted">Model <span id="model-version">—</span></span>
+      </div>
+    </header>
+
+    <section class="metric-grid" aria-label="Portfolio summary">
+      <article class="metric-card metric-card-primary">
+        <p>Expected · YE 2026</p>
+        <strong id="expected-2026">—</strong>
+        <span id="expected-2026-secondary">—</span>
+      </article>
+      <article class="metric-card">
+        <p>Expected · YE 2027</p>
+        <strong id="expected-2027">—</strong>
+        <span id="expected-2027-secondary">—</span>
+      </article>
+      <article class="metric-card">
+        <p>YE 2027 · 80% range</p>
+        <strong id="range-2027">—</strong>
+        <span id="median-2027">—</span>
+      </article>
+    </section>
+
+    <section class="surface-section" aria-labelledby="surface-heading">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Joint distribution</p>
+          <h2 id="surface-heading">Value × probability × time</h2>
+        </div>
+        <div class="chart-controls" aria-label="Chart controls">
+          <div class="segmented" role="group" aria-label="Currency">
+            <button type="button" class="segment is-active" data-currency="USD" aria-pressed="true">USD</button>
+            <button type="button" class="segment" data-currency="SGD" aria-pressed="false">SGD</button>
+          </div>
+          <button type="button" class="quiet-button" id="reset-camera">Reset view</button>
+        </div>
+      </div>
+      <div id="portfolio-surface" class="surface-plot" role="img" aria-label="Interactive three-dimensional portfolio probability surface. Drag to rotate, scroll or pinch to zoom, and hover to inspect values."></div>
+      <div class="chart-footer">
+        <span>Drag to rotate · scroll or pinch to zoom · hover for values</span>
+        <span id="fx-label">USD/SGD —</span>
+      </div>
+    </section>
+
+    <section class="detail-grid">
+      <article class="panel" aria-labelledby="positions-heading">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Position view</p>
+            <h2 id="positions-heading">Expected contribution</h2>
+          </div>
+          <span class="micro-label">Remaining positions</span>
+        </div>
+        <div id="company-rows" class="company-rows"></div>
+        <div class="cash-strip">
+          <span>Cash already distributed</span>
+          <strong id="cash-distributions">—</strong>
+        </div>
+      </article>
+
+      <article class="panel" aria-labelledby="capacity-heading">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Operating driver</p>
+            <h2 id="capacity-heading">G capacity case</h2>
+          </div>
+          <span class="micro-label">YE 2027</span>
+        </div>
+        <div class="capacity-visual">
+          <div class="capacity-ring" id="capacity-ring">
+            <span id="capacity-probability">—</span>
+            <small>chance ≥ target</small>
+          </div>
+          <div class="capacity-copy">
+            <p><strong id="capacity-expected">—</strong> expected capacity</p>
+            <p><strong id="capacity-median">—</strong> median capacity</p>
+            <p><strong id="capacity-target">—</strong> modeled target</p>
+          </div>
+        </div>
+        <div class="target-list" aria-label="Portfolio target probabilities">
+          <div><span>S$500k by YE 2026</span><strong id="target-500-2026">—</strong></div>
+          <div><span>S$500k by YE 2027</span><strong id="target-500-2027">—</strong></div>
+          <div><span>S$1m by YE 2027</span><strong id="target-1m-2027">—</strong></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="news-section" aria-labelledby="news-heading">
+      <div class="section-heading news-heading">
+        <div>
+          <p class="eyebrow">Background monitor</p>
+          <h2 id="news-heading">Latest signals for review</h2>
+        </div>
+        <div class="news-meta">
+          <span id="news-updated">—</span>
+          <span class="review-badge">No automatic valuation changes</span>
+        </div>
+      </div>
+      <div id="news-grid" class="news-grid" aria-live="polite"></div>
+    </section>
+
+    <section class="method-strip" aria-label="Methodology summary">
+      <div><span>Simulation</span><strong id="path-count">—</strong></div>
+      <div><span>Displayed surface</span><strong>Central 99.5%</strong></div>
+      <div><span>Model policy</span><strong>Owner approval</strong></div>
+      <div><span>Coverage</span><strong>O · G · V</strong></div>
+    </section>
+
+    <footer>
+      <p>Probabilistic private-market estimate only. Not financial advice, an appraisal, a fund NAV, or a liquidity forecast. Private-market indications may not be executable.</p>
+      <p id="generated-label">Generated —</p>
+    </footer>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/plotly.js-dist-min@2.35.2/plotly.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

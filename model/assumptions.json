@@ -1,0 +1,58 @@
+{
+  "version": "2026-07-19-approved",
+  "seed": 20260719,
+  "paths": 500000,
+  "usd_sgd": 1.2908,
+  "carry": 0.2,
+  "cash_distributions_usd": 131979.31,
+  "correlation": [
+    [1.0, 0.55, 0.2],
+    [0.55, 1.0, 0.25],
+    [0.2, 0.25, 1.0]
+  ],
+  "positions": {
+    "O": {
+      "economic_interest": 0.33,
+      "shares": 78.573,
+      "reference_price": 687.69,
+      "reference_valuation": 852000000000.0,
+      "basis": 16500.0,
+      "valuation_2026": {"median": 1050000000000.0, "sigma": 0.3},
+      "valuation_2027": {"median": 1500000000000.0, "sigma": 0.42},
+      "dilution_2026": [0.02, 0.05, 0.09],
+      "dilution_2027": [0.05, 0.1, 0.18]
+    },
+    "G": {
+      "economic_interest": 0.35,
+      "units": 2138.059,
+      "reference_price": 16.08,
+      "reference_valuation": 2800000000.0,
+      "valuation_2026": {"median": 7500000000.0, "sigma": 0.55},
+      "dilution_2026": [0.1, 0.15, 0.25],
+      "dilution_2027": [0.15, 0.25, 0.4],
+      "retention": {"values": [1.0, 0.5, 0.1], "probabilities": [0.7, 0.2, 0.1]},
+      "capacity_regimes": [
+        {"probability": 0.2, "triangle": [60.0, 100.0, 150.0]},
+        {"probability": 0.55, "triangle": [130.0, 190.0, 220.0]},
+        {"probability": 0.25, "triangle": [190.0, 220.0, 260.0]}
+      ],
+      "utilization": [0.45, 0.65, 0.82],
+      "revenue_per_mw_millions": [14.0, 22.0, 32.0],
+      "revenue_multiple": {"median": 7.5, "sigma": 0.4},
+      "valuation_prior": {"median": 12000000000.0, "sigma": 0.65},
+      "capacity_blend_weight": 0.75,
+      "capacity_target_mw": 200.0
+    },
+    "V": {
+      "economic_interest": 1.0,
+      "shares": 1160.9,
+      "reference_price": 21.62,
+      "reference_valuation": 1580000000.0,
+      "basis": 25000.0,
+      "valuation_2026": {"median": 2000000000.0, "sigma": 0.45},
+      "valuation_2027": {"median": 4500000000.0, "sigma": 0.75},
+      "dilution_2026": [0.1, 0.18, 0.28],
+      "dilution_2027": [0.2, 0.35, 0.5]
+    }
+  }
+}

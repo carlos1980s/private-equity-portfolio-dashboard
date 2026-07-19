@@ -1,0 +1,42 @@
+{
+  "updated_at": "2026-07-19T07:30:00+00:00",
+  "last_attempt_at": "2026-07-19T08:52:48+00:00",
+  "refresh_status": "waiting_for_secrets",
+  "status_message": "Add the replacement API key to enable the next news refresh.",
+  "policy": "News only. Model changes require owner approval.",
+  "items": [
+    {
+      "company": "O",
+      "date": "2026-07-18",
+      "headline": "Private-market indicator moved above the approved reference price",
+      "summary": "The latest secondary-market indication is above the model reference. It is informative but does not change the approved valuation distribution.",
+      "category": "valuation",
+      "impact": "positive",
+      "review_status": "none",
+      "source_label": "Private-market indicator",
+      "source_url": "https://forgeglobal.com/openai_stock/"
+    },
+    {
+      "company": "G",
+      "date": "2026-06-22",
+      "headline": "New growth capital supports the 200 MW expansion target",
+      "summary": "A new financing supports inference capacity expansion. The transaction did not disclose a valuation, so the approved capacity-driven model remains unchanged.",
+      "category": "capacity",
+      "impact": "positive",
+      "review_status": "none",
+      "source_label": "Official release",
+      "source_url": "https://groq.com/newsroom/groq-raises-usd650m-to-scale-its-ai-inference-cloud-business"
+    },
+    {
+      "company": "V",
+      "date": "2026-05-10",
+      "headline": "Mission execution supports the existing operating case",
+      "summary": "A completed mission and continuing platform development support the positive execution scenario without providing enough evidence for a valuation change.",
+      "category": "product",
+      "impact": "positive",
+      "review_status": "none",
+      "source_label": "Official mission update",
+      "source_url": "https://www.varda.com/mission/w-4"
+    }
+  ]
+}
