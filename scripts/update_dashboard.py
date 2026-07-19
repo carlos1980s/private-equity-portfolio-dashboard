@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-"""Regenerate the public model data from the last approved assumptions."""
+"""Regenerate the public full-portfolio model from approved assumptions and public NAVs."""
 
 from __future__ import annotations
 
 import json
+import math
 import urllib.request
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 from pathlib import Path
 
 import numpy as np
@@ -13,9 +14,11 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
 ASSUMPTIONS_PATH = ROOT / "model" / "assumptions.json"
+FUNDS_PATH = ROOT / "data" / "funds.json"
 OUTPUT_PATH = ROOT / "data" / "model.json"
 HORIZONS = ["YE 2026", "Q1 2027", "Q2 2027", "Q3 2027", "YE 2027"]
-TIMES = np.array([0.0, 0.25, 0.5, 0.75, 1.0])
+HORIZON_DATES = [date(2026, 12, 31), date(2027, 3, 31), date(2027, 6, 30), date(2027, 9, 30), date(2027, 12, 31)]
+PRIVATE_TIMES = np.array([0.0, 0.25, 0.5, 0.75, 1.0])
 
 
 def triangular_ppf(uniform: np.ndarray, left: float, mode: float, right: float) -> np.ndarray:
@@ -35,11 +38,11 @@ def interpolate_triangle(start: list[float], end: list[float], time: float) -> t
     return tuple((1 - time) * start[index] + time * end[index] for index in range(3))
 
 
-def current_fx(fallback: float) -> tuple[float, str]:
+def current_fx(base: str, fallback: float) -> tuple[float, str]:
     try:
         request = urllib.request.Request(
-            "https://api.frankfurter.app/latest?from=USD&to=SGD",
-            headers={"User-Agent": "portfolio-probability-monitor/1.0"},
+            f"https://api.frankfurter.app/latest?from={base}&to=SGD",
+            headers={"User-Agent": "portfolio-probability-monitor/2.0"},
         )
         with urllib.request.urlopen(request, timeout=12) as response:
             payload = json.load(response)
@@ -48,16 +51,31 @@ def current_fx(fallback: float) -> tuple[float, str]:
         return fallback, "fallback"
 
 
+def value_in_usd(amount: float | np.ndarray, currency: str, usd_sgd: float, gbp_sgd: float):
+    if currency == "USD":
+        return amount
+    if currency == "SGD":
+        return amount / usd_sgd
+    if currency == "GBP":
+        return amount * gbp_sgd / usd_sgd
+    raise ValueError(f"Unsupported fund currency: {currency}")
+
+
 def round_list(values: np.ndarray, digits: int = 4) -> list[float]:
     return np.round(values, digits).tolist()
 
 
 def main() -> None:
     assumptions = json.loads(ASSUMPTIONS_PATH.read_text())
+    funds_payload = json.loads(FUNDS_PATH.read_text())
+    funds = funds_payload["items"]
     positions = assumptions["positions"]
     paths = int(assumptions["paths"])
     carry = float(assumptions["carry"])
     rng = np.random.default_rng(int(assumptions["seed"]))
+
+    usd_sgd, usd_fx_date = current_fx("USD", float(assumptions["usd_sgd"]))
+    gbp_sgd, gbp_fx_date = current_fx("GBP", float(assumptions["gbp_sgd"]))
 
     correlation = np.asarray(assumptions["correlation"], dtype=float)
     z = rng.standard_normal((paths, 3)) @ np.linalg.cholesky(correlation).T
@@ -89,12 +107,76 @@ def main() -> None:
     g_2027 = np.exp(blend * np.log(operating_value) + (1 - blend) * np.log(valuation_prior))
     retention = rng.choice(g["retention"]["values"], paths, p=g["retention"]["probabilities"])
 
+    liquid_model = assumptions["liquid_fund_model"]
+    return_assumptions = liquid_model["return_assumptions"]
+    market_rho = float(liquid_model["market_correlation_to_o"])
+    market_z = market_rho * z[:, 0] + math.sqrt(1 - market_rho**2) * rng.standard_normal(paths)
+    group_shocks: dict[str, np.ndarray] = {}
+    for fund in funds:
+        fund_assumption = return_assumptions[fund["id"]]
+        group = fund_assumption["risk_group"]
+        if group not in group_shocks:
+            loading = float(fund_assumption["market_loading"])
+            group_shocks[group] = loading * market_z + math.sqrt(1 - loading**2) * rng.standard_normal(paths)
+
+    nav_dates = [date.fromisoformat(fund["nav_as_of"]) for fund in funds]
+    liquid_as_of = max(nav_dates)
+    forecast_years = np.asarray([max((target - liquid_as_of).days / 365.25, 0.0) for target in HORIZON_DATES])
+    liquid_values: dict[str, list[np.ndarray]] = {fund["id"]: [] for fund in funds}
+    liquid_summaries: list[dict] = []
+
+    for fund in funds:
+        fund_assumption = return_assumptions[fund["id"]]
+        nav_unit = float(fund["nav"]) * float(fund.get("nav_scale", 1.0))
+        cost_unit = float(fund["cost_nav"]) * float(fund.get("nav_scale", 1.0))
+        current_local = float(fund["shares"]) * nav_unit
+        cost_local = float(fund["shares"]) * cost_unit
+        current_usd = float(value_in_usd(current_local, fund["currency"], usd_sgd, gbp_sgd))
+        cost_usd = float(value_in_usd(cost_local, fund["currency"], usd_sgd, gbp_sgd))
+        annual_return = float(fund_assumption["annual_return"])
+        volatility = float(fund_assumption["annual_volatility"])
+        shock = group_shocks[fund_assumption["risk_group"]]
+        fund_as_of = date.fromisoformat(fund["nav_as_of"])
+        fund_forecast_years = [max((target - fund_as_of).days / 365.25, 0.0) for target in HORIZON_DATES]
+        for years in fund_forecast_years:
+            projected = current_usd * np.exp(
+                (annual_return - 0.5 * volatility**2) * years + volatility * math.sqrt(years) * shock
+            )
+            liquid_values[fund["id"]].append(projected)
+        current_sgd = current_usd * usd_sgd
+        cost_sgd = cost_usd * usd_sgd
+        liquid_summaries.append({
+            "id": fund["id"],
+            "ticker": fund["ticker"],
+            "name": fund["name"],
+            "share_class": fund["share_class"],
+            "isin": fund.get("isin", ""),
+            "ownership": 1.0,
+            "shares": fund["shares"],
+            "cost_nav": fund["cost_nav"],
+            "nav": fund["nav"],
+            "nav_scale": fund.get("nav_scale", 1.0),
+            "currency": fund["currency"],
+            "nav_as_of": fund["nav_as_of"],
+            "current_value_usd": round(current_usd, 2),
+            "current_value_sgd": round(current_sgd, 2),
+            "cost_value_sgd": round(cost_sgd, 2),
+            "unrealized_gain_sgd": round(current_sgd - cost_sgd, 2),
+            "unrealized_gain_percent": round(current_sgd / cost_sgd - 1, 6),
+            "annual_return_assumption": annual_return,
+            "annual_volatility_assumption": volatility,
+            "expected_2026_usd": round(float(liquid_values[fund["id"]][0].mean()), 2),
+            "expected_2027_usd": round(float(liquid_values[fund["id"]][-1].mean()), 2),
+            "source_label": fund.get("source_label", ""),
+            "source_url": fund.get("source_url", ""),
+        })
+
     portfolio_values: list[np.ndarray] = []
     company_values: dict[str, list[np.ndarray]] = {"O": [], "G": [], "V": []}
     valuation_paths: dict[str, list[np.ndarray]] = {"O": [], "G": [], "V": []}
     rows = []
 
-    for time, label in zip(TIMES, HORIZONS):
+    for index, (time, label) in enumerate(zip(PRIVATE_TIMES, HORIZONS)):
         o_value = np.exp((1 - time) * np.log(o_2026) + time * np.log(o_2027))
         g_value = np.exp((1 - time) * np.log(g_2026) + time * np.log(g_2027))
         v_value = np.exp((1 - time) * np.log(v_2026) + time * np.log(v_2027))
@@ -127,17 +209,20 @@ def main() -> None:
         company_values["O"].append(o_net)
         company_values["G"].append(g_net)
         company_values["V"].append(v_net)
-        total = assumptions["cash_distributions_usd"] + o_net + g_net + v_net
+        liquid_total = sum(liquid_values[fund["id"]][index] for fund in funds)
+        total = assumptions["cash_distributions_usd"] + o_net + g_net + v_net + liquid_total
         portfolio_values.append(total)
         p10, median, p90 = np.quantile(total, [0.1, 0.5, 0.9])
         rows.append({
             "label": label,
+            "forecast_years": round(float(forecast_years[index]), 4),
             "expected": round(float(total.mean()), 2),
             "median": round(float(median), 2),
             "p10": round(float(p10), 2),
             "p90": round(float(p90), 2),
             "components": {
-                ticker: round(float(company_values[ticker][-1].mean()), 2) for ticker in ("O", "G", "V")
+                **{ticker: round(float(company_values[ticker][-1].mean()), 2) for ticker in ("O", "G", "V")},
+                "FUNDS": round(float(liquid_total.mean()), 2),
             },
         })
 
@@ -150,7 +235,6 @@ def main() -> None:
         density, _ = np.histogram(values, bins=edges, density=True)
         densities.append(density * 100000)
 
-    fx, fx_date = current_fx(float(assumptions["usd_sgd"]))
     company_summary = []
     for ticker in ("O", "G", "V"):
         item = positions[ticker]
@@ -163,11 +247,18 @@ def main() -> None:
             "valuation_median_2027": round(float(np.median(valuation_paths[ticker][-1])), 2),
         })
 
+    liquid_current_usd = sum(fund["current_value_usd"] for fund in liquid_summaries)
+    liquid_current_sgd = sum(fund["current_value_sgd"] for fund in liquid_summaries)
+    liquid_cost_sgd = sum(fund["cost_value_sgd"] for fund in liquid_summaries)
     output = {
         "model_version": assumptions["version"],
-        "model_policy": "News refreshes automatically; valuation assumptions change only after owner approval.",
+        "model_policy": "News and public NAVs refresh automatically; valuation assumptions, share counts and cost basis change only after owner approval.",
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-        "currency": {"usd_sgd": round(fx, 6), "as_of": fx_date},
+        "currency": {
+            "usd_sgd": round(usd_sgd, 6),
+            "gbp_sgd": round(gbp_sgd, 6),
+            "as_of": max(usd_fx_date, gbp_fx_date) if "fallback" not in (usd_fx_date, gbp_fx_date) else "fallback",
+        },
         "cash_distributions_usd": assumptions["cash_distributions_usd"],
         "horizons": rows,
         "distribution": {
@@ -175,6 +266,18 @@ def main() -> None:
             "density_per_100k_usd": [round_list(np.asarray(values), 5) for values in densities],
         },
         "companies": company_summary,
+        "liquid_portfolio": {
+            "as_of": liquid_as_of.isoformat(),
+            "refresh_status": funds_payload.get("refresh_status", "unknown"),
+            "current_value_usd": round(liquid_current_usd, 2),
+            "current_value_sgd": round(liquid_current_sgd, 2),
+            "cost_value_sgd": round(liquid_cost_sgd, 2),
+            "unrealized_gain_sgd": round(liquid_current_sgd - liquid_cost_sgd, 2),
+            "unrealized_gain_percent": round(liquid_current_sgd / liquid_cost_sgd - 1, 6),
+            "expected_2026_usd": rows[0]["components"]["FUNDS"],
+            "expected_2027_usd": rows[-1]["components"]["FUNDS"],
+            "funds": liquid_summaries,
+        },
         "capacity": {
             "ticker": "G",
             "target_mw": g["capacity_target_mw"],
@@ -183,14 +286,15 @@ def main() -> None:
             "probability_at_least_target": round(float((capacity >= g["capacity_target_mw"]).mean()), 4),
         },
         "targets": {
-            "portfolio_sgd_500k_2026": round(float((portfolio_values[0] * fx >= 500000).mean()), 4),
-            "portfolio_sgd_500k_2027": round(float((portfolio_values[-1] * fx >= 500000).mean()), 4),
-            "portfolio_sgd_1m_2027": round(float((portfolio_values[-1] * fx >= 1000000).mean()), 4),
+            "portfolio_sgd_500k_2026": round(float((portfolio_values[0] * usd_sgd >= 500000).mean()), 4),
+            "portfolio_sgd_500k_2027": round(float((portfolio_values[-1] * usd_sgd >= 500000).mean()), 4),
+            "portfolio_sgd_1m_2027": round(float((portfolio_values[-1] * usd_sgd >= 1000000).mean()), 4),
         },
         "method": {
             "paths": paths,
             "seed": assumptions["seed"],
             "central_surface_probability": 0.995,
+            "liquid_fund_method": "Correlated lognormal total-return paths; the two Allianz AI share classes share one underlying risk factor.",
         },
     }
     OUTPUT_PATH.write_text(json.dumps(output, indent=2) + "\n")

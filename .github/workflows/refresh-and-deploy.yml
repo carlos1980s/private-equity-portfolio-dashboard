@@ -33,6 +33,13 @@ jobs:
       - name: Install model dependencies
         run: pip install -r requirements.txt
 
+      - name: Refresh verified public fund NAVs
+        if: github.event_name != 'push'
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          FUND_NAV_MODEL: gpt-5.4-nano
+        run: python scripts/update_funds.py
+
       - name: Regenerate the approved model
         run: python scripts/update_dashboard.py
 

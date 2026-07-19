@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A live probability monitor for a three-position private-equity portfolio.">
-  <title>O / G / V Probability Monitor</title>
+  <meta name="description" content="A live probability monitor for private-equity positions O, G and V plus five liquid funds.">
+  <title>Full Portfolio Probability Monitor</title>
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
-  <link rel="stylesheet" href="styles.css?v=20260719-2">
+  <link rel="stylesheet" href="styles.css?v=20260719-3">
 </head>
 <body>
   <div class="ambient ambient-one" aria-hidden="true"></div>
@@ -15,9 +15,9 @@
   <main class="page-shell">
     <header class="site-header">
       <div>
-        <p class="eyebrow">Private equity · probability monitor</p>
+        <p class="eyebrow">Full portfolio · probability monitor</p>
         <h1>Portfolio probability,<br><span>kept current.</span></h1>
-        <p class="lede">A review-controlled model for O, G and V. News refreshes in the background; valuation assumptions move only after approval.</p>
+        <p class="lede">One correlated view of O, G, V and five liquid funds. News and public NAVs refresh in the background; holdings and valuation assumptions move only after approval.</p>
       </div>
       <div class="status-stack" aria-label="Dashboard status">
         <span class="status-pill"><i class="status-dot" aria-hidden="true"></i><span id="refresh-status">Loading data</span></span>
@@ -41,6 +41,40 @@
         <strong id="range-2027">—</strong>
         <span id="median-2027">—</span>
       </article>
+      <article class="metric-card">
+        <p>Liquid funds · current</p>
+        <strong id="liquid-current">—</strong>
+        <span id="liquid-gain">—</span>
+      </article>
+    </section>
+
+    <section class="fund-section panel" aria-labelledby="funds-heading">
+      <div class="section-heading fund-heading">
+        <div>
+          <p class="eyebrow">Five liquid positions · 100% economic ownership</p>
+          <h2 id="funds-heading">Fund valuation analysis</h2>
+        </div>
+        <div class="fund-summary">
+          <span id="funds-as-of">—</span>
+          <strong id="funds-total-gain">—</strong>
+        </div>
+      </div>
+      <div class="fund-table-wrap">
+        <table class="fund-table">
+          <thead>
+            <tr>
+              <th scope="col">Fund</th>
+              <th scope="col">Shares</th>
+              <th scope="col">NAV</th>
+              <th scope="col">Current value</th>
+              <th scope="col">Gain</th>
+              <th scope="col">Expected · YE 2027</th>
+            </tr>
+          </thead>
+          <tbody id="fund-rows"></tbody>
+        </table>
+      </div>
+      <p class="fund-model-note">Liquid funds use correlated total-return paths. Both Allianz AI share classes share one underlying risk factor; SGD-hedged and USD classes remain distinct holdings.</p>
     </section>
 
     <section class="surface-section" aria-labelledby="surface-heading">
@@ -125,16 +159,16 @@
       <div><span>Simulation</span><strong id="path-count">—</strong></div>
       <div><span>Displayed surface</span><strong>Central 99.5%</strong></div>
       <div><span>Model policy</span><strong>Owner approval</strong></div>
-      <div><span>Coverage</span><strong>O · G · V</strong></div>
+      <div><span>Coverage</span><strong>O · G · V + 5 funds</strong></div>
     </section>
 
     <footer>
-      <p>Probabilistic private-market estimate only. Not financial advice, an appraisal, a fund NAV, or a liquidity forecast. Private-market indications may not be executable.</p>
+      <p>Probabilistic portfolio estimate only. Not financial advice, an appraisal, or a liquidity forecast. Fund NAVs may lag their managers; private-market indications may not be executable.</p>
       <p id="generated-label">Generated —</p>
     </footer>
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/plotly.js-dist-min@2.35.2/plotly.min.js"></script>
-  <script src="app.js?v=20260719-2"></script>
+  <script src="app.js?v=20260719-3"></script>
 </body>
 </html>

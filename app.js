@@ -13,6 +13,16 @@
     }).format(amount);
   };
 
+  const nativeNav = fund => {
+    if (fund.currency === "GBP" && fund.nav_scale === 0.01) return `${fund.nav.toFixed(2)}p`;
+    return new Intl.NumberFormat("en-SG", {
+      style: "currency",
+      currency: fund.currency,
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 4,
+    }).format(fund.nav);
+  };
+
   const percent = value => new Intl.NumberFormat("en-SG", {
     style: "percent",
     maximumFractionDigits: 1,
@@ -49,6 +59,8 @@
     setText("range-2027", `${money(last.p10, state.currency, true)} – ${money(last.p90, state.currency, true)}`);
     setText("median-2027", `Median ${money(last.median)}`);
     setText("cash-distributions", money(state.model.cash_distributions_usd));
+    setText("liquid-current", money(state.model.liquid_portfolio.current_value_usd));
+    setText("liquid-gain", `${money(state.model.liquid_portfolio.unrealized_gain_sgd / state.model.currency.usd_sgd)} unrealized gain`);
   }
 
   function nearestDensity(density, values, amount) {
@@ -195,6 +207,28 @@
     }));
   }
 
+  function renderFunds() {
+    const portfolio = state.model.liquid_portfolio;
+    const body = document.getElementById("fund-rows");
+    body.replaceChildren(...portfolio.funds.map(fund => {
+      const row = document.createElement("tr");
+      const gainUsd = fund.unrealized_gain_sgd / state.model.currency.usd_sgd;
+      row.innerHTML = `
+        <td data-label="Fund">
+          <strong>${escapeHtml(fund.ticker)}</strong>
+          <span>${escapeHtml(fund.name)} · ${escapeHtml(fund.share_class)}</span>
+        </td>
+        <td data-label="Shares">${new Intl.NumberFormat("en-SG", { maximumFractionDigits: 3 }).format(fund.shares)}</td>
+        <td data-label="NAV"><strong>${escapeHtml(nativeNav(fund))}</strong><span>${escapeHtml(formatDate(fund.nav_as_of))}</span></td>
+        <td data-label="Current value"><strong>${money(fund.current_value_usd)}</strong></td>
+        <td data-label="Gain"><strong class="gain-positive">${money(gainUsd)}</strong><span>${percent(fund.unrealized_gain_percent)}</span></td>
+        <td data-label="Expected · YE 2027"><strong>${money(fund.expected_2027_usd)}</strong></td>`;
+      return row;
+    }));
+    setText("funds-as-of", `NAVs through ${formatDate(portfolio.as_of)}`);
+    setText("funds-total-gain", `${money(portfolio.unrealized_gain_sgd / state.model.currency.usd_sgd)} total gain`);
+  }
+
   function renderCapacity() {
     const capacity = state.model.capacity;
     const angle = Math.round(capacity.probability_at_least_target * 360);
@@ -238,8 +272,10 @@
 
   function renderMeta() {
     setText("model-version", state.model.model_version);
-    const current = state.news.refresh_status === "current";
-    setText("refresh-status", current ? "News current" : "News refresh pending");
+    const newsCurrent = state.news.refresh_status === "current";
+    const navCurrent = ["current", "owner_statement"].includes(state.model.liquid_portfolio.refresh_status);
+    const current = newsCurrent && navCurrent;
+    setText("refresh-status", current ? "News + NAVs current" : "Data refresh pending");
     document.querySelector(".status-dot").style.background = current ? "var(--positive)" : "var(--amber)";
     setText("fx-label", `USD/SGD ${state.model.currency.usd_sgd.toFixed(4)} · ${formatDate(state.model.currency.as_of)}`);
     setText("path-count", `${new Intl.NumberFormat("en-SG").format(state.model.method.paths)} paths`);
@@ -250,6 +286,7 @@
     renderMetrics();
     renderPlot();
     renderCompanies();
+    renderFunds();
     renderCapacity();
     renderNews();
     renderMeta();
@@ -265,6 +302,7 @@
       });
       renderMetrics();
       renderCompanies();
+      renderFunds();
       renderPlot();
     });
   });

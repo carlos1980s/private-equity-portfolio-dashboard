@@ -1,0 +1,83 @@
+{
+  "updated_at": "2026-07-17T00:00:00+00:00",
+  "last_attempt_at": "2026-07-17T00:00:00+00:00",
+  "refresh_status": "owner_statement",
+  "policy": "Public NAVs may refresh automatically; share counts and cost basis remain owner-controlled.",
+  "items": [
+    {
+      "id": "NEB5CSA",
+      "ticker": "NEB5CSA:ID",
+      "name": "Neuberger Berman Next Generation Connectivity Fund",
+      "share_class": "SGD A Acc",
+      "isin": "IE00BMPRXR70",
+      "shares": 2058.144,
+      "cost_nav": 32.9846,
+      "nav": 55.0,
+      "nav_scale": 1.0,
+      "currency": "SGD",
+      "nav_as_of": "2026-07-17",
+      "source_label": "Owner statement",
+      "source_url": "https://www.nb.com/en/sg/products/ucits-funds/next-generation-connectivity-fund"
+    },
+    {
+      "id": "FTTASH1",
+      "ticker": "FTTASH1:LX",
+      "name": "Franklin Technology Fund",
+      "share_class": "A (acc) SGD-H1",
+      "isin": "LU1803068979",
+      "shares": 5812.034,
+      "cost_nav": 22.5655,
+      "nav": 34.99,
+      "nav_scale": 1.0,
+      "currency": "SGD",
+      "nav_as_of": "2026-07-17",
+      "source_label": "Owner statement",
+      "source_url": "https://www.franklintempleton.com.sg/our-funds/price-and-performance/products/4916/Z5/franklin-technology-fund/LU1803068979"
+    },
+    {
+      "id": "SLBGLEP",
+      "ticker": "SLBGLEP:LN",
+      "name": "Standard Life BlackRock Aquila HP 50:50 Global Equity Pension Fund",
+      "share_class": "Pension",
+      "isin": "",
+      "shares": 13734.875,
+      "cost_nav": 150.0,
+      "nav": 470.9,
+      "nav_scale": 0.01,
+      "currency": "GBP",
+      "nav_as_of": "2026-07-17",
+      "source_label": "Owner statement",
+      "source_url": ""
+    },
+    {
+      "id": "ALGAATU",
+      "ticker": "ALGAATU:LX",
+      "name": "Allianz Global Artificial Intelligence",
+      "share_class": "AT (USD) Acc",
+      "isin": "LU1548497426",
+      "shares": 2713.919,
+      "cost_nav": 34.5911,
+      "nav": 39.9732,
+      "nav_scale": 1.0,
+      "currency": "USD",
+      "nav_as_of": "2026-07-17",
+      "source_label": "Allianz Global Investors",
+      "source_url": "https://uk.allianzgi.com/en-gb/funds/mutual-funds/allianz-global-artificial-intelligence-at-usd"
+    },
+    {
+      "id": "AGATH2S",
+      "ticker": "AGATH2S:LX",
+      "name": "Allianz Global Artificial Intelligence",
+      "share_class": "AT (H2-SGD) Acc",
+      "isin": "LU1720051017",
+      "shares": 11558.0,
+      "cost_nav": 27.9,
+      "nav": 29.89,
+      "nav_scale": 1.0,
+      "currency": "SGD",
+      "nav_as_of": "2026-07-17",
+      "source_label": "Owner statement",
+      "source_url": "https://sg.allianzgi.com/en-sg/retail/products-solutions/recognised-fund/allianz-global-artificial-intelligence-at-h2-sgd-sgd"
+    }
+  ]
+}

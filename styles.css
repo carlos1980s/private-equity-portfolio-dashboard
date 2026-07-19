@@ -112,7 +112,7 @@ h2 {
 
 .metric-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 14px;
   margin-bottom: 14px;
 }
@@ -165,6 +165,23 @@ h2 {
 .company-value span { color: var(--muted); font-size: .76rem; }
 .cash-strip { display: flex; justify-content: space-between; gap: 20px; align-items: center; margin-top: 22px; padding: 16px 18px; border-radius: 15px; background: rgba(88, 166, 255, .08); color: var(--muted); font-size: .84rem; }
 .cash-strip strong { color: var(--ink); font-size: 1rem; }
+
+.fund-section { margin-top: 14px; overflow: hidden; }
+.fund-heading { align-items: center; }
+.fund-summary { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; text-align: right; }
+.fund-summary span { color: var(--quiet); font-size: .74rem; }
+.fund-summary strong { color: var(--positive); font-size: .92rem; }
+.fund-table-wrap { margin-top: 26px; overflow-x: auto; }
+.fund-table { width: 100%; border-collapse: collapse; min-width: 900px; }
+.fund-table th { padding: 0 14px 12px; color: var(--quiet); font-size: .66rem; font-weight: 650; letter-spacing: .08em; text-align: right; text-transform: uppercase; }
+.fund-table th:first-child { padding-left: 0; text-align: left; }
+.fund-table td { padding: 16px 14px; border-top: 1px solid var(--line); color: var(--muted); font-size: .8rem; text-align: right; vertical-align: middle; }
+.fund-table td:first-child { width: 34%; padding-left: 0; text-align: left; }
+.fund-table td strong, .fund-table td span { display: block; }
+.fund-table td strong { color: var(--ink); font-size: .87rem; font-weight: 620; }
+.fund-table td span { margin-top: 5px; color: var(--quiet); font-size: .69rem; line-height: 1.4; }
+.fund-table .gain-positive { color: var(--positive); }
+.fund-model-note { margin: 16px 0 0; color: var(--quiet); font-size: .7rem; line-height: 1.55; }
 
 .capacity-visual { display: grid; grid-template-columns: 148px 1fr; gap: 24px; align-items: center; padding: 30px 0 24px; }
 .capacity-ring {
@@ -221,7 +238,8 @@ footer p:last-child { text-align: right; white-space: nowrap; }
   .page-shell { width: min(100% - 28px, 1180px); padding-top: 34px; }
   .site-header { flex-direction: column; gap: 26px; }
   .status-stack { flex-direction: row; flex-wrap: wrap; align-items: center; }
-  .metric-grid, .news-grid { grid-template-columns: 1fr; }
+  .metric-grid { grid-template-columns: repeat(2, 1fr); }
+  .news-grid { grid-template-columns: 1fr; }
   .metric-card { min-height: auto; }
   .detail-grid { grid-template-columns: 1fr; }
   .surface-section { padding: 24px 18px 14px; }
@@ -235,6 +253,7 @@ footer p:last-child { text-align: right; white-space: nowrap; }
   h1 { font-size: 3rem; }
   .site-header { margin-bottom: 28px; }
   .section-heading, .panel-heading, .news-heading { align-items: flex-start; flex-direction: column; }
+  .metric-grid { grid-template-columns: 1fr; }
   .chart-controls { width: 100%; flex-direction: row; justify-content: space-between; align-items: center; }
   .surface-plot { height: 480px; margin-top: 12px; }
   .chart-footer, .news-meta, footer { flex-direction: column; align-items: flex-start; }
@@ -242,6 +261,7 @@ footer p:last-child { text-align: right; white-space: nowrap; }
   .capacity-copy { width: 100%; }
   .company-row { grid-template-columns: 42px 1fr; }
   .company-value { grid-column: 2; text-align: left; }
+  .fund-summary { align-items: flex-start; text-align: left; }
   .method-strip { grid-template-columns: 1fr; }
   footer p:last-child { text-align: left; }
 }
