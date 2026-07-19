@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
   schedule:
-    - cron: "17 7 */2 * *"
+    - cron: "17 7 * * *"
       timezone: "Asia/Singapore"
   workflow_dispatch:
 

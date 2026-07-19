@@ -5,7 +5,7 @@ Public GitHub Pages dashboard for an approved full-portfolio probability model c
 ## Update policy
 
 - The approved valuation assumptions are stored in `model/assumptions.json`.
-- The model, fund NAVs and USD/SGD/GBP conversion regenerate every two days.
+- The model, fund NAVs and USD/SGD/GBP conversion regenerate daily at 7:17 AM Singapore time.
 - News signals refresh automatically and are shown for review.
 - News never changes valuation assumptions automatically; fund refreshes may update only verified public NAVs.
 - Share counts, cost basis, private-company labels and subjective return assumptions remain owner-controlled.
