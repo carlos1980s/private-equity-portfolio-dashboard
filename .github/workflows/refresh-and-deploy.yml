@@ -40,16 +40,16 @@ jobs:
           FUND_NAV_MODEL: gpt-5.4-nano
         run: python scripts/update_funds.py
 
-      - name: Regenerate the approved model
-        run: python scripts/update_dashboard.py
-
-      - name: Refresh review-only news signals
+      - name: Refresh verified private-position news
         if: github.event_name != 'push'
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           NEWS_WATCHLIST_JSON: ${{ secrets.NEWS_WATCHLIST_JSON }}
           NEWS_MODEL: gpt-5.4-nano
         run: python scripts/update_news.py
+
+      - name: Regenerate the approved model
+        run: python scripts/update_dashboard.py
 
       - name: Save refreshed public data
         if: github.event_name != 'push'

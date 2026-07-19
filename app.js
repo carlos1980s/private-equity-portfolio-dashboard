@@ -193,11 +193,17 @@
     container.replaceChildren(...state.model.companies.map(company => {
       const row = document.createElement("div");
       row.className = "company-row";
+      const adjustment = company.news_adjustment_2027;
+      const adjustmentClass = adjustment > .0005 ? "positive" : adjustment < -.0005 ? "negative" : "neutral";
+      const adjustmentLabel = Math.abs(adjustment) <= .0005
+        ? "No active news adjustment"
+        : `News overlay ${adjustment > 0 ? "+" : ""}${percent(adjustment)} at YE 2027`;
       row.innerHTML = `
         <span class="ticker">${company.ticker}</span>
         <span class="company-copy">
           <strong>${percent(company.economic_interest)} economic interest</strong>
           <span>Company median ${money(company.valuation_median_2027, "USD", true)} at YE 2027</span>
+          <span class="news-adjustment news-adjustment-${adjustmentClass}">${adjustmentLabel}</span>
         </span>
         <span class="company-value">
           <strong>${money(company.expected_2027)}</strong>
@@ -252,6 +258,11 @@
   function renderNews() {
     const grid = document.getElementById("news-grid");
     setText("news-updated", state.news.updated_at ? `Updated ${formatDate(state.news.updated_at)}` : "Refresh pending");
+    const overlayCompanies = state.model.news_overlay.companies;
+    setText("news-overlay-summary", ["O", "G", "V"].map(ticker => {
+      const adjustment = overlayCompanies[ticker].adjustment_2026;
+      return `${ticker} ${adjustment >= 0 ? "+" : ""}${percent(adjustment)}`;
+    }).join(" · "));
     if (!state.news.items?.length) {
       grid.innerHTML = '<p class="empty-news">No material signals are currently waiting for review.</p>';
       return;
@@ -262,6 +273,11 @@
       const sourceUrl = safeSourceUrl(item.source_url);
       const sourceLabel = escapeHtml(item.source_label);
       const link = sourceUrl ? `<a href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener noreferrer">${sourceLabel}</a>` : sourceLabel;
+      const overlayItem = overlayCompanies[item.company]?.items.find(candidate => candidate.source_url === item.source_url);
+      const appliedEffect = overlayItem?.applied ? overlayItem.effect_2026 : 0;
+      const modelLabel = overlayItem?.applied
+        ? `Model ${appliedEffect >= 0 ? "+" : ""}${percent(appliedEffect)}`
+        : item.review_status === "pending" ? "Review" : "Logged";
       card.innerHTML = `
         <div class="news-card-top">
           <span class="news-ticker">${escapeHtml(item.company)}</span>
@@ -271,7 +287,7 @@
         <p>${escapeHtml(item.summary)}</p>
         <div class="news-card-footer">
           <span>${escapeHtml(formatDate(item.date))} · ${link}</span>
-          <span class="${item.review_status === "pending" ? "pending" : ""}">${item.review_status === "pending" ? "Review" : "Logged"}</span>
+          <span class="${overlayItem?.applied ? "model-applied" : item.review_status === "pending" ? "pending" : ""}">${escapeHtml(modelLabel)}</span>
         </div>`;
       return card;
     }));

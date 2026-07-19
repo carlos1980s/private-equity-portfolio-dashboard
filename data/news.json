@@ -2,7 +2,7 @@
   "updated_at": "2026-07-19T09:37:24+00:00",
   "last_attempt_at": "2026-07-19T09:37:24+00:00",
   "refresh_status": "current",
-  "policy": "News only. Model changes require owner approval.",
+  "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
       "company": "O",

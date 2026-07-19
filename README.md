@@ -6,8 +6,9 @@ Public GitHub Pages dashboard for an approved full-portfolio probability model c
 
 - The approved valuation assumptions are stored in `model/assumptions.json`.
 - The model, fund NAVs and USD/SGD/GBP conversion regenerate daily at 7:17 AM Singapore time.
-- News signals refresh automatically and are shown for review.
-- News never changes valuation assumptions automatically; fund refreshes may update only verified public NAVs.
+- News signals refresh automatically and feed a bounded, time-decaying simulation overlay.
+- The overlay uses fixed category and source-reliability rules, is capped at +20%/-15% for YE 2026, and carries 75% of its effect into YE 2027.
+- Fund refreshes may update only verified public NAVs.
 - Share counts, cost basis, private-company labels and subjective return assumptions remain owner-controlled.
 - Company labels remain O, G, and V in the public interface.
 - Liquid-fund paths are beta-linked to the approved S&P 500 central case: 8,150 at YE 2026 and 9,300 at YE 2027.

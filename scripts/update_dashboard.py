@@ -17,6 +17,7 @@ import numpy as np
 ROOT = Path(__file__).resolve().parents[1]
 ASSUMPTIONS_PATH = ROOT / "model" / "assumptions.json"
 FUNDS_PATH = ROOT / "data" / "funds.json"
+NEWS_PATH = ROOT / "data" / "news.json"
 OUTPUT_PATH = ROOT / "data" / "model.json"
 HORIZONS = ["YE 2026", "Q1 2027", "Q2 2027", "Q3 2027", "YE 2027"]
 HORIZON_DATES = [date(2026, 12, 31), date(2027, 3, 31), date(2027, 6, 30), date(2027, 9, 30), date(2027, 12, 31)]
@@ -93,9 +94,81 @@ def round_list(values: np.ndarray, digits: int = 4) -> list[float]:
     return np.round(values, digits).tolist()
 
 
+def calculate_news_overlay(news: dict, config: dict, as_of: date) -> dict:
+    results = {}
+    half_life = float(config["half_life_days"])
+    max_age = int(config["max_age_days"])
+    lower_score = math.log(1 - float(config["max_downside_2026"]))
+    upper_score = math.log(1 + float(config["max_upside_2026"]))
+    impact_sign = {"positive": 1.0, "negative": -1.0, "neutral": 0.0, "mixed": 0.0}
+
+    for ticker in ("O", "G", "V"):
+        scored_items = []
+        raw_score = 0.0
+        seen_urls = set()
+        for item in news.get("items", []):
+            if item.get("company") != ticker:
+                continue
+            source_url = str(item.get("source_url", ""))
+            if not source_url.startswith(("https://", "http://")) or source_url in seen_urls:
+                continue
+            seen_urls.add(source_url)
+            try:
+                item_date = date.fromisoformat(str(item["date"]))
+            except (KeyError, TypeError, ValueError):
+                continue
+            age_days = (as_of - item_date).days
+            if age_days < 0 or age_days > max_age:
+                continue
+            category = str(item.get("category", "other"))
+            sign = impact_sign.get(str(item.get("impact", "neutral")), 0.0)
+            base_effect = float(config["category_effects"].get(category, config["category_effects"]["other"]))
+            reliability = float(config["source_reliability"].get(str(item.get("source_label", "")), 0.55))
+            materiality = float(config["pending_materiality_multiplier"]) if item.get("review_status") == "pending" else 1.0
+            decay = 0.5 ** (age_days / half_life)
+            score = sign * base_effect * reliability * materiality * decay
+            raw_score += score
+            scored_items.append({
+                "date": item_date.isoformat(),
+                "headline": item.get("headline", ""),
+                "category": category,
+                "impact": item.get("impact", "neutral"),
+                "source_url": source_url,
+                "age_days": age_days,
+                "decay_weight": round(decay, 6),
+                "effect_2026": round(math.exp(score) - 1, 6),
+                "applied": sign != 0.0,
+            })
+        bounded_score = float(np.clip(raw_score, lower_score, upper_score))
+        multiplier_2026 = math.exp(bounded_score)
+        multiplier_2027 = math.exp(bounded_score * float(config["persistence_2027"]))
+        results[ticker] = {
+            "multiplier_2026": round(multiplier_2026, 6),
+            "multiplier_2027": round(multiplier_2027, 6),
+            "adjustment_2026": round(multiplier_2026 - 1, 6),
+            "adjustment_2027": round(multiplier_2027 - 1, 6),
+            "raw_score": round(raw_score, 6),
+            "capped": not math.isclose(raw_score, bounded_score),
+            "active_items": sum(bool(item["applied"]) for item in scored_items),
+            "items": scored_items,
+        }
+    return {
+        "enabled": bool(config.get("enabled", True)),
+        "as_of": as_of.isoformat(),
+        "half_life_days": half_life,
+        "max_age_days": max_age,
+        "caps_2026": {
+            "upside": float(config["max_upside_2026"]),
+            "downside": -float(config["max_downside_2026"]),
+        },
+        "companies": results,
+    }
+
+
 def main() -> None:
     assumptions = json.loads(ASSUMPTIONS_PATH.read_text())
     funds_payload = json.loads(FUNDS_PATH.read_text())
+    news_payload = json.loads(NEWS_PATH.read_text())
     funds = funds_payload["items"]
     positions = assumptions["positions"]
     paths = int(assumptions["paths"])
@@ -134,6 +207,15 @@ def main() -> None:
     blend = float(g["capacity_blend_weight"])
     g_2027 = np.exp(blend * np.log(operating_value) + (1 - blend) * np.log(valuation_prior))
     retention = rng.choice(g["retention"]["values"], paths, p=g["retention"]["probabilities"])
+
+    overlay = calculate_news_overlay(news_payload, assumptions["news_overlay"], datetime.now(timezone.utc).date())
+    if overlay["enabled"]:
+        o_2026 *= overlay["companies"]["O"]["multiplier_2026"]
+        o_2027 *= overlay["companies"]["O"]["multiplier_2027"]
+        g_2026 *= overlay["companies"]["G"]["multiplier_2026"]
+        g_2027 *= overlay["companies"]["G"]["multiplier_2027"]
+        v_2026 *= overlay["companies"]["V"]["multiplier_2026"]
+        v_2027 *= overlay["companies"]["V"]["multiplier_2027"]
 
     liquid_model = assumptions["liquid_fund_model"]
     equity_market = liquid_model["equity_market"]
@@ -293,6 +375,8 @@ def main() -> None:
             "expected_2027": rows[-1]["components"][ticker],
             "valuation_median_2026": round(float(np.median(valuation_paths[ticker][0])), 2),
             "valuation_median_2027": round(float(np.median(valuation_paths[ticker][-1])), 2),
+            "news_adjustment_2026": overlay["companies"][ticker]["adjustment_2026"],
+            "news_adjustment_2027": overlay["companies"][ticker]["adjustment_2027"],
         })
 
     liquid_current_usd = sum(fund["current_value_usd"] for fund in liquid_summaries)
@@ -300,7 +384,7 @@ def main() -> None:
     liquid_cost_sgd = sum(fund["cost_value_sgd"] for fund in liquid_summaries)
     output = {
         "model_version": assumptions["version"],
-        "model_policy": "News and public NAVs refresh automatically; valuation assumptions, share counts and cost basis change only after owner approval.",
+        "model_policy": "Verified news applies a bounded, time-decaying overlay to private-position simulations. Base assumptions, share counts and cost basis remain owner-controlled.",
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "currency": {
             "usd_sgd": round(usd_sgd, 6),
@@ -314,6 +398,7 @@ def main() -> None:
             "density_per_100k_usd": [round_list(np.asarray(values), 5) for values in densities],
         },
         "companies": company_summary,
+        "news_overlay": overlay,
         "equity_market": {
             "index": "S&P 500",
             "reference_level": round(float(market_reference_level), 2),
@@ -356,6 +441,7 @@ def main() -> None:
             "seed": assumptions["seed"],
             "central_surface_probability": 0.995,
             "liquid_fund_method": "Fund returns are beta-linked to the owner-approved S&P 500 central path, with correlated market and fund-specific residual risk. The two Allianz AI share classes share one underlying factor.",
+            "private_news_method": "Verified news is translated through fixed category, source-reliability and time-decay rules, capped at +20%/-15% for YE 2026 with 75% persistence into YE 2027.",
         },
     }
     OUTPUT_PATH.write_text(json.dumps(output, indent=2) + "\n")

@@ -6,7 +6,7 @@ from __future__ import annotations
 import json
 import os
 import re
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 from pathlib import Path
 
 from openai import OpenAI
@@ -88,7 +88,7 @@ def main() -> None:
             raise ValueError("The private watchlist must map O, G and V to search names.")
         today = datetime.now(timezone.utc).date().isoformat()
         prompt = f"""
-Today is {today}. Research material news from the last 14 days for this private watchlist:
+Today is {today}. Research material news from the last 45 days for this private watchlist:
 {json.dumps(mapping)}
 
 Return at most four genuinely material items per ticker. Prioritize official company releases,
@@ -96,10 +96,11 @@ regulatory filings, financing or valuation evidence, capacity or revenue evidenc
 IPO signals, and credible press. Use only O, G, or V in every visible field; never write the full
 company names in headlines, summaries, or source labels. Keep each summary under 42 words.
 
-This dashboard uses review-only mode: do not change valuations or model assumptions. Set
-review_status to pending only when a reasonable investor should consider changing an assumption;
-otherwise use none. Include a direct source URL and a generic source label such as Official release,
-Regulatory filing, or Credible press.
+Classify impact conservatively. Positive or negative labels feed a bounded rules-based simulation
+overlay; neutral and mixed items remain visible but do not move valuations. Set review_status to
+pending only when a reasonable investor should consider changing a base assumption. Include a direct
+article URL, never a landing, category, homepage, or search page. Use exactly one generic source label:
+Official release, Regulatory filing, or Credible press.
 """
         client = OpenAI(api_key=key)
         response = client.responses.create(
@@ -117,9 +118,21 @@ Regulatory filing, or Credible press.
         )
         payload = json.loads(response.output_text)
         items = []
+        seen_urls = set()
+        today_date = date.fromisoformat(today)
         for item in payload.get("items", []):
             if item.get("company") not in VALID_TICKERS:
                 continue
+            try:
+                item_date = date.fromisoformat(str(item["date"]))
+            except (KeyError, TypeError, ValueError):
+                continue
+            if (today_date - item_date).days not in range(46):
+                continue
+            source_url = str(item.get("source_url", ""))
+            if not source_url.startswith(("https://", "http://")) or source_url in seen_urls:
+                continue
+            seen_urls.add(source_url)
             for field in ("headline", "summary", "source_label"):
                 item[field] = clean_text(str(item[field]), mapping)
             items.append(item)
@@ -128,7 +141,7 @@ Regulatory filing, or Credible press.
             "updated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
             "last_attempt_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
             "refresh_status": "current",
-            "policy": "News only. Model changes require owner approval.",
+            "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
             "items": items[:12],
         }
         OUTPUT_PATH.write_text(json.dumps(output, indent=2) + "\n")

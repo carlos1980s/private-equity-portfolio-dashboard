@@ -1,5 +1,5 @@
 {
-  "version": "2026-07-19-spx-central-case",
+  "version": "2026-07-19-news-overlay",
   "seed": 20260719,
   "paths": 500000,
   "usd_sgd": 1.2908,
@@ -11,6 +11,29 @@
     [0.55, 1.0, 0.25],
     [0.2, 0.25, 1.0]
   ],
+  "news_overlay": {
+    "enabled": true,
+    "half_life_days": 21.0,
+    "max_age_days": 45,
+    "max_upside_2026": 0.2,
+    "max_downside_2026": 0.15,
+    "persistence_2027": 0.75,
+    "category_effects": {
+      "funding": 0.04,
+      "valuation": 0.08,
+      "capacity": 0.06,
+      "product": 0.02,
+      "regulatory": 0.05,
+      "ipo": 0.06,
+      "other": 0.01
+    },
+    "source_reliability": {
+      "Official release": 0.85,
+      "Regulatory filing": 1.0,
+      "Credible press": 0.7
+    },
+    "pending_materiality_multiplier": 1.15
+  },
   "liquid_fund_model": {
     "equity_market": {
       "reference_level": 7457.69,
