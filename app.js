@@ -97,22 +97,26 @@
 
     const pathTrace = (key, name, color, dash, showlegend) => {
       const amounts = state.model.horizons.map(row => row[key] * factor / 1000);
-      return {
+      const trace = {
         type: "scatter3d",
-        mode: key === "expected" ? "lines+markers+text" : "lines",
+        mode: "lines",
         x: amounts,
         y: amounts.map((amount, index) => nearestDensity(density[index], x, amount)),
         z: time,
-        text: key === "expected" ? [`${axisCurrency}${amounts[0].toFixed(0)}k`, "", "", "", `${axisCurrency}${amounts.at(-1).toFixed(0)}k`] : undefined,
-        textposition: "top center",
-        textfont: { color: "#f5f8ff", size: 12 },
         line: { color, width: key === "expected" ? 8 : 4, dash },
-        marker: key === "expected" ? { color, size: 5 } : undefined,
         name,
         showlegend,
         customdata: state.model.horizons.map((row, index) => `${dates[index]} · ${axisCurrency}${Math.round(row[key] * factor / 1000)}k`),
         hovertemplate: "%{customdata}<extra></extra>",
       };
+      if (key === "expected") {
+        trace.mode = "lines+markers+text";
+        trace.text = [`${axisCurrency}${amounts[0].toFixed(0)}k`, "", "", "", `${axisCurrency}${amounts.at(-1).toFixed(0)}k`];
+        trace.textposition = "top center";
+        trace.textfont = { color: "#f5f8ff", size: 12 };
+        trace.marker = { color, size: 5 };
+      }
+      return trace;
     };
 
     const data = [
@@ -163,7 +167,8 @@
       },
     };
 
-    Plotly.react(plot, data, layout, {
+    Plotly.purge(plot);
+    Plotly.newPlot(plot, data, layout, {
       responsive: true,
       displaylogo: false,
       scrollZoom: true,
