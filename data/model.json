@@ -1,7 +1,7 @@
 {
   "model_version": "2026-07-19-news-overlay",
   "model_policy": "Verified news applies a bounded, time-decaying overlay to private-position simulations. Base assumptions, share counts and cost basis remain owner-controlled.",
-  "generated_at": "2026-07-19T10:17:07+00:00",
+  "generated_at": "2026-07-19T10:19:28+00:00",
   "currency": {
     "usd_sgd": 1.2912,
     "gbp_sgd": 1.7351,
@@ -595,7 +595,7 @@
             "headline": "O reveals LLM-optimized inference chip with Broadcom",
             "category": "product",
             "impact": "positive",
-            "source_url": "https://openai.com/news/company-announcements/",
+            "source_url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip/",
             "age_days": 25,
             "decay_weight": 0.438158,
             "effect_2026": 0.007477,
@@ -653,7 +653,7 @@
       8998.12,
       9300.0
     ],
-    "source_status": "fallback",
+    "source_status": "FRED",
     "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=SP500"
   },
   "liquid_portfolio": {

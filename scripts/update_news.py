@@ -8,13 +8,22 @@ import os
 import re
 from datetime import date, datetime, timezone
 from pathlib import Path
-
-from openai import OpenAI
-
+from urllib.parse import urlsplit, urlunsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT_PATH = ROOT / "data" / "news.json"
 VALID_TICKERS = {"O", "G", "V"}
+VALID_SOURCE_LABELS = {"Official release", "Regulatory filing", "Credible press"}
+GENERIC_SOURCE_PATHS = {
+    "",
+    "/blog",
+    "/media",
+    "/news",
+    "/news/company-announcements",
+    "/newsroom",
+    "/press",
+    "/search",
+}
 
 
 SCHEMA = {
@@ -36,7 +45,7 @@ SCHEMA = {
                     },
                     "impact": {"type": "string", "enum": ["positive", "neutral", "negative", "mixed"]},
                     "review_status": {"type": "string", "enum": ["none", "pending"]},
-                    "source_label": {"type": "string"},
+                    "source_label": {"type": "string", "enum": sorted(VALID_SOURCE_LABELS)},
                     "source_url": {"type": "string"}
                 },
                 "required": [
@@ -61,6 +70,22 @@ def clean_text(text: str, mapping: dict[str, str]) -> str:
         for alias in sorted(aliases, key=len, reverse=True):
             cleaned = re.sub(rf"\b{re.escape(alias)}\b", ticker, cleaned, flags=re.IGNORECASE)
     return cleaned
+
+
+def normalize_direct_source_url(raw_url: str) -> str | None:
+    """Return a canonical article URL, or None for generic/non-web sources."""
+    try:
+        parsed = urlsplit(raw_url.strip())
+    except ValueError:
+        return None
+    if parsed.scheme not in {"http", "https"} or not parsed.netloc:
+        return None
+    path = re.sub(r"/+", "/", parsed.path).rstrip("/").lower()
+    if path in GENERIC_SOURCE_PATHS:
+        return None
+    if any(marker in path for marker in ("/category/", "/search/", "/tag/")):
+        return None
+    return urlunsplit((parsed.scheme.lower(), parsed.netloc.lower(), parsed.path.rstrip("/"), parsed.query, ""))
 
 
 def write_status(status: str, error: str | None = None) -> None:
@@ -102,6 +127,8 @@ pending only when a reasonable investor should consider changing a base assumpti
 article URL, never a landing, category, homepage, or search page. Use exactly one generic source label:
 Official release, Regulatory filing, or Credible press.
 """
+        from openai import OpenAI
+
         client = OpenAI(api_key=key)
         response = client.responses.create(
             model=os.getenv("NEWS_MODEL", "gpt-5.4-nano"),
@@ -129,9 +156,12 @@ Official release, Regulatory filing, or Credible press.
                 continue
             if (today_date - item_date).days not in range(46):
                 continue
-            source_url = str(item.get("source_url", ""))
-            if not source_url.startswith(("https://", "http://")) or source_url in seen_urls:
+            source_url = normalize_direct_source_url(str(item.get("source_url", "")))
+            if not source_url or source_url in seen_urls:
                 continue
+            if item.get("source_label") not in VALID_SOURCE_LABELS:
+                continue
+            item["source_url"] = source_url
             seen_urls.add(source_url)
             for field in ("headline", "summary", "source_label"):
                 item[field] = clean_text(str(item[field]), mapping)
