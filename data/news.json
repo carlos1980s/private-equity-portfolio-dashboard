@@ -1,42 +1,63 @@
 {
-  "updated_at": "2026-07-19T07:30:00+00:00",
-  "last_attempt_at": "2026-07-19T08:52:48+00:00",
-  "refresh_status": "waiting_for_secrets",
-  "status_message": "Add the replacement API key to enable the next news refresh.",
+  "updated_at": "2026-07-19T08:59:57+00:00",
+  "last_attempt_at": "2026-07-19T08:59:57+00:00",
+  "refresh_status": "current",
   "policy": "News only. Model changes require owner approval.",
   "items": [
     {
-      "company": "O",
-      "date": "2026-07-18",
-      "headline": "Private-market indicator moved above the approved reference price",
-      "summary": "The latest secondary-market indication is above the model reference. It is informative but does not change the approved valuation distribution.",
-      "category": "valuation",
+      "company": "V",
+      "date": "2026-07-12",
+      "headline": "V: W-6 in orbit\u2014autonomous navigation reentry flight updates",
+      "summary": "Varda posted that W-6 is now in orbit, describing its 2026 flight manifest and autonomous hypersonic reentry focus. The update highlights payload elements and data collection for navigation and thermal protection.",
+      "category": "product",
       "impact": "positive",
       "review_status": "none",
-      "source_label": "Private-market indicator",
-      "source_url": "https://forgeglobal.com/openai_stock/"
+      "source_label": "Credible press",
+      "source_url": "https://www.linkedin.com/posts/varda-space-industries_w-6-is-now-in-orbit-kicking-off-our-2026-activity-7444358298419523584-KFUD"
+    },
+    {
+      "company": "O",
+      "date": "2026-07-08",
+      "headline": "O: ChatGPT release notes\u2014o3 retirement and GPT-4.5 sunset",
+      "summary": "ChatGPT release notes indicate o3 retirement on 2026-08-26 after a 90-day sunset, and GPT-4.5 retirement on 2026-06-26 after a 30-day sunset. This signals model lifecycle changes affecting product availability.",
+      "category": "product",
+      "impact": "neutral",
+      "review_status": "pending",
+      "source_label": "Official release",
+      "source_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes?tpcc=TCreviewnewsletter"
+    },
+    {
+      "company": "O",
+      "date": "2026-06-24",
+      "headline": "O: Jalape\u00f1o inference chip unveiled with G",
+      "summary": "O and Broadcom unveiled \u201cJalape\u00f1o,\u201d O\u2019s first Intelligence Processor built for LLM inference. The release frames it as an accelerator in a multi-generation compute platform for faster, more reliable inference at scale.",
+      "category": "product",
+      "impact": "positive",
+      "review_status": "none",
+      "source_label": "Official release",
+      "source_url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip/"
     },
     {
       "company": "G",
       "date": "2026-06-22",
-      "headline": "New growth capital supports the 200 MW expansion target",
-      "summary": "A new financing supports inference capacity expansion. The transaction did not disclose a valuation, so the approved capacity-driven model remains unchanged.",
-      "category": "capacity",
+      "headline": "G: $650M growth capital for GCloud expansion",
+      "summary": "G announced $650M in new growth capital to scale its AI inference cloud, stating the funding will accelerate expansion of GCloud and infrastructure scaling. The release also references leadership appointments in July.",
+      "category": "funding",
       "impact": "positive",
-      "review_status": "none",
+      "review_status": "pending",
       "source_label": "Official release",
       "source_url": "https://groq.com/newsroom/groq-raises-usd650m-to-scale-its-ai-inference-cloud-business"
     },
     {
-      "company": "V",
-      "date": "2026-05-10",
-      "headline": "Mission execution supports the existing operating case",
-      "summary": "A completed mission and continuing platform development support the positive execution scenario without providing enough evidence for a valuation change.",
+      "company": "O",
+      "date": "2026-06-11",
+      "headline": "O: acquire Ona\u2014Codex team deal announced",
+      "summary": "O announced an agreement to acquire Ona. The release notes the deal is subject to customary closing conditions, including regulatory approvals, and positions Ona\u2019s team within O\u2019s Codex work.",
       "category": "product",
-      "impact": "positive",
-      "review_status": "none",
-      "source_label": "Official mission update",
-      "source_url": "https://www.varda.com/mission/w-4"
+      "impact": "mixed",
+      "review_status": "pending",
+      "source_label": "Official release",
+      "source_url": "https://openai.com/index/openai-to-acquire-ona/"
     }
   ]
 }
