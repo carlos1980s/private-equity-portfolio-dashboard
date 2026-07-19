@@ -55,7 +55,11 @@ SCHEMA = {
 def clean_text(text: str, mapping: dict[str, str]) -> str:
     cleaned = text.strip()
     for ticker, name in sorted(mapping.items(), key=lambda pair: len(pair[1]), reverse=True):
-        cleaned = re.sub(re.escape(name), ticker, cleaned, flags=re.IGNORECASE)
+        aliases = {name}
+        if len(name.split()) > 1:
+            aliases.add(name.split()[0])
+        for alias in sorted(aliases, key=len, reverse=True):
+            cleaned = re.sub(rf"\b{re.escape(alias)}\b", ticker, cleaned, flags=re.IGNORECASE)
     return cleaned
 
 
