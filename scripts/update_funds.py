@@ -7,6 +7,7 @@ import json
 import os
 from datetime import date, datetime, timezone
 from pathlib import Path
+from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
 FUNDS_PATH = ROOT / "data" / "funds.json"
@@ -106,10 +107,20 @@ classes return normal currency units. Use a direct HTTPS page URL.
                 continue
             if candidate_date < existing_date or candidate_date > today or (today - candidate_date).days > 21:
                 continue
-            if not 0.6 * float(existing["nav"]) <= nav <= 1.4 * float(existing["nav"]):
+            days_advanced = (candidate_date - existing_date).days
+            ratio = nav / float(existing["nav"])
+            if existing.get("source_label") == "Owner statement" and days_advanced == 0:
+                continue
+            if days_advanced == 0 and not 0.995 <= ratio <= 1.005:
+                continue
+            daily_guard = 1.08 ** max(days_advanced, 1)
+            if not 1 / daily_guard <= ratio <= daily_guard:
                 continue
             source_url = str(candidate.get("source_url", ""))
             if not source_url.startswith("https://"):
+                continue
+            preferred_url = str(existing.get("source_url", ""))
+            if preferred_url and urlparse(source_url).hostname != urlparse(preferred_url).hostname:
                 continue
             existing.update({
                 "nav": round(nav, 6),
