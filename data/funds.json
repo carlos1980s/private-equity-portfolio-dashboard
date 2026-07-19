@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-07-17T00:00:00+00:00",
-  "last_attempt_at": "2026-07-17T00:00:00+00:00",
-  "refresh_status": "owner_statement",
+  "updated_at": "2026-07-19T09:36:37+00:00",
+  "last_attempt_at": "2026-07-19T09:36:37+00:00",
+  "refresh_status": "current",
   "policy": "Public NAVs may refresh automatically; share counts and cost basis remain owner-controlled.",
   "items": [
     {
@@ -27,11 +27,11 @@
       "isin": "LU1803068979",
       "shares": 5812.034,
       "cost_nav": 22.5655,
-      "nav": 34.99,
+      "nav": 39.17,
       "nav_scale": 1.0,
       "currency": "SGD",
       "nav_as_of": "2026-07-17",
-      "source_label": "Owner statement",
+      "source_label": "Franklin Templeton Singapore \u2013 price and performance (LU1803068979)",
       "source_url": "https://www.franklintempleton.com.sg/our-funds/price-and-performance/products/4916/Z5/franklin-technology-fund/LU1803068979"
     },
     {

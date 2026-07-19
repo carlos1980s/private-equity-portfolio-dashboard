@@ -1,63 +1,52 @@
 {
-  "updated_at": "2026-07-19T08:59:57+00:00",
-  "last_attempt_at": "2026-07-19T08:59:57+00:00",
+  "updated_at": "2026-07-19T09:37:24+00:00",
+  "last_attempt_at": "2026-07-19T09:37:24+00:00",
   "refresh_status": "current",
   "policy": "News only. Model changes require owner approval.",
   "items": [
     {
-      "company": "V",
-      "date": "2026-07-12",
-      "headline": "V: W-6 in orbit\u2014autonomous navigation reentry flight updates",
-      "summary": "V posted that W-6 is now in orbit, describing its 2026 flight manifest and autonomous hypersonic reentry focus. The update highlights payload elements and data collection for navigation and thermal protection.",
+      "company": "O",
+      "date": "2026-07-14",
+      "headline": "O: ChatGPT release notes update (July 14, 2026)",
+      "summary": "O published ChatGPT release notes for July 14, 2026, documenting product changes and fixes. Review for potential impacts to model/runtime behavior and user workflows tied to dashboard assumptions.",
       "category": "product",
-      "impact": "positive",
+      "impact": "neutral",
       "review_status": "none",
-      "source_label": "Credible press",
-      "source_url": "https://www.linkedin.com/posts/varda-space-industries_w-6-is-now-in-orbit-kicking-off-our-2026-activity-7444358298419523584-KFUD"
+      "source_label": "Official release",
+      "source_url": "https://help.openai.com/en/articles/6825453-chatpt-faq"
     },
     {
       "company": "O",
-      "date": "2026-07-08",
-      "headline": "O: ChatGPT release notes\u2014o3 retirement and GPT-4.5 sunset",
-      "summary": "ChatGPT release notes indicate o3 retirement on 2026-08-26 after a 90-day sunset, and GPT-4.5 retirement on 2026-06-26 after a 30-day sunset. This signals model lifecycle changes affecting product availability.",
+      "date": "2026-07-09",
+      "headline": "O: Model release notes\u2014GPT-5.6 Sol introduced",
+      "summary": "O\u2019s model release notes indicate \u201cGPT-5.6 Sol\u201d for ChatGPT (July 9, 2026), along with related retirement/migration notes. Review only if your assumptions depend on specific model availability or feature scope.",
       "category": "product",
-      "impact": "neutral",
+      "impact": "mixed",
       "review_status": "pending",
       "source_label": "Official release",
-      "source_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes?tpcc=TCreviewnewsletter"
+      "source_url": "https://help-lb.openai.com/en/articles/9624314-model-release-notes"
     },
     {
       "company": "O",
       "date": "2026-06-24",
-      "headline": "O: Jalape\u00f1o inference chip unveiled with G",
-      "summary": "O and Broadcom unveiled \u201cJalape\u00f1o,\u201d O\u2019s first Intelligence Processor built for LLM inference. The release frames it as an accelerator in a multi-generation compute platform for faster, more reliable inference at scale.",
+      "headline": "O: chip announcement\u2014LLM-optimized inference hardware",
+      "summary": "O\u2019s newsroom lists an \u201cLLM-optimized inference chip\u201d announcement with Broadcom (Jun 24, 2026). This can be capacity/cost-relevant for inference scaling assumptions; review for downstream model-serving impact.",
       "category": "product",
       "impact": "positive",
-      "review_status": "none",
+      "review_status": "pending",
       "source_label": "Official release",
-      "source_url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip/"
+      "source_url": "https://openai.com/news/company-announcements/"
     },
     {
       "company": "G",
       "date": "2026-06-22",
-      "headline": "G: $650M growth capital for GCloud expansion",
-      "summary": "G announced $650M in new growth capital to scale its AI inference cloud, stating the funding will accelerate expansion of GCloud and infrastructure scaling. The release also references leadership appointments in July.",
+      "headline": "G: $650M growth capital to scale inference cloud",
+      "summary": "G announced $650M growth capital (Jun 22, 2026) to expand its AI inference cloud. This is direct capacity/revenue-scaling evidence; review if your operating-expansion assumptions should change.",
       "category": "funding",
       "impact": "positive",
       "review_status": "pending",
       "source_label": "Official release",
       "source_url": "https://groq.com/newsroom/groq-raises-usd650m-to-scale-its-ai-inference-cloud-business"
-    },
-    {
-      "company": "O",
-      "date": "2026-06-11",
-      "headline": "O: acquire Ona\u2014Codex team deal announced",
-      "summary": "O announced an agreement to acquire Ona. The release notes the deal is subject to customary closing conditions, including regulatory approvals, and positions Ona\u2019s team within O\u2019s Codex work.",
-      "category": "product",
-      "impact": "mixed",
-      "review_status": "pending",
-      "source_label": "Official release",
-      "source_url": "https://openai.com/index/openai-to-acquire-ona/"
     }
   ]
 }
