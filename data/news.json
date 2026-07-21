@@ -1,50 +1,39 @@
 {
-  "updated_at": "2026-07-20T00:12:06+00:00",
-  "last_attempt_at": "2026-07-20T00:12:06+00:00",
+  "updated_at": "2026-07-21T00:09:31+00:00",
+  "last_attempt_at": "2026-07-21T00:09:31+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
       "company": "O",
-      "date": "2026-07-14",
-      "headline": "Apple vs O involving io",
-      "summary": "Credible press reported Apple\u2019s lawsuit against O/io could slow or derail O\u2019s hardware-device plans.",
-      "category": "regulatory",
-      "impact": "negative",
-      "review_status": "pending",
-      "source_label": "Credible press",
-      "source_url": "https://www.axios.com/2026/07/14/litigation-openai-device-apple"
-    },
-    {
-      "company": "O",
-      "date": "2026-07-09",
-      "headline": "GPT-5.6 Sol/Terra/Luna GA",
-      "summary": "O launched GPT-5.6 Sol, Terra, and Luna for general availability after a limited preview, expanding its flagship/lower-cost/fast tiers for general use across platforms and APIs.",
-      "category": "product",
-      "impact": "positive",
-      "review_status": "pending",
-      "source_label": "Official release",
-      "source_url": "https://openai.com/index/gpt-5-6"
-    },
-    {
-      "company": "O",
-      "date": "2026-07-08",
-      "headline": "GPT-5.6 System Card published",
-      "summary": "O published the GPT-5.6 system card detailing safety mitigations and preparedness framework outcomes for the Sol/Terra/Luna model family prior to deployment.",
+      "date": "2026-07-15",
+      "headline": "O: state/federal AI safety coordination update",
+      "summary": "O published an article on US AI safety progress, referencing state-led frontier safety legislation aligning toward a national baseline. It frames \u201creverse federalism\u201d as groundwork for a US-led global framework.",
       "category": "regulatory",
       "impact": "neutral",
       "review_status": "none",
       "source_label": "Official release",
-      "source_url": "https://deploymentsafety.openai.com/gpt-5-6"
+      "source_url": "https://openai.com/index/advancing-ai-safety-through-state-and-federal-action"
+    },
+    {
+      "company": "O",
+      "date": "2026-06-24",
+      "headline": "O: Jalape\u00f1o inference chip unveiled with Broadcom",
+      "summary": "O and Broadcom unveiled \u201cJalape\u00f1o,\u201d described as O\u2019s first Intelligence Processor for LLM inference. The release cites nine-month tape-out, performance-per-watt improvements, and deployment planning toward gigawatt-scale data centers.",
+      "category": "product",
+      "impact": "positive",
+      "review_status": "none",
+      "source_label": "Official release",
+      "source_url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip"
     },
     {
       "company": "G",
       "date": "2026-06-22",
-      "headline": "$650M for GroqCloud scaling",
-      "summary": "G announced $650M in new growth capital to expand its AI inference cloud and target scaling toward ~200 MW by end of 2027, citing current global data-center footprint and token demand.",
+      "headline": "G: $650M growth capital for GroqCloud expansion",
+      "summary": "G announced $650M in new growth capital to accelerate expansion of its AI inference cloud, with stated intent to scale GroqCloud capacity and support rising inference demand.",
       "category": "funding",
       "impact": "positive",
-      "review_status": "pending",
+      "review_status": "none",
       "source_label": "Official release",
       "source_url": "https://groq.com/newsroom/groq-raises-usd650m-to-scale-its-ai-inference-cloud-business"
     }
