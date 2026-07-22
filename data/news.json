@@ -1,39 +1,28 @@
 {
-  "updated_at": "2026-07-21T00:09:31+00:00",
-  "last_attempt_at": "2026-07-21T00:09:31+00:00",
+  "updated_at": "2026-07-22T00:06:54+00:00",
+  "last_attempt_at": "2026-07-22T00:06:54+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
       "company": "O",
-      "date": "2026-07-15",
-      "headline": "O: state/federal AI safety coordination update",
-      "summary": "O published an article on US AI safety progress, referencing state-led frontier safety legislation aligning toward a national baseline. It frames \u201creverse federalism\u201d as groundwork for a US-led global framework.",
-      "category": "regulatory",
-      "impact": "neutral",
-      "review_status": "none",
-      "source_label": "Official release",
-      "source_url": "https://openai.com/index/advancing-ai-safety-through-state-and-federal-action"
-    },
-    {
-      "company": "O",
-      "date": "2026-06-24",
-      "headline": "O: Jalape\u00f1o inference chip unveiled with Broadcom",
-      "summary": "O and Broadcom unveiled \u201cJalape\u00f1o,\u201d described as O\u2019s first Intelligence Processor for LLM inference. The release cites nine-month tape-out, performance-per-watt improvements, and deployment planning toward gigawatt-scale data centers.",
-      "category": "product",
+      "date": "2026-06-22",
+      "headline": "O submits confidential S-1",
+      "summary": "O reported submitting a confidential draft S-1 to the SEC, a key IPO-readiness signal that typically implies increased preparation for potential public markets.",
+      "category": "ipo",
       "impact": "positive",
-      "review_status": "none",
+      "review_status": "pending",
       "source_label": "Official release",
-      "source_url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip"
+      "source_url": "https://openai.com/index/openai-submits-confidential-s-1"
     },
     {
       "company": "G",
       "date": "2026-06-22",
-      "headline": "G: $650M growth capital for GroqCloud expansion",
-      "summary": "G announced $650M in new growth capital to accelerate expansion of its AI inference cloud, with stated intent to scale GroqCloud capacity and support rising inference demand.",
-      "category": "funding",
+      "headline": "G raises $650M to scale inference cloud",
+      "summary": "G announced $650M in new growth capital to accelerate GroqCloud expansion, supporting capacity scaling and inference-demand capture.",
+      "category": "capacity",
       "impact": "positive",
-      "review_status": "none",
+      "review_status": "pending",
       "source_label": "Official release",
       "source_url": "https://groq.com/newsroom/groq-raises-usd650m-to-scale-its-ai-inference-cloud-business"
     }
