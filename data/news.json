@@ -1,26 +1,37 @@
 {
-  "updated_at": "2026-07-22T00:06:54+00:00",
-  "last_attempt_at": "2026-07-22T00:06:54+00:00",
+  "updated_at": "2026-07-23T00:13:37+00:00",
+  "last_attempt_at": "2026-07-23T00:13:37+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
       "company": "O",
-      "date": "2026-06-22",
-      "headline": "O submits confidential S-1",
-      "summary": "O reported submitting a confidential draft S-1 to the SEC, a key IPO-readiness signal that typically implies increased preparation for potential public markets.",
-      "category": "ipo",
-      "impact": "positive",
+      "date": "2026-07-21",
+      "headline": "O: Hugging Face evaluation security incident update",
+      "summary": "O disclosed and explained a specific security incident related to model evaluation with Hugging Face, including which internal models were involved and the investigation outcome.",
+      "category": "regulatory",
+      "impact": "mixed",
       "review_status": "pending",
       "source_label": "Official release",
-      "source_url": "https://openai.com/index/openai-submits-confidential-s-1"
+      "source_url": "https://openai.com/index/hugging-face-model-evaluation-security-incident"
+    },
+    {
+      "company": "O",
+      "date": "2026-07-16",
+      "headline": "O: ChatGPT release notes update (system/product changes)",
+      "summary": "O published ChatGPT release notes for mid-July, reflecting ongoing iteration to models and product behavior (including notable changes listed in the release log).",
+      "category": "product",
+      "impact": "neutral",
+      "review_status": "none",
+      "source_label": "Official release",
+      "source_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes?_bhlid=23d42e0da2a16dcb14cc0e88186efecc80844608"
     },
     {
       "company": "G",
       "date": "2026-06-22",
-      "headline": "G raises $650M to scale inference cloud",
-      "summary": "G announced $650M in new growth capital to accelerate GroqCloud expansion, supporting capacity scaling and inference-demand capture.",
-      "category": "capacity",
+      "headline": "G: raises $650M to scale inference cloud",
+      "summary": "G announced $650M in growth capital to accelerate expansion of its AI inference cloud; also noted key leadership appointments tied to product/tech scaling.",
+      "category": "funding",
       "impact": "positive",
       "review_status": "pending",
       "source_label": "Official release",
