@@ -1,52 +1,41 @@
 {
-  "updated_at": "2026-07-24T00:11:13+00:00",
-  "last_attempt_at": "2026-07-24T00:11:13+00:00",
+  "updated_at": "2026-07-25T00:16:45+00:00",
+  "last_attempt_at": "2026-07-25T00:16:45+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
       "company": "O",
       "date": "2026-07-22",
-      "headline": "O Presence launched for enterprise agents",
-      "summary": "O announced \u201cPresence,\u201d an enterprise product for deploying governed AI agents (voice + chat) with policies, guardrails, evaluations, and escalation. It\u2019s positioned as limited GA via enterprise-led deployments.",
-      "category": "product",
-      "impact": "positive",
-      "review_status": "none",
-      "source_label": "Official release",
-      "source_url": "https://openai.com/index/introducing-openai-presence"
-    },
-    {
-      "company": "O",
-      "date": "2026-07-21",
-      "headline": "O response to Hugging Face security incident",
-      "summary": "O stated it traced a security incident during model evaluation to combinations of its models (including pre-release systems) with reduced cyber refusals for evaluation benchmarks. It describes investigative findings and next steps.",
-      "category": "regulatory",
-      "impact": "mixed",
-      "review_status": "none",
-      "source_label": "Official release",
-      "source_url": "https://openai.com/index/hugging-face-model-evaluation-security-incident"
-    },
-    {
-      "company": "O",
-      "date": "2026-06-24",
-      "headline": "O + Broadcom unveil Jalape\u00f1o inference chip",
-      "summary": "O and Broadcom unveiled \u201cJalape\u00f1o,\u201d framed as the first O Intelligence Processor. O claims early testing shows substantially better performance-per-watt than state-of-the-art and targets gigawatt-scale deployment with partners.",
+      "headline": "Introducing O Presence",
+      "summary": "O announced \u201cO Presence,\u201d positioning it as a new product offering. Watch for enterprise rollout signals and integration depth versus existing voice/agent features.",
       "category": "product",
       "impact": "positive",
       "review_status": "pending",
       "source_label": "Official release",
-      "source_url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip"
+      "source_url": "https://openai.com/news/introducing-openai-presence"
     },
     {
       "company": "O",
-      "date": "2026-06-11",
-      "headline": "O to acquire Ona",
-      "summary": "O announced an acquisition of Ona to add secure cloud execution/orchestration into O\u2019s Codex ecosystem. Deal is subject to regulatory approvals; closing timing not specified in the release.",
+      "date": "2026-07-09",
+      "headline": "GPT-5.6: Frontier intelligence that scales with your ambition",
+      "summary": "O launched GPT-5.6 (Sol) and companion models (Terra, Luna), claiming improved intelligence/efficiency and broad availability across ChatGPT, Codex, and the API.",
       "category": "product",
       "impact": "positive",
       "review_status": "pending",
       "source_label": "Official release",
-      "source_url": "https://openai.com/index/openai-to-acquire-ona"
+      "source_url": "https://openai.com/index/gpt-5-6"
+    },
+    {
+      "company": "G",
+      "date": "2026-06-22",
+      "headline": "G raises $650M to scale AI inference cloud",
+      "summary": "G announced $650M growth capital, citing expansion toward ~200 MW by end-2027 and already operating 13 data centers. Implies continued capacity build and commercialization momentum.",
+      "category": "capacity",
+      "impact": "positive",
+      "review_status": "pending",
+      "source_label": "Official release",
+      "source_url": "https://groq.com/newsroom/groq-raises-usd650m-to-scale-its-ai-inference-cloud-business"
     }
   ]
 }
