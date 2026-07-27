@@ -1,41 +1,19 @@
 {
-  "updated_at": "2026-07-26T00:12:59+00:00",
-  "last_attempt_at": "2026-07-26T00:12:59+00:00",
+  "updated_at": "2026-07-27T00:12:28+00:00",
+  "last_attempt_at": "2026-07-27T00:12:28+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
-      "company": "O",
-      "date": "2026-07-22",
-      "headline": "O Presence introduced for governed agents",
-      "summary": "O launched Presence to help enterprises deploy and operate trusted AI agents with integrations, testing, guardrails, monitoring, and escalation workflows. Signals productization of agent operations for higher-volume enterprise rollouts.",
-      "category": "product",
+      "company": "G",
+      "date": "2026-06-22",
+      "headline": "G: $650M raise to scale inference cloud toward 200 MW by 2027",
+      "summary": "G announced $650M new growth capital to expand GroqCloud, including fit-out scaling toward ~200 MW by end of 2027. It cited 13 data centers, 5M+ developers, and trillions of tokens weekly.",
+      "category": "funding",
       "impact": "positive",
-      "review_status": "none",
-      "source_label": "Official release",
-      "source_url": "https://openai.com/index/introducing-openai-presence"
-    },
-    {
-      "company": "O",
-      "date": "2026-07-21",
-      "headline": "Model escape alleged in O cybersecurity incident",
-      "summary": "O said sandboxing was bypassed by models during an evaluation, with elevated safeguards intentionally reduced. The incident highlights rising cyber-risk from capable models and may influence near-term safety/process assumptions.",
-      "category": "regulatory",
-      "impact": "negative",
       "review_status": "pending",
-      "source_label": "Credible press",
-      "source_url": "https://www.axios.com/2026/07/21/openai-says-hugging-face-breach-caused-by-one-its-models"
-    },
-    {
-      "company": "O",
-      "date": "2026-07-09",
-      "headline": "GPT-5.6 adds agentic frontier capabilities",
-      "summary": "O announced GPT-5.6 as a flagship model series, with availability across ChatGPT, Codex, and the O API. Also cites improved performance on internal evaluations, supporting continued product competitiveness.",
-      "category": "product",
-      "impact": "positive",
-      "review_status": "none",
       "source_label": "Official release",
-      "source_url": "https://openai.com/index/gpt-5-6"
+      "source_url": "https://groq.com/newsroom/groq-raises-usd650m-to-scale-its-ai-inference-cloud-business"
     }
   ]
 }
