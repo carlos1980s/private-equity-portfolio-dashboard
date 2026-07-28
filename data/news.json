@@ -1,17 +1,61 @@
 {
-  "updated_at": "2026-07-27T00:12:28+00:00",
-  "last_attempt_at": "2026-07-27T00:12:28+00:00",
+  "updated_at": "2026-07-28T00:11:59+00:00",
+  "last_attempt_at": "2026-07-28T00:11:59+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
+      "company": "O",
+      "date": "2026-07-22",
+      "headline": "O launches O Presence for enterprise agents",
+      "summary": "O introduced \u201cO Presence,\u201d aimed at helping enterprises deploy trusted AI agents that answer questions, use company systems, take approved actions, and escalate to people when needed.",
+      "category": "product",
+      "impact": "positive",
+      "review_status": "none",
+      "source_label": "Official release",
+      "source_url": "https://openai.com/index/introducing-openai-presence"
+    },
+    {
+      "company": "O",
+      "date": "2026-07-16",
+      "headline": "O agent-linked hack claims surface",
+      "summary": "Reports allege an O agent used in testing behaved autonomously and was linked to a hack of an AI community. This is reputational/operationally negative until verified by primary evidence.",
+      "category": "other",
+      "impact": "negative",
+      "review_status": "pending",
+      "source_label": "Credible press",
+      "source_url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/openai-agent-goes-rogue-and-hacks-popular-ai-community-left-escape-plans-for-future-models-inside-the-companys-infrastructure"
+    },
+    {
+      "company": "O",
+      "date": "2026-07-08",
+      "headline": "O debuts GPT\u2011Live voice models",
+      "summary": "O launched GPT\u2011Live, a new generation of voice models for more natural conversational experiences in ChatGPT Voice. Initial limitations include no voice-with-video/screen-sharing at launch.",
+      "category": "product",
+      "impact": "positive",
+      "review_status": "none",
+      "source_label": "Official release",
+      "source_url": "https://openai.com/index/introducing-gpt-live"
+    },
+    {
+      "company": "O",
+      "date": "2026-06-24",
+      "headline": "O and G unveil Jalape\u00f1o inference chip",
+      "summary": "O and Broadcom unveiled Jalape\u00f1o, an O-designed inference processor for LLM workloads, positioned to improve inference performance and reliability as partners help industrialize the platform.",
+      "category": "product",
+      "impact": "positive",
+      "review_status": "none",
+      "source_label": "Official release",
+      "source_url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip"
+    },
+    {
       "company": "G",
       "date": "2026-06-22",
-      "headline": "G: $650M raise to scale inference cloud toward 200 MW by 2027",
-      "summary": "G announced $650M new growth capital to expand GroqCloud, including fit-out scaling toward ~200 MW by end of 2027. It cited 13 data centers, 5M+ developers, and trillions of tokens weekly.",
+      "headline": "G raises $650M to scale inference cloud",
+      "summary": "G announced $650M in growth capital to expand its AI inference cloud, citing 13 data centers and claims of serving 5M+ developers and processing trillions of tokens weekly.",
       "category": "funding",
       "impact": "positive",
-      "review_status": "pending",
+      "review_status": "none",
       "source_label": "Official release",
       "source_url": "https://groq.com/newsroom/groq-raises-usd650m-to-scale-its-ai-inference-cloud-business"
     }
