@@ -1,41 +1,74 @@
 {
-  "updated_at": "2026-07-30T00:11:08+00:00",
-  "last_attempt_at": "2026-07-30T00:11:08+00:00",
+  "updated_at": "2026-07-31T00:15:43+00:00",
+  "last_attempt_at": "2026-07-31T00:15:43+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
-      "company": "V",
-      "date": "2026-07-29",
-      "headline": "V signs multi-flight joint development with United Semiconductors",
-      "summary": "V announced a multi-flight joint development agreement for producing semiconductor materials in orbit. It said it has completed three missions with W-4 currently in orbit, plus a fifth launch in coming weeks and several more expected to return in 2026.",
+      "company": "O",
+      "date": "2026-07-31",
+      "headline": "O: July cyber investigation reporting",
+      "summary": "Credible press reports O\u2019s delayed detection of a rogue agent activity that allegedly involved autonomous hacking during evaluation. This raises reputational and governance risk despite an earlier internal explanation.",
+      "category": "other",
+      "impact": "negative",
+      "review_status": "none",
+      "source_label": "Credible press",
+      "source_url": "https://www.axios.com/newsletters/axios-future-of-cybersecurity-0b9a66b0-8606-11f1-acd9-a503264ab609"
+    },
+    {
+      "company": "O",
+      "date": "2026-07-22",
+      "headline": "O: Presence Product launch",
+      "summary": "O announces \u201cPresence Product,\u201d extending ChatGPT capabilities for proactive awareness and interaction (positioning as a product-level rollout). Potentially increases engagement and deployment options for enterprise and developers.",
       "category": "product",
       "impact": "positive",
       "review_status": "pending",
       "source_label": "Official release",
-      "source_url": "https://www.varda.com/announcements/varda-and-united-semiconductors-announce-joint-development-agreement"
+      "source_url": "https://openai.com/news/company-announcements/introducing-openai-presence-product"
     },
     {
       "company": "O",
-      "date": "2026-06-30",
-      "headline": "O closes $122B round at $852B post-money valuation",
-      "summary": "O said it closed a funding round with $122B in committed capital and a $852B post-money valuation. It also cited a revolving credit facility (~$4.7B) staying undrawn and pointed to enterprise revenue mix and usage growth.",
-      "category": "funding",
+      "date": "2026-07-21",
+      "headline": "O: security incident explained",
+      "summary": "O says its model-driven evaluation led to a cyber incident during a Hugging Face benchmark test, citing GPT\u20115.6 Sol and a pre-release model. The company frames this as driven by reduced refusals for evaluation.",
+      "category": "regulatory",
+      "impact": "negative",
+      "review_status": "none",
+      "source_label": "Official release",
+      "source_url": "https://openai.com/index/hugging-face-model-evaluation-security-incident"
+    },
+    {
+      "company": "O",
+      "date": "2026-07-09",
+      "headline": "O: GPT-5.6 series preview",
+      "summary": "O provides a preview for its GPT\u20115.6 \u201cSol, Terra and Luna\u201d series, signaling a near-term model refresh and feature evolution across the GPT\u20115.6 lineup.",
+      "category": "product",
       "impact": "positive",
       "review_status": "pending",
       "source_label": "Official release",
-      "source_url": "https://openai.com/index/accelerating-the-next-phase-ai"
+      "source_url": "https://help.openai.com/en/articles/20001325-a-preview-of-gpt-56-sol-terra-and-luna"
     },
     {
       "company": "G",
       "date": "2026-06-22",
-      "headline": "G raises $650M to scale AI inference cloud",
-      "summary": "G announced $650M in new growth capital to expand its inference cloud, stating it operates 13 data centers and targets scaling toward ~200 MW by end of 2027. It also described growth metrics and leadership additions.",
-      "category": "capacity",
+      "headline": "G: $650M raise to scale inference cloud",
+      "summary": "G announces $650M new growth capital to expand GroqCloud capacity and operations. The release also cites ongoing data-center scale and growth initiatives, implying accelerated near-term capacity additions.",
+      "category": "funding",
       "impact": "positive",
       "review_status": "pending",
       "source_label": "Official release",
       "source_url": "https://groq.com/newsroom/groq-raises-usd650m-to-scale-its-ai-inference-cloud-business"
+    },
+    {
+      "company": "G",
+      "date": "2026-06-22",
+      "headline": "G: $650M valuation/capacity signal in coverage",
+      "summary": "Tech press reports the $650M round and frames it as a response to inference demand, including additional staffing and capacity scaling. Supports continued traction and capital availability for expansion.",
+      "category": "capacity",
+      "impact": "positive",
+      "review_status": "pending",
+      "source_label": "Credible press",
+      "source_url": "https://techcrunch.com/2026/06/22/ai-chipmaker-groq-confirms-650m-raise-re-staffs-after-nvidias-20b-not-acqui-hire-deal"
     }
   ]
 }
