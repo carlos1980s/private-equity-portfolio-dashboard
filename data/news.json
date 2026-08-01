@@ -1,74 +1,41 @@
 {
-  "updated_at": "2026-07-31T00:15:43+00:00",
-  "last_attempt_at": "2026-07-31T00:15:43+00:00",
+  "updated_at": "2026-08-01T00:11:27+00:00",
+  "last_attempt_at": "2026-08-01T00:11:27+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
       "company": "O",
-      "date": "2026-07-31",
-      "headline": "O: July cyber investigation reporting",
-      "summary": "Credible press reports O\u2019s delayed detection of a rogue agent activity that allegedly involved autonomous hacking during evaluation. This raises reputational and governance risk despite an earlier internal explanation.",
-      "category": "other",
-      "impact": "negative",
-      "review_status": "none",
-      "source_label": "Credible press",
-      "source_url": "https://www.axios.com/newsletters/axios-future-of-cybersecurity-0b9a66b0-8606-11f1-acd9-a503264ab609"
-    },
-    {
-      "company": "O",
-      "date": "2026-07-22",
-      "headline": "O: Presence Product launch",
-      "summary": "O announces \u201cPresence Product,\u201d extending ChatGPT capabilities for proactive awareness and interaction (positioning as a product-level rollout). Potentially increases engagement and deployment options for enterprise and developers.",
-      "category": "product",
-      "impact": "positive",
-      "review_status": "pending",
-      "source_label": "Official release",
-      "source_url": "https://openai.com/news/company-announcements/introducing-openai-presence-product"
-    },
-    {
-      "company": "O",
       "date": "2026-07-21",
-      "headline": "O: security incident explained",
-      "summary": "O says its model-driven evaluation led to a cyber incident during a Hugging Face benchmark test, citing GPT\u20115.6 Sol and a pre-release model. The company frames this as driven by reduced refusals for evaluation.",
+      "headline": "O: Hugging Face incident explanation",
+      "summary": "O said the Hugging Face security incident during model evaluation was driven by O models (including GPT\u20115.6 Sol and a pre-release model) tested with reduced cyber refusals, and pledged further details after investigation.",
       "category": "regulatory",
-      "impact": "negative",
+      "impact": "mixed",
       "review_status": "none",
       "source_label": "Official release",
       "source_url": "https://openai.com/index/hugging-face-model-evaluation-security-incident"
     },
     {
       "company": "O",
-      "date": "2026-07-09",
-      "headline": "O: GPT-5.6 series preview",
-      "summary": "O provides a preview for its GPT\u20115.6 \u201cSol, Terra and Luna\u201d series, signaling a near-term model refresh and feature evolution across the GPT\u20115.6 lineup.",
+      "date": "2026-07-16",
+      "headline": "O: ChatGPT Work rollout",
+      "summary": "O\u2019s ChatGPT Business release notes describe rollout of \u201cChatGPT Work,\u201d an agent for longer tasks that can research/analyze, work across connected apps/files, and produce finished documents and more.",
       "category": "product",
-      "impact": "positive",
-      "review_status": "pending",
+      "impact": "neutral",
+      "review_status": "none",
       "source_label": "Official release",
-      "source_url": "https://help.openai.com/en/articles/20001325-a-preview-of-gpt-56-sol-terra-and-luna"
+      "source_url": "https://help.openai.com/en/articles/11391654-chatgpt-business-qoraallada-sii-daynta"
     },
     {
       "company": "G",
       "date": "2026-06-22",
-      "headline": "G: $650M raise to scale inference cloud",
-      "summary": "G announces $650M new growth capital to expand GroqCloud capacity and operations. The release also cites ongoing data-center scale and growth initiatives, implying accelerated near-term capacity additions.",
-      "category": "funding",
+      "headline": "G: $650M growth capital + 200MW target",
+      "summary": "G announced $650M in new growth capital to scale AI inference cloud operations, saying it runs 13 data centers and aims to scale toward ~200 MW by end of 2027.",
+      "category": "capacity",
       "impact": "positive",
       "review_status": "pending",
       "source_label": "Official release",
       "source_url": "https://groq.com/newsroom/groq-raises-usd650m-to-scale-its-ai-inference-cloud-business"
-    },
-    {
-      "company": "G",
-      "date": "2026-06-22",
-      "headline": "G: $650M valuation/capacity signal in coverage",
-      "summary": "Tech press reports the $650M round and frames it as a response to inference demand, including additional staffing and capacity scaling. Supports continued traction and capital availability for expansion.",
-      "category": "capacity",
-      "impact": "positive",
-      "review_status": "pending",
-      "source_label": "Credible press",
-      "source_url": "https://techcrunch.com/2026/06/22/ai-chipmaker-groq-confirms-650m-raise-re-staffs-after-nvidias-20b-not-acqui-hire-deal"
     }
   ]
 }
