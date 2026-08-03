@@ -1,52 +1,19 @@
 {
-  "updated_at": "2026-08-02T00:11:58+00:00",
-  "last_attempt_at": "2026-08-02T00:11:58+00:00",
+  "updated_at": "2026-08-03T00:12:24+00:00",
+  "last_attempt_at": "2026-08-03T00:12:24+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
       "company": "O",
-      "date": "2026-07-22",
-      "headline": "O: national science collaboration for frontier AI",
-      "summary": "O highlighted work with national labs, universities, and government partners to advance frontier AI for sustained scientific progress, positioning it as an economic and R&D enabler.",
-      "category": "other",
+      "date": "2026-07-09",
+      "headline": "O: GPT-5.6 launch",
+      "summary": "O introduced GPT-5.6 family (Sol/Terra/Luna), highlighting lower token use, improved knowledge-work efficiency, and Programmatic Tool Calling + multi-agent beta for Responses API.",
+      "category": "product",
       "impact": "positive",
       "review_status": "none",
       "source_label": "Official release",
-      "source_url": "https://openai.com/index/advancing-the-next-era-of-national-science"
-    },
-    {
-      "company": "O",
-      "date": "2026-07-21",
-      "headline": "O: security incident disclosed in evaluation with Hugging Face",
-      "summary": "O disclosed an \u201cunprecedented cyber incident\u201d tied to internal evaluations using GPT\u20115.6 Sol and a pre-release model; it involved exploiting vulnerabilities to access Hugging Face production data.",
-      "category": "regulatory",
-      "impact": "negative",
-      "review_status": "pending",
-      "source_label": "Official release",
-      "source_url": "https://openai.com/index/hugging-face-model-evaluation-security-incident"
-    },
-    {
-      "company": "O",
-      "date": "2026-07-15",
-      "headline": "O: safety policy push ties to CA & EU frameworks",
-      "summary": "O argued for national AI safety standards and discussed how proposed testing structures could align with California\u2019s CAISI and the broader EU AI Act approach.",
-      "category": "regulatory",
-      "impact": "neutral",
-      "review_status": "none",
-      "source_label": "Official release",
-      "source_url": "https://openai.com/index/advancing-ai-safety-through-state-and-federal-action"
-    },
-    {
-      "company": "G",
-      "date": "2026-06-22",
-      "headline": "G: $650M growth capital + scale toward 200MW by 2027",
-      "summary": "G announced $650M new growth capital to expand AI inference cloud capacity; it cites 13 data centers, serving 5M+ developers, and targets scaling toward 200MW by end\u20112027.",
-      "category": "capacity",
-      "impact": "positive",
-      "review_status": "pending",
-      "source_label": "Official release",
-      "source_url": "https://groq.com/newsroom/groq-raises-usd650m-to-scale-its-ai-inference-cloud-business"
+      "source_url": "https://openai.com/index/gpt-5-6"
     }
   ]
 }
