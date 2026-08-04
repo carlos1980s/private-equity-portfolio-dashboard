@@ -1,19 +1,30 @@
 {
-  "updated_at": "2026-08-03T00:12:24+00:00",
-  "last_attempt_at": "2026-08-03T00:12:24+00:00",
+  "updated_at": "2026-08-04T00:16:07+00:00",
+  "last_attempt_at": "2026-08-04T00:16:07+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
       "company": "O",
-      "date": "2026-07-09",
-      "headline": "O: GPT-5.6 launch",
-      "summary": "O introduced GPT-5.6 family (Sol/Terra/Luna), highlighting lower token use, improved knowledge-work efficiency, and Programmatic Tool Calling + multi-agent beta for Responses API.",
+      "date": "2026-07-22",
+      "headline": "O: national science collaboration update",
+      "summary": "O published an update on frontier-AI support for scientists and U.S. national labs, detailing continued work with research institutions and government partners on sustained scientific capability.",
       "category": "product",
-      "impact": "positive",
+      "impact": "neutral",
       "review_status": "none",
       "source_label": "Official release",
-      "source_url": "https://openai.com/index/gpt-5-6"
+      "source_url": "https://openai.com/index/advancing-the-next-era-of-national-science"
+    },
+    {
+      "company": "G",
+      "date": "2026-06-22",
+      "headline": "G: $650M growth capital for inference cloud",
+      "summary": "G announced $650M in new growth capital to expand its AI inference cloud business, supporting scaling efforts for GroqCloud capacity.",
+      "category": "capacity",
+      "impact": "positive",
+      "review_status": "pending",
+      "source_label": "Official release",
+      "source_url": "https://groq.com/newsroom/groq-raises-usd650m-to-scale-its-ai-inference-cloud-business"
     }
   ]
 }
