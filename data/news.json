@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-08-04T00:16:07+00:00",
-  "last_attempt_at": "2026-08-04T00:16:07+00:00",
+  "updated_at": "2026-08-05T00:15:31+00:00",
+  "last_attempt_at": "2026-08-05T00:15:31+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
       "company": "O",
       "date": "2026-07-22",
-      "headline": "O: national science collaboration update",
-      "summary": "O published an update on frontier-AI support for scientists and U.S. national labs, detailing continued work with research institutions and government partners on sustained scientific capability.",
+      "headline": "O: national-science push via evaluations",
+      "summary": "O published work describing new bioscience evaluations to study safe use of multimodal systems in realistic lab settings.",
       "category": "product",
       "impact": "neutral",
       "review_status": "none",
@@ -18,8 +18,8 @@
     {
       "company": "G",
       "date": "2026-06-22",
-      "headline": "G: $650M growth capital for inference cloud",
-      "summary": "G announced $650M in new growth capital to expand its AI inference cloud business, supporting scaling efforts for GroqCloud capacity.",
+      "headline": "G: $650M to scale AI inference cloud",
+      "summary": "G announced $650M growth capital to expand its AI inference cloud toward 200 MW by 2027, signaling capacity scale and growth funding.",
       "category": "capacity",
       "impact": "positive",
       "review_status": "pending",
