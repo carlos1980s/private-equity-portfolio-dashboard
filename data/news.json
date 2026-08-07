@@ -1,41 +1,19 @@
 {
-  "updated_at": "2026-08-06T00:10:28+00:00",
-  "last_attempt_at": "2026-08-06T00:10:28+00:00",
+  "updated_at": "2026-08-07T01:44:26+00:00",
+  "last_attempt_at": "2026-08-07T01:44:26+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
       "company": "O",
-      "date": "2026-07-23",
-      "headline": "O: Health in ChatGPT",
-      "summary": "O released \u201cHealth in ChatGPT,\u201d describing physician testing and connected health-data use, alongside model evaluation claims for health tasks. Signals product expansion into clinical-adjacent workflows.",
+      "date": "2026-07-22",
+      "headline": "O posts Introducing O Presence",
+      "summary": "O launched O Presence, positioning it as a managed enterprise platform for governed AI agents (deployment, monitoring, guardrails). Signals product expansion toward production workflows and continuity improvements across deployments.",
       "category": "product",
       "impact": "positive",
-      "review_status": "pending",
-      "source_label": "Official release",
-      "source_url": "https://openai.com/index/health-in-chatgpt"
-    },
-    {
-      "company": "O",
-      "date": "2026-07-22",
-      "headline": "O: O Presence",
-      "summary": "O introduced \u201cO Presence,\u201d positioning it as a new product capability and company announcement. Materiality centers on potential distribution/capability expansion for downstream integrations.",
-      "category": "product",
-      "impact": "neutral",
       "review_status": "none",
       "source_label": "Official release",
-      "source_url": "https://openai.com/news/company-announcements/introducing-openai-presence"
-    },
-    {
-      "company": "G",
-      "date": "2026-06-22",
-      "headline": "G: $650M inference cloud funding",
-      "summary": "G announced $650M in new growth capital to scale its AI inference cloud, including near-term leadership appointments (CTO and CPO) tied to product expansion. Reinforces runway/capacity investment.",
-      "category": "funding",
-      "impact": "positive",
-      "review_status": "pending",
-      "source_label": "Official release",
-      "source_url": "https://groq.com/newsroom/groq-raises-usd650m-to-scale-its-ai-inference-cloud-business"
+      "source_url": "https://openai.com/index/introducing-openai-presence"
     }
   ]
 }
