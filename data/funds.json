@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-08-07T23:47:43+00:00",
-  "last_attempt_at": "2026-08-07T23:47:43+00:00",
+  "updated_at": "2026-08-08T23:43:52+00:00",
+  "last_attempt_at": "2026-08-08T23:43:52+00:00",
   "refresh_status": "partial",
   "policy": "Public NAVs may refresh automatically; share counts and cost basis remain owner-controlled.",
   "items": [
@@ -27,11 +27,11 @@
       "isin": "LU1803068979",
       "shares": 5812.034,
       "cost_nav": 22.5655,
-      "nav": 36.34,
+      "nav": 36.28,
       "nav_scale": 1.0,
       "currency": "SGD",
-      "nav_as_of": "2026-07-24",
-      "source_label": "Franklin Templeton (price and performance)",
+      "nav_as_of": "2026-08-06",
+      "source_label": "Franklin Templeton (fund-manager) - daily NAV table by ISIN",
       "source_url": "https://www.franklintempleton.com.sg/our-funds/price-and-performance/products/4916/Z5/franklin-technology-fund/LU1803068979"
     },
     {
@@ -76,7 +76,7 @@
       "nav_scale": 1.0,
       "currency": "SGD",
       "nav_as_of": "2026-07-24",
-      "source_label": "Unable to verify a later daily NAV than provided last_nav_as_of; returning not_u",
+      "source_label": "Allianz Global Investors (fund-manager) - daily NAV for AT (H2-SGD) Acc (ISIN LU",
       "source_url": "https://sg.allianzgi.com/en-sg/retail/products-solutions/recognised-fund/allianz-global-artificial-intelligence-at-h2-sgd-sgd?nav=dividends"
     }
   ]
