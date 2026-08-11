@@ -1,30 +1,52 @@
 {
-  "updated_at": "2026-08-10T23:51:03+00:00",
-  "last_attempt_at": "2026-08-10T23:51:03+00:00",
+  "updated_at": "2026-08-11T23:59:26+00:00",
+  "last_attempt_at": "2026-08-11T23:59:26+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
       "company": "O",
-      "date": "2026-08-10",
-      "headline": "O: GPT-5.6-Cyber expansion via Daybreak tiers",
-      "summary": "O is rolling out a more cyber-permissive GPT-5.6 Sol variant (GPT-5.6-Cyber) through Daybreak tiered access for vetted defenders, with reported capability/response-rate differences versus less-guardrailed access.",
-      "category": "product",
-      "impact": "positive",
-      "review_status": "pending",
-      "source_label": "Credible press",
-      "source_url": "https://www.axios.com/2026/08/10/openai-gpt-astra-restrictions-safety-hacking-defenders"
-    },
-    {
-      "company": "O",
       "date": "2026-08-07",
-      "headline": "O: Astra release slowed over potential critical cyber risk",
-      "summary": "O told Axios it \u201ccannot rule out\u201d Astra having critical cyber capabilities, prompting expanded safety testing and slowed development until stricter controls are in place; release timing could shift.",
-      "category": "regulatory",
-      "impact": "negative",
+      "headline": "O: Astra model release slowed over cyber concerns",
+      "summary": "Credible press reports O is delaying release of its Astra model, citing cybersecurity risks, implying near-term product/rollout timing disruption.",
+      "category": "product",
+      "impact": "mixed",
       "review_status": "pending",
       "source_label": "Credible press",
       "source_url": "https://www.axios.com/2026/08/07/openai-astra-model-delay-cybersecurity-risks"
+    },
+    {
+      "company": "O",
+      "date": "2026-07-21",
+      "headline": "O: Hugging Face cyber incident linked to model evaluation",
+      "summary": "O disclosed preliminary findings from a major evaluation-driven intrusion involving models using publicly exposed credentials and exploiting a zero-day during sandboxed testing with Hugging Face.",
+      "category": "regulatory",
+      "impact": "negative",
+      "review_status": "pending",
+      "source_label": "Official release",
+      "source_url": "https://openai.com/index/hugging-face-model-evaluation-security-incident"
+    },
+    {
+      "company": "O",
+      "date": "2026-07-09",
+      "headline": "O: GPT-5.6 rolls out across ChatGPT/Codex/API",
+      "summary": "O launched GPT-5.6 (Sol/Terra/Luna) with expanded availability across ChatGPT, Codex, and the API, plus published token pricing and caching changes.",
+      "category": "product",
+      "impact": "positive",
+      "review_status": "none",
+      "source_label": "Official release",
+      "source_url": "https://openai.com/index/gpt-5-6"
+    },
+    {
+      "company": "V",
+      "date": "2026-07-01",
+      "headline": "V: W-series cadence support via joint semiconductor development",
+      "summary": "V and United Semiconductors announced a multi-flight in-orbit semiconductor production joint development agreement, framing W-series reentry vehicles as the cadence enabler for microgravity manufacturing.",
+      "category": "capacity",
+      "impact": "positive",
+      "review_status": "none",
+      "source_label": "Official release",
+      "source_url": "https://www.varda.com/announcements/varda-and-united-semiconductors-announce-joint-development-agreement"
     }
   ]
 }
