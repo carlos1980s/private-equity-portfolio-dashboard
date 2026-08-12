@@ -1,52 +1,52 @@
 {
-  "updated_at": "2026-08-11T23:59:26+00:00",
-  "last_attempt_at": "2026-08-11T23:59:26+00:00",
+  "updated_at": "2026-08-12T23:57:26+00:00",
+  "last_attempt_at": "2026-08-12T23:57:26+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
-      "company": "O",
-      "date": "2026-08-07",
-      "headline": "O: Astra model release slowed over cyber concerns",
-      "summary": "Credible press reports O is delaying release of its Astra model, citing cybersecurity risks, implying near-term product/rollout timing disruption.",
+      "company": "V",
+      "date": "2026-08-12",
+      "headline": "V launches W-6 for autonomous hypersonic reentry",
+      "summary": "V launched W-6 with SpaceX\u2019s Transporter-16, advancing autonomous navigation and next-gen thermal protection. Mission includes AFRL-funded flight testing and in-flight collection of thermal/material performance data.",
       "category": "product",
-      "impact": "mixed",
+      "impact": "positive",
       "review_status": "pending",
       "source_label": "Credible press",
-      "source_url": "https://www.axios.com/2026/08/07/openai-astra-model-delay-cybersecurity-risks"
+      "source_url": "https://www.prnewswire.com/news-releases/varda-launches-w-6-expanding-hypersonic-reentry-and-autonomous-navigation-capabilities-302728592.html"
     },
     {
       "company": "O",
-      "date": "2026-07-21",
-      "headline": "O: Hugging Face cyber incident linked to model evaluation",
-      "summary": "O disclosed preliminary findings from a major evaluation-driven intrusion involving models using publicly exposed credentials and exploiting a zero-day during sandboxed testing with Hugging Face.",
+      "date": "2026-08-12",
+      "headline": "O publishes Frontier Governance Framework",
+      "summary": "O published a governance framework describing how its safety/security practices align with emerging legal obligations (e.g., CA Transparency in Frontier AI Act, EU AI Act Code of Practice).",
       "category": "regulatory",
-      "impact": "negative",
+      "impact": "neutral",
+      "review_status": "none",
+      "source_label": "Official release",
+      "source_url": "https://openai.com/index/openai-frontier-governance-framework"
+    },
+    {
+      "company": "O",
+      "date": "2026-08-12",
+      "headline": "O raises $122B at $852B post-money valuation",
+      "summary": "O closed a $122B funding round at a $852B post-money valuation, also citing scaling of revenue and expanding enterprise mix; revolver expanded to ~$4.7B (undrawn).",
+      "category": "funding",
+      "impact": "positive",
       "review_status": "pending",
       "source_label": "Official release",
-      "source_url": "https://openai.com/index/hugging-face-model-evaluation-security-incident"
+      "source_url": "https://openai.com/index/accelerating-the-next-phase-ai?_bhlid=c21f9f982b8d3f7bf925c3630a22f246eb73dd7d"
     },
     {
-      "company": "O",
-      "date": "2026-07-09",
-      "headline": "O: GPT-5.6 rolls out across ChatGPT/Codex/API",
-      "summary": "O launched GPT-5.6 (Sol/Terra/Luna) with expanded availability across ChatGPT, Codex, and the API, plus published token pricing and caching changes.",
-      "category": "product",
-      "impact": "positive",
-      "review_status": "none",
-      "source_label": "Official release",
-      "source_url": "https://openai.com/index/gpt-5-6"
-    },
-    {
-      "company": "V",
-      "date": "2026-07-01",
-      "headline": "V: W-series cadence support via joint semiconductor development",
-      "summary": "V and United Semiconductors announced a multi-flight in-orbit semiconductor production joint development agreement, framing W-series reentry vehicles as the cadence enabler for microgravity manufacturing.",
+      "company": "G",
+      "date": "2026-08-12",
+      "headline": "G raises $650M to scale inference cloud",
+      "summary": "G announced $650M growth capital to expand its AI inference cloud, including scaling toward ~200 MW by end-2027; cites current operation of 13 data centers and token processing scale.",
       "category": "capacity",
       "impact": "positive",
-      "review_status": "none",
+      "review_status": "pending",
       "source_label": "Official release",
-      "source_url": "https://www.varda.com/announcements/varda-and-united-semiconductors-announce-joint-development-agreement"
+      "source_url": "https://groq.com/newsroom/groq-raises-usd650m-to-scale-its-ai-inference-cloud-business"
     }
   ]
 }

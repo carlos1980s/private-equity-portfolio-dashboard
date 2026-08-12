@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-08-09T23:45:27+00:00",
-  "last_attempt_at": "2026-08-11T23:58:43+00:00",
+  "updated_at": "2026-08-12T23:56:46+00:00",
+  "last_attempt_at": "2026-08-12T23:56:46+00:00",
   "refresh_status": "partial",
   "policy": "Public NAVs may refresh automatically; share counts and cost basis remain owner-controlled.",
   "items": [
@@ -76,7 +76,7 @@
       "nav_scale": 1.0,
       "currency": "SGD",
       "nav_as_of": "2026-07-24",
-      "source_label": "Allianz Global Investors (fund-manager) - daily NAV for AT (H2-SGD) Acc (ISIN LU",
+      "source_label": "Allianz Global Investors (Unit NAV - Valuation Date)",
       "source_url": "https://sg.allianzgi.com/en-sg/retail/products-solutions/recognised-fund/allianz-global-artificial-intelligence-at-h2-sgd-sgd?nav=dividends"
     }
   ]
