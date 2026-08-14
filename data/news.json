@@ -1,30 +1,7 @@
 {
-  "updated_at": "2026-08-13T23:57:53+00:00",
-  "last_attempt_at": "2026-08-13T23:57:53+00:00",
+  "updated_at": "2026-08-14T23:36:20+00:00",
+  "last_attempt_at": "2026-08-14T23:36:20+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
-  "items": [
-    {
-      "company": "O",
-      "date": "2026-08-10",
-      "headline": "O introduces GPT-5.6-Cyber via Daybreak tiers",
-      "summary": "O is rolling out a more cyber-permissive GPT-5.6 variant for vetted defenders under Daybreak Blue/Red, with different guardrails and capability targeting.",
-      "category": "product",
-      "impact": "mixed",
-      "review_status": "pending",
-      "source_label": "Credible press",
-      "source_url": "https://www.axios.com/2026/08/10/openai-gpt-astra-restrictions-safety-hacking-defenders"
-    },
-    {
-      "company": "O",
-      "date": "2026-08-07",
-      "headline": "O delays Astra release over cyber-safety findings",
-      "summary": "O told Axios it cannot rule out \u201ccritical\u201d cyber capabilities in Astra; the company is expanding safety testing and slowing development until stronger safeguards are in place.",
-      "category": "regulatory",
-      "impact": "negative",
-      "review_status": "none",
-      "source_label": "Credible press",
-      "source_url": "https://www.axios.com/2026/08/07/openai-astra-model-delay-cybersecurity-ris"
-    }
-  ]
+  "items": []
 }
