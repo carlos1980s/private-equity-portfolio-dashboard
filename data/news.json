@@ -1,7 +1,19 @@
 {
-  "updated_at": "2026-08-14T23:36:20+00:00",
-  "last_attempt_at": "2026-08-14T23:36:20+00:00",
+  "updated_at": "2026-08-15T23:33:50+00:00",
+  "last_attempt_at": "2026-08-15T23:33:50+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
-  "items": []
+  "items": [
+    {
+      "company": "O",
+      "date": "2026-08-10",
+      "headline": "O publishes safety/alignment era update",
+      "summary": "O outlined how its long-horizon model safety approach evolves over time, describing operational practices for risk management and evaluation as model capabilities change.",
+      "category": "regulatory",
+      "impact": "neutral",
+      "review_status": "none",
+      "source_label": "Official release",
+      "source_url": "https://openai.com/index/safety-and-alignment-in-an-era-of-long-horizon-models"
+    }
+  ]
 }
