@@ -1,7 +1,7 @@
 {
   "model_version": "2026-07-19-news-overlay",
   "model_policy": "Verified news applies a bounded, time-decaying overlay to private-position simulations. Base assumptions, share counts and cost basis remain owner-controlled.",
-  "generated_at": "2026-08-15T23:34:07+00:00",
+  "generated_at": "2026-08-16T23:34:10+00:00",
   "currency": {
     "usd_sgd": 1.2781,
     "gbp_sgd": 1.7301,
@@ -562,7 +562,7 @@
   ],
   "news_overlay": {
     "enabled": true,
-    "as_of": "2026-08-15",
+    "as_of": "2026-08-16",
     "half_life_days": 21.0,
     "max_age_days": 45,
     "caps_2026": {
@@ -578,19 +578,7 @@
         "raw_score": 0.0,
         "capped": false,
         "active_items": 0,
-        "items": [
-          {
-            "date": "2026-08-10",
-            "headline": "O publishes safety/alignment era update",
-            "category": "regulatory",
-            "impact": "neutral",
-            "source_url": "https://openai.com/index/safety-and-alignment-in-an-era-of-long-horizon-models",
-            "age_days": 5,
-            "decay_weight": 0.847864,
-            "effect_2026": 0.0,
-            "applied": false
-          }
-        ]
+        "items": []
       },
       "G": {
         "multiplier_2026": 1.0,
