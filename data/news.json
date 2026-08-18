@@ -1,41 +1,19 @@
 {
-  "updated_at": "2026-08-17T23:35:29+00:00",
-  "last_attempt_at": "2026-08-17T23:35:29+00:00",
+  "updated_at": "2026-08-18T23:35:45+00:00",
+  "last_attempt_at": "2026-08-18T23:35:45+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
       "company": "O",
-      "date": "2026-07-22",
-      "headline": "O announces presence product",
-      "summary": "O published an announcement introducing its \u201cPresence\u201d product, signaling a new customer-facing capability beyond core ChatGPT usage. Likely incremental, but relevant for enterprise rollout and feature expansion.",
-      "category": "product",
+      "date": "2026-07-31",
+      "headline": "O highlights one-billion active users and 2+ million businesses",
+      "summary": "O published metrics stating models reach 1B+ active users and 2M+ businesses, with agentic output share for Codex at 99.8% weekly output tokens. Suggests demand/capacity strength; limited margin details.",
+      "category": "capacity",
       "impact": "positive",
       "review_status": "pending",
       "source_label": "Official release",
-      "source_url": "https://openai.com/news/company-announcements/introducing-openai-presence-product"
-    },
-    {
-      "company": "O",
-      "date": "2026-07-21",
-      "headline": "O partners disclose eval security incident",
-      "summary": "O described a security incident during model evaluation with Hugging Face, attributing it to specific internal models used for cyber-capability benchmarking. Impacts trust/governance posture more than revenue near-term.",
-      "category": "regulatory",
-      "impact": "mixed",
-      "review_status": "pending",
-      "source_label": "Official release",
-      "source_url": "https://openai.com/index/hugging-face-model-evaluation-security-incident"
-    },
-    {
-      "company": "O",
-      "date": "2026-07-09",
-      "headline": "O releases GPT-5.6 + ChatGPT Work",
-      "summary": "Axios reported O shipped GPT-5.6 plus a ChatGPT Work tool, after governmental engagement around rollout timing. This is a major product-cycle signal that can drive adoption and compute demand.",
-      "category": "product",
-      "impact": "positive",
-      "review_status": "pending",
-      "source_label": "Credible press",
-      "source_url": "https://www.axios.com/2026/07/09/ai-openai-gpt-release"
+      "source_url": "https://openai.com/index/building-abundant-intelligence"
     }
   ]
 }
