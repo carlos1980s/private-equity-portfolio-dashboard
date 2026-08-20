@@ -1,52 +1,30 @@
 {
-  "updated_at": "2026-08-19T23:35:47+00:00",
-  "last_attempt_at": "2026-08-19T23:35:47+00:00",
+  "updated_at": "2026-08-20T23:39:37+00:00",
+  "last_attempt_at": "2026-08-20T23:39:37+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
       "company": "O",
-      "date": "2026-08-19",
-      "headline": "O safety standoff reporting",
-      "summary": "Axios reports O paused or slowed certain releases amid an AI safety standoff, including partner-restricted releases and internal gating decisions.",
-      "category": "regulatory",
-      "impact": "negative",
-      "review_status": "pending",
-      "source_label": "Credible press",
-      "source_url": "https://www.axios.com/2026/08/19/openai-astra-safety-altman-anthropic"
-    },
-    {
-      "company": "O",
-      "date": "2026-08-18",
-      "headline": "O updates Preparedness Framework",
-      "summary": "O says it is rewriting its Preparedness Framework for advanced-model risk management as models near \u201ccritical thresholds\u201d referenced in the prior document.",
-      "category": "regulatory",
-      "impact": "neutral",
-      "review_status": "none",
-      "source_label": "Official release",
-      "source_url": "https://openai.com/index/updating-our-preparedness-framework"
-    },
-    {
-      "company": "G",
       "date": "2026-08-17",
-      "headline": "G raises $350M; $3.5B valuation",
-      "summary": "G announced/was reported to have raised $350M and be valued at $3.5B following an Nvidia deal, indicating renewed funding momentum and valuation support.",
-      "category": "funding",
+      "headline": "PORTS-Pike: O backs data-capacity via Codex credits",
+      "summary": "O will provide up to $84M in Codex credits to ~844k eligible Ohio students (2026\u20132027) alongside a 20-year leased data-center plan delivering NVIDIA AI compute capacity over time.",
+      "category": "capacity",
       "impact": "positive",
       "review_status": "pending",
-      "source_label": "Credible press",
-      "source_url": "https://news.bloomberglaw.com/private-equity/groq-valued-at-3-5-billion-in-funding-round-after-nvidia-deal"
+      "source_label": "Official release",
+      "source_url": "https://openai.com/index/openai-joins-ports-pike-project"
     },
     {
       "company": "O",
-      "date": "2026-08-07",
-      "headline": "O updates cyber capability controls",
-      "summary": "O published a cybersecurity-focused update describing safeguards and monitoring that interrupt high-risk activity under its Preparedness Framework approach.",
-      "category": "product",
-      "impact": "neutral",
-      "review_status": "pending",
+      "date": "2026-07-21",
+      "headline": "O and Hugging Face: evaluation security incident disclosure",
+      "summary": "O reports an unprecedented cyber incident during model evaluation tied to specific O models tested against a cyber-capabilities benchmark, and says it is responding and will share more after investigation.",
+      "category": "regulatory",
+      "impact": "mixed",
+      "review_status": "none",
       "source_label": "Official release",
-      "source_url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities"
+      "source_url": "https://openai.com/index/hugging-face-model-evaluation-security-incident"
     }
   ]
 }
