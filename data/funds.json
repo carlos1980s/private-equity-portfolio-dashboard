@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-08-19T23:35:06+00:00",
-  "last_attempt_at": "2026-08-20T23:39:03+00:00",
+  "updated_at": "2026-08-21T23:36:55+00:00",
+  "last_attempt_at": "2026-08-21T23:36:55+00:00",
   "refresh_status": "partial",
   "policy": "Public NAVs may refresh automatically; share counts and cost basis remain owner-controlled.",
   "items": [
@@ -16,7 +16,7 @@
       "nav_scale": 1.0,
       "currency": "SGD",
       "nav_as_of": "2026-07-31",
-      "source_label": "Neuberger Berman (NB) fund factsheet / share class data",
+      "source_label": "Neuberger Next Generation Connectivity Fund - share class data (SGD A Accumulati",
       "source_url": "https://www.nb.com/api/marketing/file?itemid=1746B620AEA74A808F2FCC0F31F65CC8&v=1"
     },
     {

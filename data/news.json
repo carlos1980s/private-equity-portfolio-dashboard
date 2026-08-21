@@ -1,30 +1,30 @@
 {
-  "updated_at": "2026-08-20T23:39:37+00:00",
-  "last_attempt_at": "2026-08-20T23:39:37+00:00",
+  "updated_at": "2026-08-21T23:37:35+00:00",
+  "last_attempt_at": "2026-08-21T23:37:35+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
       "company": "O",
+      "date": "2026-08-21",
+      "headline": "O: $122B committed capital at $852B post-money valuation",
+      "summary": "O says it closed a latest funding round with $122B committed capital and $852B post-money valuation; also expands a revolving credit facility to about $4.7B and cites rapid product usage growth.",
+      "category": "funding",
+      "impact": "positive",
+      "review_status": "none",
+      "source_label": "Official release",
+      "source_url": "https://openai.com/index/accelerating-the-next-phase-ai?_bhlid=c21f9f982b8d3f7bf925c3630a22f246eb73dd7d"
+    },
+    {
+      "company": "G",
       "date": "2026-08-17",
-      "headline": "PORTS-Pike: O backs data-capacity via Codex credits",
-      "summary": "O will provide up to $84M in Codex credits to ~844k eligible Ohio students (2026\u20132027) alongside a 20-year leased data-center plan delivering NVIDIA AI compute capacity over time.",
+      "headline": "G: $350M Series A; valuation $3.5B; 200+MW by 2027",
+      "summary": "G announced a $350M Series A led by Disruptive (NVIDIA planned participation), valuing it at $3.5B. It says it runs 13 data centers and expects to scale from 54MW to 200+MW in 2027.",
       "category": "capacity",
       "impact": "positive",
       "review_status": "pending",
       "source_label": "Official release",
-      "source_url": "https://openai.com/index/openai-joins-ports-pike-project"
-    },
-    {
-      "company": "O",
-      "date": "2026-07-21",
-      "headline": "O and Hugging Face: evaluation security incident disclosure",
-      "summary": "O reports an unprecedented cyber incident during model evaluation tied to specific O models tested against a cyber-capabilities benchmark, and says it is responding and will share more after investigation.",
-      "category": "regulatory",
-      "impact": "mixed",
-      "review_status": "none",
-      "source_label": "Official release",
-      "source_url": "https://openai.com/index/hugging-face-model-evaluation-security-incident"
+      "source_url": "https://groq.com/newsroom/groq-closes-usd350-million-series-a-building-the-world-s-leading-ai-inference-cloud"
     }
   ]
 }
