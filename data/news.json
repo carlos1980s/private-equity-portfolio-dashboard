@@ -1,47 +1,36 @@
 {
-  "updated_at": "2026-08-22T23:34:40+00:00",
-  "last_attempt_at": "2026-08-22T23:34:40+00:00",
+  "updated_at": "2026-08-23T23:35:16+00:00",
+  "last_attempt_at": "2026-08-23T23:35:16+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
       "company": "O",
-      "date": "2026-08-20",
-      "headline": "AI Futures launch",
-      "summary": "O launched AI Futures (new Strategic Futures blog). Indicates ongoing institutionalization of forward-looking research and thought leadership around AI policy, markets, and timelines.",
-      "category": "product",
-      "impact": "neutral",
-      "review_status": "none",
-      "source_label": "Official release",
-      "source_url": "https://openai.com/index/introducing-ai-futures"
-    },
-    {
-      "company": "O",
-      "date": "2026-08-18",
-      "headline": "Democratic oversight initiative",
-      "summary": "O announced an initiative to help democratic oversight bodies build expertise and tools to understand and oversee government use of AI for national security.",
+      "date": "2026-08-19",
+      "headline": "O: O updates GPT-5.6 deployment safety for August releases",
+      "summary": "O\u2019s Deployment Safety Hub posted August updates for GPT-5.6 Sol and GPT-5.6 Luna, stating they are treated as high capability in specified domains under its Preparedness Framework.",
       "category": "regulatory",
       "impact": "neutral",
       "review_status": "none",
       "source_label": "Official release",
-      "source_url": "https://openai.com/index/strengthening-democratic-oversight-in-national-security"
+      "source_url": "https://deploymentsafety.openai.com/gpt-5-6-august-update"
     },
     {
       "company": "O",
-      "date": "2026-08-17",
-      "headline": "Economic Research Exchange grants",
-      "summary": "O said it is awarding grants to 14 independent projects via the O Economic Research Exchange, following its April 2026 Industrial Policy commitment.",
-      "category": "capacity",
-      "impact": "neutral",
-      "review_status": "none",
-      "source_label": "Official release",
-      "source_url": "https://openai.com/index/new-policy-ideas-for-the-intelligence-age"
+      "date": "2026-08-18",
+      "headline": "O: model-safety policy\u2014Preparedness Framework rewrite",
+      "summary": "O said it is rewriting its Preparedness Framework security document as model capability thresholds near/approach earlier critical levels defined in 2023-era guidance.",
+      "category": "regulatory",
+      "impact": "mixed",
+      "review_status": "pending",
+      "source_label": "Credible press",
+      "source_url": "https://www.axios.com/2026/08/18/openai-pause-astra-preparedness-framework"
     },
     {
       "company": "G",
       "date": "2026-08-17",
-      "headline": "Series A $350M",
-      "summary": "G announced it closed a $350M Series A, bringing total recent funding to $1B alongside a previously announced June 2026 round.",
+      "headline": "G: closes $350M Series A; values G at $3.5B",
+      "summary": "G announced a $350M Series A led by Disruptive with planned NVIDIA participation, valuing the company at $3.5B; it also stated total 2026 funding includes $650M from June.",
       "category": "funding",
       "impact": "positive",
       "review_status": "pending",
@@ -50,36 +39,14 @@
     },
     {
       "company": "G",
-      "date": "2026-08-17",
-      "headline": "Neocloud pivot valuation context",
-      "summary": "Credible reporting ties the round to G\u2019s shift from AI chips toward a \u201cneocloud\u201d inference model, framing it as a valuation reset rather than a down round post-licensing.",
-      "category": "valuation",
-      "impact": "mixed",
-      "review_status": "pending",
-      "source_label": "Credible press",
-      "source_url": "https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud"
-    },
-    {
-      "company": "G",
-      "date": "2026-08-17",
-      "headline": "Funding history visibility",
-      "summary": "Secondary financial aggregation sites track the disclosed Series A date/size as the latest funding milestone, useful as corroboration for investors tracking timing/updates.",
-      "category": "funding",
-      "impact": "neutral",
-      "review_status": "none",
-      "source_label": "Credible press",
-      "source_url": "https://public.com/company/groq-groq"
-    },
-    {
-      "company": "O",
-      "date": "2026-08-10",
-      "headline": "Texas responsible AI letter",
-      "summary": "O published its letter to Governor Abbott on responsible AI infrastructure in Texas, reinforcing engagement with state-level policy and deployment guardrails.",
-      "category": "regulatory",
-      "impact": "neutral",
+      "date": "2026-08-12",
+      "headline": "G: G joins NVIDIA Cloud Partner program",
+      "summary": "G said it joined NVIDIA Cloud Partner (NCP), framing certification as validation that its infrastructure can deploy and operate NVIDIA-accelerated computing to NCP standards.",
+      "category": "capacity",
+      "impact": "positive",
       "review_status": "none",
       "source_label": "Official release",
-      "source_url": "https://openai.com/index/responsible-ai-infrastructure-texas"
+      "source_url": "https://groq.com/newsroom/groq-becomes-an-nvidia-cloud-partner"
     }
   ]
 }
