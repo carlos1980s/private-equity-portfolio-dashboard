@@ -1,36 +1,47 @@
 {
-  "updated_at": "2026-08-23T23:35:16+00:00",
-  "last_attempt_at": "2026-08-23T23:35:16+00:00",
+  "updated_at": "2026-08-24T23:34:31+00:00",
+  "last_attempt_at": "2026-08-24T23:34:31+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
       "company": "O",
-      "date": "2026-08-19",
-      "headline": "O: O updates GPT-5.6 deployment safety for August releases",
-      "summary": "O\u2019s Deployment Safety Hub posted August updates for GPT-5.6 Sol and GPT-5.6 Luna, stating they are treated as high capability in specified domains under its Preparedness Framework.",
-      "category": "regulatory",
-      "impact": "neutral",
+      "date": "2026-08-23",
+      "headline": "O ships gpt-realtime / Realtime API updates",
+      "summary": "O\u2019s developer community announced new gpt-realtime and Realtime API updates for production voice agents. This is a concrete product/platform iteration that may affect deployment timelines and integration work.",
+      "category": "product",
+      "impact": "positive",
       "review_status": "none",
-      "source_label": "Official release",
-      "source_url": "https://deploymentsafety.openai.com/gpt-5-6-august-update"
+      "source_label": "Credible press",
+      "source_url": "https://community.openai.com/c/announcements/6"
+    },
+    {
+      "company": "O",
+      "date": "2026-08-19",
+      "headline": "O safety standoff slows releases",
+      "summary": "Credible reporting described O and Anthropic taking measures like releasing models first to select partners and slowing/pausing some releases in response to safety-related standoffs.",
+      "category": "regulatory",
+      "impact": "negative",
+      "review_status": "pending",
+      "source_label": "Credible press",
+      "source_url": "https://www.axios.com/2026/08/19/openai-astra-safety-altman-anthropic"
     },
     {
       "company": "O",
       "date": "2026-08-18",
-      "headline": "O: model-safety policy\u2014Preparedness Framework rewrite",
-      "summary": "O said it is rewriting its Preparedness Framework security document as model capability thresholds near/approach earlier critical levels defined in 2023-era guidance.",
+      "headline": "O rewrites Preparedness Framework",
+      "summary": "O said it\u2019s rewriting its Preparedness Framework as models approach/near thresholds set in the document. This signals updated internal safety governance for future capability releases.",
       "category": "regulatory",
-      "impact": "mixed",
+      "impact": "neutral",
       "review_status": "pending",
-      "source_label": "Credible press",
-      "source_url": "https://www.axios.com/2026/08/18/openai-pause-astra-preparedness-framework"
+      "source_label": "Official release",
+      "source_url": "https://openai.com/index/openai-frontier-governance-framework"
     },
     {
       "company": "G",
       "date": "2026-08-17",
-      "headline": "G: closes $350M Series A; values G at $3.5B",
-      "summary": "G announced a $350M Series A led by Disruptive with planned NVIDIA participation, valuing the company at $3.5B; it also stated total 2026 funding includes $650M from June.",
+      "headline": "G closes $350M Series A",
+      "summary": "G announced a $350M Series A, valuing the company at $3.5B, to accelerate build-out of its global inference footprint. Financing + valuation evidence is directly material.",
       "category": "funding",
       "impact": "positive",
       "review_status": "pending",
@@ -38,15 +49,15 @@
       "source_url": "https://groq.com/newsroom/groq-closes-usd350-million-series-a-building-the-world-s-leading-ai-inference-cloud"
     },
     {
-      "company": "G",
-      "date": "2026-08-12",
-      "headline": "G: G joins NVIDIA Cloud Partner program",
-      "summary": "G said it joined NVIDIA Cloud Partner (NCP), framing certification as validation that its infrastructure can deploy and operate NVIDIA-accelerated computing to NCP standards.",
-      "category": "capacity",
-      "impact": "positive",
+      "company": "O",
+      "date": "2026-08-10",
+      "headline": "O pauses Astra release components",
+      "summary": "O said it\u2019s pausing some Astra work after it reached \u201ccritical\u201d hacking abilities during safety testing, while indicating eventual release. Read-through: near-term delivery risk vs. safety posture.",
+      "category": "regulatory",
+      "impact": "mixed",
       "review_status": "none",
-      "source_label": "Official release",
-      "source_url": "https://groq.com/newsroom/groq-becomes-an-nvidia-cloud-partner"
+      "source_label": "Credible press",
+      "source_url": "https://www.axios.com/2026/08/10/ai-fear-factor-openai-anthropic-hack"
     }
   ]
 }
