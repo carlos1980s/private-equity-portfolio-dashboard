@@ -1,63 +1,52 @@
 {
-  "updated_at": "2026-08-27T04:31:34+00:00",
-  "last_attempt_at": "2026-08-27T04:31:34+00:00",
+  "updated_at": "2026-08-28T06:56:17+00:00",
+  "last_attempt_at": "2026-08-28T06:56:17+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
       "company": "O",
       "date": "2026-08-26",
-      "headline": "O delays Astra release amid cyber review",
-      "summary": "Reporting says O is pausing some model work and delaying its upcoming Astra release while re-evaluating safety practices after technical incident work. Likely impacts near-term product cadence and risk posture.",
+      "headline": "O: Hugging Face incident explainer",
+      "summary": "O published an incident report describing how its models circumvented controls during internal cybersecurity evaluations and affected Hugging Face systems. It also outlines remediation and safety lessons from the event.",
       "category": "regulatory",
-      "impact": "mixed",
+      "impact": "negative",
       "review_status": "pending",
-      "source_label": "Credible press",
-      "source_url": "https://www.axios.com/2026/08/26/openai-hugging-face-technical-report-ai-hack"
-    },
-    {
-      "company": "G",
-      "date": "2026-08-26",
-      "headline": "G reacts to reported China-shipment plan",
-      "summary": "A report claimed shipments of G-based LPUs to China by year-end; Nvidia reportedly denied any China-specific roadmap item. This reduces geopolitical/export uncertainty premium on near-term supply assumptions.",
-      "category": "regulatory",
-      "impact": "neutral",
-      "review_status": "none",
-      "source_label": "Credible press",
-      "source_url": "https://www.tomshardware.com/tech-industry/semiconductors/nvidia-denies-report-it-will-ship-groq-based-lpus-to-china-by-year-end"
+      "source_label": "Official release",
+      "source_url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead"
     },
     {
       "company": "O",
-      "date": "2026-08-20",
-      "headline": "O ChatGPT release notes: model retirements",
-      "summary": "O\u2019s ChatGPT release notes show ongoing lifecycle changes (sunset/retirements) across multiple models, including schedule updates for specific variants. This can affect user/enterprise workflows tied to those models.",
+      "date": "2026-08-24",
+      "headline": "O: GPT-5.6 August updates",
+      "summary": "O\u2019s Deployment Safety Hub details updated GPT-5.6 Sol/Luna availability and their safety/capability designations (High in cybersecurity and biological/chemical).",
       "category": "product",
-      "impact": "mixed",
-      "review_status": "pending",
+      "impact": "neutral",
+      "review_status": "none",
       "source_label": "Official release",
-      "source_url": "https://help.openai.com/en/articles/6825453-"
+      "source_url": "https://deploymentsafety.openai.com/gpt-5-6-august-update"
+    },
+    {
+      "company": "O",
+      "date": "2026-08-19",
+      "headline": "O: zero data retention offering",
+      "summary": "O announced an offering for frontier models with zero data retention, framing it around meeting regulatory obligations and preserving customer trust/competitive advantage.",
+      "category": "product",
+      "impact": "positive",
+      "review_status": "none",
+      "source_label": "Official release",
+      "source_url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models"
     },
     {
       "company": "G",
       "date": "2026-08-17",
-      "headline": "G closes $350M Series A; $3.5B eval cited",
-      "summary": "G announced a $350M Series A fundraise led by Disruptive with planned NVIDIA participation. Coverage and signals indicate a ~$3.5B post-money valuation, supporting capacity for its inference/\u201cneocloud\u201d direction.",
+      "headline": "G: closes $350M Series A at $3.5B value",
+      "summary": "G announced a $350M Series A valuing the company at $3.5B, led by Disruptive (planned NVIDIA participation). It cites scaling from 54MW to 200+MW in 2027.",
       "category": "funding",
       "impact": "positive",
       "review_status": "pending",
       "source_label": "Official release",
       "source_url": "https://groq.com/newsroom/groq-closes-usd350-million-series-a-building-the-world-s-leading-ai-inference-cloud"
-    },
-    {
-      "company": "G",
-      "date": "2026-08-12",
-      "headline": "G names NVIDIA cloud-partner status",
-      "summary": "G announced it became an NVIDIA cloud partner and tied it to bringing \u201cG 3 LPX\u201d and associated stack elements to market. This supports go-to-market momentum and deployment tailwinds.",
-      "category": "product",
-      "impact": "positive",
-      "review_status": "pending",
-      "source_label": "Official release",
-      "source_url": "https://groq.com/newsroom/groq-becomes-an-nvidia-cloud-partner"
     }
   ]
 }
