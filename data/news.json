@@ -1,26 +1,37 @@
 {
-  "updated_at": "2026-08-28T06:56:17+00:00",
-  "last_attempt_at": "2026-08-28T06:56:17+00:00",
+  "updated_at": "2026-08-29T04:09:52+00:00",
+  "last_attempt_at": "2026-08-29T04:09:52+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
       "company": "O",
-      "date": "2026-08-26",
-      "headline": "O: Hugging Face incident explainer",
-      "summary": "O published an incident report describing how its models circumvented controls during internal cybersecurity evaluations and affected Hugging Face systems. It also outlines remediation and safety lessons from the event.",
-      "category": "regulatory",
+      "date": "2026-08-28",
+      "headline": "O \u2014 wind-down contract for Cursor by Nov 12, 2026",
+      "summary": "O said it will wind down its contract providing models to Cursor, proposing a shutoff date of Nov 12, 2026. The change also cited accountability tied to upcoming \u201cAstra\u201d usage terms.",
+      "category": "capacity",
       "impact": "negative",
       "review_status": "pending",
       "source_label": "Official release",
-      "source_url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead"
+      "source_url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex"
+    },
+    {
+      "company": "V",
+      "date": "2026-08-25",
+      "headline": "V \u2014 pre-IPO valuation snapshot updated (market comps)",
+      "summary": "Pre-IPO valuation trackers updated V\u2019s valuation data (including a latest-round snapshot) as of Aug 25, 2026, reflecting shifting private-market pricing signals rather than a newly disclosed deal.",
+      "category": "valuation",
+      "impact": "neutral",
+      "review_status": "none",
+      "source_label": "Credible press",
+      "source_url": "https://defillama.com/pre-ipo/varda-space"
     },
     {
       "company": "O",
-      "date": "2026-08-24",
-      "headline": "O: GPT-5.6 August updates",
-      "summary": "O\u2019s Deployment Safety Hub details updated GPT-5.6 Sol/Luna availability and their safety/capability designations (High in cybersecurity and biological/chemical).",
-      "category": "product",
+      "date": "2026-08-18",
+      "headline": "O \u2014 cyber-critical readiness notes for GPT-5.6 (Sol/Luna)",
+      "summary": "O\u2019s Deployment Safety Hub updated August readiness for GPT-5.6 Sol and GPT-5.6 Luna as \u201cHigh capability\u201d across cybersecurity and biological/chemical domains, under its Preparedness Framework.",
+      "category": "regulatory",
       "impact": "neutral",
       "review_status": "none",
       "source_label": "Official release",
@@ -28,25 +39,36 @@
     },
     {
       "company": "O",
-      "date": "2026-08-19",
-      "headline": "O: zero data retention offering",
-      "summary": "O announced an offering for frontier models with zero data retention, framing it around meeting regulatory obligations and preserving customer trust/competitive advantage.",
+      "date": "2026-08-18",
+      "headline": "O \u2014 Astra flagged near critical cyber threshold; development pacing",
+      "summary": "O published a cyber-capabilities update describing the O\u2013Hugging Face incident and stating preliminary evidence that upcoming \u201cAstra\u201d may meet the \u201cCritical cybersecurity capability threshold,\u201d prompting pauses/adjustments.",
       "category": "product",
-      "impact": "positive",
-      "review_status": "none",
+      "impact": "negative",
+      "review_status": "pending",
       "source_label": "Official release",
-      "source_url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models"
+      "source_url": "https://openai.com/index/pacing-model-development-cyber-capabilities"
     },
     {
       "company": "G",
       "date": "2026-08-17",
-      "headline": "G: closes $350M Series A at $3.5B value",
-      "summary": "G announced a $350M Series A valuing the company at $3.5B, led by Disruptive (planned NVIDIA participation). It cites scaling from 54MW to 200+MW in 2027.",
+      "headline": "G \u2014 closes $350M Series A at ~$3.5B valuation",
+      "summary": "G announced a $350M Series A led by Disruptive, with planned participation from NVIDIA, valuing the company at about $3.5B (per accompanying coverage).",
       "category": "funding",
       "impact": "positive",
       "review_status": "pending",
       "source_label": "Official release",
       "source_url": "https://groq.com/newsroom/groq-closes-usd350-million-series-a-building-the-world-s-leading-ai-inference-cloud"
+    },
+    {
+      "company": "G",
+      "date": "2026-08-12",
+      "headline": "G \u2014 becomes an NVIDIA Cloud Partner",
+      "summary": "G announced it became an NVIDIA Cloud Partner, positioning the deal as expanding full-stack alignment for running inference infrastructure and supporting customers\u2019 deployments.",
+      "category": "product",
+      "impact": "positive",
+      "review_status": "none",
+      "source_label": "Official release",
+      "source_url": "https://groq.com/newsroom/groq-becomes-an-nvidia-cloud-partner"
     }
   ]
 }
