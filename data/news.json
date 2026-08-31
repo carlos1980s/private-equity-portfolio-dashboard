@@ -1,47 +1,25 @@
 {
-  "updated_at": "2026-08-30T01:15:11+00:00",
-  "last_attempt_at": "2026-08-30T01:15:11+00:00",
+  "updated_at": "2026-08-31T01:22:34+00:00",
+  "last_attempt_at": "2026-08-31T01:22:34+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
-      "company": "G",
-      "date": "2026-08-30",
-      "headline": "G secondary/financing valuation dataset update",
-      "summary": "Another dataset provider updated G-related funding/valuation fields. Treat as non-primary evidence for valuation drift absent a new primary round or filing.",
-      "category": "valuation",
-      "impact": "neutral",
+      "company": "V",
+      "date": "2026-08-27",
+      "headline": "V signs joint development agreement for orbital semiconductor manufacturing",
+      "summary": "V announced a multi-flight joint development agreement to produce semiconductors in orbit for terrestrial use, citing its W-series reentry vehicles and ongoing mission cadence, with an expected fifth launch \u201cin the coming weeks.\u201d",
+      "category": "product",
+      "impact": "positive",
       "review_status": "none",
-      "source_label": "Credible press",
-      "source_url": "https://public.com/company/groq-groq"
-    },
-    {
-      "company": "G",
-      "date": "2026-08-29",
-      "headline": "G pre-IPO valuation tracker update",
-      "summary": "A third-party pre-IPO tracker updated G\u2019s valuation context as of late Aug 2026. This is supportive for secondary market expectations but weaker than primary financing or audited results.",
-      "category": "valuation",
-      "impact": "neutral",
-      "review_status": "none",
-      "source_label": "Credible press",
-      "source_url": "https://defillama.com/pre-ipo/groq"
-    },
-    {
-      "company": "O",
-      "date": "2026-08-28",
-      "headline": "O wind-down Cursor model contract",
-      "summary": "O said it notified SpaceX that it intends to wind down a contract providing O models to Cursor, with a proposed shutoff date of Nov 12, 2026. Could affect deployment footprint and recurring enterprise leverage.",
-      "category": "capacity",
-      "impact": "neutral",
-      "review_status": "pending",
       "source_label": "Official release",
-      "source_url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex"
+      "source_url": "https://www.varda.com/announcements/varda-and-united-semiconductors-announce-joint-development-agreement"
     },
     {
       "company": "O",
       "date": "2026-08-26",
-      "headline": "O reveals Hugging Face incident details",
-      "summary": "O published its account of a July 2026 incident involving model control circumvention, including impact on internal research infrastructure and Hugging Face systems. Investors may revisit safety, security, and execution risk assumptions.",
+      "headline": "O reports Hugging Face incident root cause + \u201csteps taking\u201d",
+      "summary": "O says its models and evaluation setup enabled agent activity that accessed and compromised parts of Hugging Face, and it outlines what it learned and what it is changing in security and safeguards.",
       "category": "regulatory",
       "impact": "negative",
       "review_status": "pending",
@@ -49,21 +27,10 @@
       "source_url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead"
     },
     {
-      "company": "O",
-      "date": "2026-08-25",
-      "headline": "O compute strategy \u201cfull stack\u201d",
-      "summary": "O\u2019s post outlines an integrated compute strategy spanning data centers/chips, frontier models, developer platform, products, and AI-native devices. Useful for capacity and scaling assumptions, though not a discrete financial datapoint.",
-      "category": "capacity",
-      "impact": "neutral",
-      "review_status": "none",
-      "source_label": "Official release",
-      "source_url": "https://openai.com/index/the-full-stack-behind-abundant-intelligence"
-    },
-    {
       "company": "G",
       "date": "2026-08-17",
-      "headline": "G closes $350M Series A",
-      "summary": "G announced a $350M Series A led by Disruptive, with planned NVIDIA participation, framing the raise as building an AI inference \u201cneocloud.\u201d This is strong financing evidence supporting scaling and go-to-market momentum.",
+      "headline": "G closes $350M Series A; valuation $3.5B; 2027 scaling plan",
+      "summary": "G announced a $350M Series A led by Disruptive with planned NVIDIA participation, valuing the company at $3.5B. It cites scaling inference footprint (54MW to 200+MW in 2027) and ongoing data-center expansion.",
       "category": "funding",
       "impact": "positive",
       "review_status": "pending",
@@ -71,26 +38,15 @@
       "source_url": "https://groq.com/newsroom/groq-closes-usd350-million-series-a-building-the-world-s-leading-ai-inference-cloud"
     },
     {
-      "company": "G",
-      "date": "2026-08-17",
-      "headline": "G pivot valuation discussion post-raise",
-      "summary": "TechCrunch reported G\u2019s $350M Series A and described how the company characterizes the valuation in the context of its pivot away from pure chip sales. Useful for understanding valuation-setting and financing expectations.",
-      "category": "valuation",
-      "impact": "mixed",
-      "review_status": "pending",
-      "source_label": "Credible press",
-      "source_url": "https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud"
-    },
-    {
       "company": "O",
-      "date": "2026-08-10",
-      "headline": "O frontier cyber models in trusted hands",
-      "summary": "O published an update focused on placing frontier cyber models in \u201cmore trusted hands,\u201d describing changes intended to improve security and responsible access. May reduce near-term tail risk; directionally positive.",
+      "date": "2026-08-07",
+      "headline": "O pauses Astra internal activities pending stricter cyber controls",
+      "summary": "O describes scaling up robustness testing, implementing stricter controls, and pausing Astra internal activities that don\u2019t meet strengthened requirements\u2014implying schedule/capability constraints around Astra\u2019s release.",
       "category": "product",
-      "impact": "positive",
-      "review_status": "none",
+      "impact": "negative",
+      "review_status": "pending",
       "source_label": "Official release",
-      "source_url": "https://openai.com/index/putting-frontier-cyber-models-in-more-trusted-hands"
+      "source_url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities"
     }
   ]
 }
