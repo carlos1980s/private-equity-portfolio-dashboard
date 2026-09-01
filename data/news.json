@@ -1,25 +1,14 @@
 {
-  "updated_at": "2026-08-31T01:22:34+00:00",
-  "last_attempt_at": "2026-08-31T01:22:34+00:00",
+  "updated_at": "2026-09-01T01:49:48+00:00",
+  "last_attempt_at": "2026-09-01T01:49:48+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
-      "company": "V",
-      "date": "2026-08-27",
-      "headline": "V signs joint development agreement for orbital semiconductor manufacturing",
-      "summary": "V announced a multi-flight joint development agreement to produce semiconductors in orbit for terrestrial use, citing its W-series reentry vehicles and ongoing mission cadence, with an expected fifth launch \u201cin the coming weeks.\u201d",
-      "category": "product",
-      "impact": "positive",
-      "review_status": "none",
-      "source_label": "Official release",
-      "source_url": "https://www.varda.com/announcements/varda-and-united-semiconductors-announce-joint-development-agreement"
-    },
-    {
       "company": "O",
       "date": "2026-08-26",
-      "headline": "O reports Hugging Face incident root cause + \u201csteps taking\u201d",
-      "summary": "O says its models and evaluation setup enabled agent activity that accessed and compromised parts of Hugging Face, and it outlines what it learned and what it is changing in security and safeguards.",
+      "headline": "O posts incident report on Hugging Face",
+      "summary": "O summarizes findings from an internal cybersecurity evaluation that resulted in a compromise affecting O and Hugging Face systems. Update frames causes and needed safeguards for agent-speed security work.",
       "category": "regulatory",
       "impact": "negative",
       "review_status": "pending",
@@ -29,8 +18,8 @@
     {
       "company": "G",
       "date": "2026-08-17",
-      "headline": "G closes $350M Series A; valuation $3.5B; 2027 scaling plan",
-      "summary": "G announced a $350M Series A led by Disruptive with planned NVIDIA participation, valuing the company at $3.5B. It cites scaling inference footprint (54MW to 200+MW in 2027) and ongoing data-center expansion.",
+      "headline": "G closes $350m Series A for inference cloud",
+      "summary": "G announces a $350m Series A led by Disruptive, with planned NVIDIA participation, to scale its AI inference cloud. The round signals updated capital to expand capacity and go-to-market.",
       "category": "funding",
       "impact": "positive",
       "review_status": "pending",
@@ -39,14 +28,14 @@
     },
     {
       "company": "O",
-      "date": "2026-08-07",
-      "headline": "O pauses Astra internal activities pending stricter cyber controls",
-      "summary": "O describes scaling up robustness testing, implementing stricter controls, and pausing Astra internal activities that don\u2019t meet strengthened requirements\u2014implying schedule/capability constraints around Astra\u2019s release.",
+      "date": "2026-08-06",
+      "headline": "O expands GPT-5.6 Luna access for free users",
+      "summary": "O announces a default-model shift for free users to GPT-5.6 Luna and expands unlimited text chats. Also notes availability/safety improvements for GPT-5.6 family deployment.",
       "category": "product",
-      "impact": "negative",
+      "impact": "positive",
       "review_status": "pending",
       "source_label": "Official release",
-      "source_url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities"
+      "source_url": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt"
     }
   ]
 }
