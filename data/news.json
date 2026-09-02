@@ -1,25 +1,25 @@
 {
-  "updated_at": "2026-09-01T01:49:48+00:00",
-  "last_attempt_at": "2026-09-01T01:49:48+00:00",
+  "updated_at": "2026-09-02T01:01:33+00:00",
+  "last_attempt_at": "2026-09-02T01:01:33+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
       "company": "O",
-      "date": "2026-08-26",
-      "headline": "O posts incident report on Hugging Face",
-      "summary": "O summarizes findings from an internal cybersecurity evaluation that resulted in a compromise affecting O and Hugging Face systems. Update frames causes and needed safeguards for agent-speed security work.",
-      "category": "regulatory",
-      "impact": "negative",
+      "date": "2026-08-21",
+      "headline": "O cuts GPT-5.6 Sol/Terra/Luna pricing; boosts API price-performance",
+      "summary": "O stated it reduced GPT-5.6 Sol API/credit pricing by over 20% (3 months) and passed performance gains to customers via lower prices for GPT-5.6 Luna and Terra.",
+      "category": "product",
+      "impact": "positive",
       "review_status": "pending",
       "source_label": "Official release",
-      "source_url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead"
+      "source_url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6"
     },
     {
       "company": "G",
       "date": "2026-08-17",
-      "headline": "G closes $350m Series A for inference cloud",
-      "summary": "G announces a $350m Series A led by Disruptive, with planned NVIDIA participation, to scale its AI inference cloud. The round signals updated capital to expand capacity and go-to-market.",
+      "headline": "G closes $350M Series A to scale inference cloud",
+      "summary": "G announced a $350M Series A led by Disruptive, with planned NVIDIA participation, positioning the funding to expand an inference-focused cloud offering.",
       "category": "funding",
       "impact": "positive",
       "review_status": "pending",
@@ -29,8 +29,8 @@
     {
       "company": "O",
       "date": "2026-08-06",
-      "headline": "O expands GPT-5.6 Luna access for free users",
-      "summary": "O announces a default-model shift for free users to GPT-5.6 Luna and expands unlimited text chats. Also notes availability/safety improvements for GPT-5.6 family deployment.",
+      "headline": "O releases GPT-5.6 Sol update; expands GPT-5.6 Luna access for free users",
+      "summary": "O announced improvements to GPT-5.6 Sol in ChatGPT and expanded access to GPT-5.6 Luna for free users, while clarifying which Sol version powers Work/Codex.",
       "category": "product",
       "impact": "positive",
       "review_status": "pending",
