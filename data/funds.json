@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-03T01:06:31+00:00",
-  "last_attempt_at": "2026-09-03T01:06:31+00:00",
+  "updated_at": "2026-09-04T00:58:10+00:00",
+  "last_attempt_at": "2026-09-04T00:58:10+00:00",
   "refresh_status": "partial",
   "policy": "Public NAVs may refresh automatically; share counts and cost basis remain owner-controlled.",
   "items": [
@@ -72,12 +72,12 @@
       "isin": "LU1720051017",
       "shares": 11558.0,
       "cost_nav": 27.9,
-      "nav": 29.88,
+      "nav": 29.7497,
       "nav_scale": 1.0,
       "currency": "SGD",
-      "nav_as_of": "2026-08-26",
-      "source_label": "issuer (Allianz Global Investors) product page",
-      "source_url": "https://sg.allianzgi.com/en-sg/retail/products-solutions/recognised-fund/allianz-global-artificial-intelligence-at-h2-sgd-sgd"
+      "nav_as_of": "2026-09-01",
+      "source_label": "Allianz Global Investors (issuer/fund page)",
+      "source_url": "https://sg.allianzgi.com/en-sg/retail/products-solutions/recognised-fund/allianz-global-artificial-intelligence-at-h2-sgd-sgd?nav=overview"
     }
   ]
 }
