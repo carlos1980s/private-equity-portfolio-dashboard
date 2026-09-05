@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-04T00:58:10+00:00",
-  "last_attempt_at": "2026-09-04T00:58:10+00:00",
+  "updated_at": "2026-09-05T00:56:31+00:00",
+  "last_attempt_at": "2026-09-05T00:56:31+00:00",
   "refresh_status": "partial",
   "policy": "Public NAVs may refresh automatically; share counts and cost basis remain owner-controlled.",
   "items": [
@@ -76,7 +76,7 @@
       "nav_scale": 1.0,
       "currency": "SGD",
       "nav_as_of": "2026-09-01",
-      "source_label": "Allianz Global Investors (issuer/fund page)",
+      "source_label": "Allianz Global Investors - recognised fund page (LU1720051017)",
       "source_url": "https://sg.allianzgi.com/en-sg/retail/products-solutions/recognised-fund/allianz-global-artificial-intelligence-at-h2-sgd-sgd?nav=overview"
     }
   ]
