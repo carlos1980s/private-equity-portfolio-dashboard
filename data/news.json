@@ -1,52 +1,85 @@
 {
-  "updated_at": "2026-09-05T00:57:10+00:00",
-  "last_attempt_at": "2026-09-05T00:57:10+00:00",
+  "updated_at": "2026-09-06T00:56:03+00:00",
+  "last_attempt_at": "2026-09-06T00:56:03+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
       "company": "O",
-      "date": "2026-08-26",
-      "headline": "O: SEC Form D filed for O Startup Fund II, L.P.",
-      "summary": "SEC EDGAR shows a Form D filed with accession dated 2026-08-26 for O Startup Fund II, L.P., indicating an exempt securities offering activity tied to a fund entity.",
-      "category": "regulatory",
-      "impact": "neutral",
-      "review_status": "none",
-      "source_label": "Regulatory filing",
-      "source_url": "https://www.sec.gov/Archives/edgar/data/2133720/000213372026000001/0002133720-26-000001-index.htm"
-    },
-    {
-      "company": "O",
-      "date": "2026-08-17",
-      "headline": "O: PORTS-Pike credits for Ohio students + NVIDIA/ SB Energy financing-linked build",
-      "summary": "O announced an Ohio program providing up to $84M in Codex credits (2026\u20132027). It also described that lease payments start as capacity is available, with NVIDIA investing $1.5B in SB Energy for initial IT capacity buildout.",
-      "category": "capacity",
-      "impact": "positive",
-      "review_status": "pending",
-      "source_label": "Official release",
-      "source_url": "https://openai.com/index/openai-joins-ports-pike-project"
-    },
-    {
-      "company": "G",
-      "date": "2026-08-17",
-      "headline": "G: $350M Series A values company at $3.5B",
-      "summary": "G announced closing a $350M Series A, valuing the company at $3.5B, led by Disruptive with planned NVIDIA participation; it also cited $650M raised in June 2026 and a $1B total in recent funding.",
-      "category": "funding",
-      "impact": "positive",
-      "review_status": "pending",
-      "source_label": "Official release",
-      "source_url": "https://groq.com/newsroom/groq-closes-usd350-million-series-a-building-the-world-s-leading-ai-inference-cloud"
-    },
-    {
-      "company": "O",
-      "date": "2026-08-06",
-      "headline": "O: GPT-5.6 Luna/Sol become default/updated in ChatGPT",
-      "summary": "O expanded August availability of updated GPT-5.6 Sol and GPT-5.6 Luna, moving free and paid tiers to new defaults/model options and continuing Preparedness Framework safeguards.",
+      "date": "2026-09-03",
+      "headline": "O: GPT-6 Astra rolled out beginning Sept 3 (phased)",
+      "summary": "O Academy materials say GPT-6 Astra begins a phased rollout starting September 3, 2026, as part of a broader ChatGPT update cycle.",
       "category": "product",
       "impact": "positive",
       "review_status": "none",
       "source_label": "Official release",
-      "source_url": "https://deploymentsafety.openai.com/gpt-5-6-august-update"
+      "source_url": "https://academy.openai.com/en/pages/chatgpt-5-6-champion-launch-resources-tzoyyc"
+    },
+    {
+      "company": "O",
+      "date": "2026-09-03",
+      "headline": "O: Axios\u2014expanded policy/security footprint amid scrutiny",
+      "summary": "Axios reports O expanding its policy team and convening security leaders ahead of planned cyber-related announcements, amid heightened government attention.",
+      "category": "other",
+      "impact": "neutral",
+      "review_status": "none",
+      "source_label": "Credible press",
+      "source_url": "https://www.axios.com/2026/09/03/openai-cyber-summit-greg-brockman"
+    },
+    {
+      "company": "O",
+      "date": "2026-09-02",
+      "headline": "O: Astra broad release at phased cyber capability threshold",
+      "summary": "O said Astra will soon launch broadly, but some most powerful cyber capabilities will initially be limited to trusted testers after reaching a \u201ccritical\u201d cybersecurity threshold.",
+      "category": "regulatory",
+      "impact": "mixed",
+      "review_status": "pending",
+      "source_label": "Official release",
+      "source_url": "https://www.openai.com/index/path-to-astra"
+    },
+    {
+      "company": "O",
+      "date": "2026-09-01",
+      "headline": "O: Path to Astra\u2014delays tied to added cyber safeguards",
+      "summary": "O described delaying parts of Astra\u2019s development/release while strengthening and testing protections against cyber misuse and unauthorized model actions.",
+      "category": "product",
+      "impact": "mixed",
+      "review_status": "none",
+      "source_label": "Official release",
+      "source_url": "https://openai.com/index/path-to-astra"
+    },
+    {
+      "company": "G",
+      "date": "2026-08-22",
+      "headline": "G: Raises $650M to scale inference cloud",
+      "summary": "G announced $650M in growth capital to accelerate expansion of its AI inference cloud, aimed at scaling deployment via partners and data-center operators.",
+      "category": "funding",
+      "impact": "positive",
+      "review_status": "pending",
+      "source_label": "Official release",
+      "source_url": "https://groq.com/newsroom/groq-raises-usd650m-to-scale-its-ai-inference-cloud-business"
+    },
+    {
+      "company": "G",
+      "date": "2026-08-12",
+      "headline": "G: G becomes NVIDIA cloud partner",
+      "summary": "G announced it became an NVIDIA cloud partner, positioning future customers to get more capacity and latest inference technology \u201cwithout changing a line of code.\u201d",
+      "category": "capacity",
+      "impact": "positive",
+      "review_status": "pending",
+      "source_label": "Official release",
+      "source_url": "https://groq.com/newsroom/groq-becomes-an-nvidia-cloud-partner"
+    },
+    {
+      "company": "V",
+      "date": "2026-08-03",
+      "headline": "V: Board addition as space-based pharma manufacturing accelerates",
+      "summary": "V announced pharmaceutical leader Mikael Dolsten will join its board as space-based pharmaceutical manufacturing scales.",
+      "category": "capacity",
+      "impact": "positive",
+      "review_status": "none",
+      "source_label": "Credible press",
+      "source_url": "https://www.prnewswire.com/news/varda-space-industries-inc."
     }
   ]
 }
