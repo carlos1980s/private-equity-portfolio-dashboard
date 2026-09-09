@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-07T01:00:27+00:00",
-  "last_attempt_at": "2026-09-08T01:11:35+00:00",
+  "updated_at": "2026-09-09T01:14:15+00:00",
+  "last_attempt_at": "2026-09-09T01:14:15+00:00",
   "refresh_status": "partial",
   "policy": "Public NAVs may refresh automatically; share counts and cost basis remain owner-controlled.",
   "items": [
@@ -27,11 +27,11 @@
       "isin": "LU1803068979",
       "shares": 5812.034,
       "cost_nav": 22.5655,
-      "nav": 36.34,
+      "nav": 36.49,
       "nav_scale": 1.0,
       "currency": "SGD",
-      "nav_as_of": "2026-08-08",
-      "source_label": "Franklin Templeton (daily fund prices), match by ISIN LU1803068979",
+      "nav_as_of": "2026-09-04",
+      "source_label": "Franklin Templeton (daily NAV, by ISIN share class page)",
       "source_url": "https://www.franklintempleton.com.sg/our-funds/price-and-performance/products/4916/Z5/franklin-technology-fund/LU1803068979"
     },
     {
@@ -72,12 +72,12 @@
       "isin": "LU1720051017",
       "shares": 11558.0,
       "cost_nav": 27.9,
-      "nav": 29.7497,
+      "nav": 29.6798,
       "nav_scale": 1.0,
       "currency": "SGD",
-      "nav_as_of": "2026-09-01",
-      "source_label": "Issuer (Allianz Global Investors Singapore) - unit NAV",
-      "source_url": "https://sg.allianzgi.com/en-sg/retail/products-solutions/recognised-fund/allianz-global-artificial-intelligence-at-h2-sgd-sgd?nav=overview"
+      "nav_as_of": "2026-09-04",
+      "source_label": "Allianz Global Investors (daily NAV, exact ISIN share class page)",
+      "source_url": "https://sg.allianzgi.com/en-sg/financial-advisor/products-solutions/recognised-fund/allianz-global-artificial-intelligence-at-h2-sgd-sgd?nav=overview"
     }
   ]
 }

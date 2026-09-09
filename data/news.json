@@ -1,52 +1,52 @@
 {
-  "updated_at": "2026-09-08T01:12:11+00:00",
-  "last_attempt_at": "2026-09-08T01:12:11+00:00",
+  "updated_at": "2026-09-09T01:14:48+00:00",
+  "last_attempt_at": "2026-09-09T01:14:48+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
       "company": "O",
-      "date": "2026-09-03",
-      "headline": "O convenes security leaders ahead of cyber announcement",
-      "summary": "O convened security leaders around an upcoming cyber announcement, following an open letter warning orgs have only months to prepare for AI-enabled cyberattacks.",
-      "category": "other",
-      "impact": "neutral",
+      "date": "2026-09-08",
+      "headline": "O: ChatGPT release notes update GPT-5.6",
+      "summary": "ChatGPT release notes show Sept 8, 2026 updates to GPT\u20115.6 (facts, focus controls) plus broader rollout changes for GPT\u20115.6 Luna/think features and handling of large pastes.",
+      "category": "product",
+      "impact": "positive",
       "review_status": "none",
-      "source_label": "Credible press",
-      "source_url": "https://www.axios.com/2026/09/03/openai-cyber-summit-greg-brockman"
+      "source_label": "Official release",
+      "source_url": "https://help.openai.com/en/articles/6825453"
     },
     {
       "company": "O",
-      "date": "2026-09-02",
-      "headline": "O limits Astra access for \u201ccritical\u201d cyber tools",
-      "summary": "O said the Astra model will be released broadly, but its most powerful cyber capabilities will be initially limited to trusted testers pending safeguards.",
-      "category": "regulatory",
-      "impact": "neutral",
-      "review_status": "none",
-      "source_label": "Credible press",
-      "source_url": "https://www.axios.com/2026/09/02/openai-anthropic-fable-astra-ipo"
-    },
-    {
-      "company": "O",
-      "date": "2026-09-01",
-      "headline": "O to restrict Astra\u2019s top cyber capabilities",
-      "summary": "O indicated it\u2019s slowing release and limiting the highest-capability cyber tooling around Astra to add additional safety measures before broader rollout.",
+      "date": "2026-09-08",
+      "headline": "O: NYT v OAI enters arguments phase",
+      "summary": "Axios says NYT v. O/Microsoft moved into a critical phase with parties presenting official arguments, raising trial-risks for AI training business models.",
       "category": "regulatory",
       "impact": "negative",
       "review_status": "pending",
       "source_label": "Credible press",
-      "source_url": "https://www.axios.com/2026/09/01/openai-astras-cyber-critical"
+      "source_url": "https://www.axios.com/2026/09/08/nyt-openai-microsoft-copyright-lawsuit"
+    },
+    {
+      "company": "O",
+      "date": "2026-09-02",
+      "headline": "O: U.S. administration backs OAI in NYT case",
+      "summary": "AP reports the Trump administration backing O in the New York Times copyright dispute over how chatbots are trained using news articles.",
+      "category": "regulatory",
+      "impact": "mixed",
+      "review_status": "pending",
+      "source_label": "Credible press",
+      "source_url": "https://apnews.com/article/dbb22e8e02c660ee5a8644915dec39a4"
     },
     {
       "company": "G",
       "date": "2026-08-17",
-      "headline": "G closes $350M Series A at $3.5B",
-      "summary": "G announced a $350M Series A, valuing the company at $3.5B, to accelerate its inference footprint. It reported scaling from 54MW toward 200+MW in 2027.",
+      "headline": "G: $350M raise; valuation $3.5B",
+      "summary": "TechCrunch reports G raised $350M (Series A) led by Disruptive with planned NVIDIA participation, valuing the company at $3.5B and supporting a pivot to inference cloud/dc capacity.",
       "category": "funding",
       "impact": "positive",
       "review_status": "pending",
-      "source_label": "Official release",
-      "source_url": "https://groq.com/newsroom/groq-closes-usd350-million-series-a-building-the-world-s-leading-ai-inference-cloud"
+      "source_label": "Credible press",
+      "source_url": "https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud"
     }
   ]
 }
