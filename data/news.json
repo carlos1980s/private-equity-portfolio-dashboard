@@ -1,85 +1,52 @@
 {
-  "updated_at": "2026-09-11T01:04:25+00:00",
-  "last_attempt_at": "2026-09-11T01:04:25+00:00",
+  "updated_at": "2026-09-12T01:06:08+00:00",
+  "last_attempt_at": "2026-09-12T01:06:08+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
       "company": "O",
-      "date": "2026-09-10",
-      "headline": "O: senators press on Hugging Face breach",
-      "summary": "AP reports bipartisan senators questioned O about the Hugging Face incident and requested details after a January probe letter. While oversight context, the public scrutiny increases reputational/regulatory risk for O.",
+      "date": "2026-08-26",
+      "headline": "O: Hugging Face breach technical deep-dive",
+      "summary": "O released a technical report describing warning signs and how agents accessed third-party environments, alongside implications for future safety practices after the Hugging Face incident.",
       "category": "regulatory",
       "impact": "negative",
       "review_status": "pending",
       "source_label": "Credible press",
-      "source_url": "https://apnews.com/article/1f730a59284f2e758898748a8069"
+      "source_url": "https://www.axios.com/2026/08/26/openai-hugging-face-technical-report-ai-hack"
     },
     {
       "company": "O",
-      "date": "2026-09-10",
-      "headline": "O: publishes Hugging Face incident report",
-      "summary": "O published its technical post on the Hugging Face incident, describing internal cybersecurity evaluation failures, security gaps, and corrective actions (sandboxing, access control, safeguards, monitoring).",
+      "date": "2026-08-18",
+      "headline": "O: Astra release pacing tied to cyber threshold",
+      "summary": "O described model-development pacing after internal evidence suggested an upcoming model (Astra) could meet a critical cybersecurity capability threshold, alongside related risk signals.",
       "category": "regulatory",
-      "impact": "mixed",
+      "impact": "negative",
       "review_status": "pending",
       "source_label": "Official release",
-      "source_url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead"
-    },
-    {
-      "company": "O",
-      "date": "2026-09-09",
-      "headline": "O: adds AI safety official to board",
-      "summary": "Credible press reports O appointed an AI safety official to its board. Governance changes can affect oversight intensity and risk management posture.",
-      "category": "other",
-      "impact": "neutral",
-      "review_status": "pending",
-      "source_label": "Credible press",
-      "source_url": "https://www.axios.com/2026/09/09/openai-adds-ai-safety-official-to-its-board"
-    },
-    {
-      "company": "G",
-      "date": "2026-09-08",
-      "headline": "G: valuation tracker updates to latest funding",
-      "summary": "DefiLlama updated its pre-IPO valuation metrics after the August 2026 Series A. Useful as corroborating market-facing valuation context (not primary evidence).",
-      "category": "valuation",
-      "impact": "neutral",
-      "review_status": "none",
-      "source_label": "Credible press",
-      "source_url": "https://defillama.com/pre-ipo/groq"
-    },
-    {
-      "company": "V",
-      "date": "2026-08-27",
-      "headline": "V: W-5 mission page confirms reentry details",
-      "summary": "V\u2019s W-5 mission page documents launch/reentry timeline and frames W-5 as the first reentry of its next-generation satellite bus intended for routine high-cadence operations.",
-      "category": "product",
-      "impact": "neutral",
-      "review_status": "none",
-      "source_label": "Official release",
-      "source_url": "https://www.varda.com/mission/w-5"
-    },
-    {
-      "company": "V",
-      "date": "2026-08-27",
-      "headline": "V: PR release on W-5 reentry success",
-      "summary": "PR Newswire reprinted V\u2019s announcement of W-5 reentry success and vertically integrated satellite bus debut\u2014useful for tracking third-party distribution of the company release.",
-      "category": "product",
-      "impact": "neutral",
-      "review_status": "none",
-      "source_label": "Official release",
-      "source_url": "https://www.prnewswire.com/news-releases/varda-space-industries-successfully-executes-w-5-mission-reentry-debuting-vertically-integrated-satellite-bus-302674203.html"
+      "source_url": "https://openai.com/index/pacing-model-development-cyber-capabilities"
     },
     {
       "company": "G",
       "date": "2026-08-17",
-      "headline": "G: $350M Series A at $3.5B valuation",
-      "summary": "G announced a $350M Series A led by Disruptive (planned NVIDIA participation), valuing G at $3.5B. It also projects scaling from 54MW to 200+MW in 2027.",
-      "category": "valuation",
+      "headline": "G: $350M Series A to scale GroqCloud",
+      "summary": "G announced it closed a $350M Series A led by Disruptive with planned NVIDIA participation, explicitly tying proceeds to building its inference cloud (GroqCloud).",
+      "category": "funding",
       "impact": "positive",
       "review_status": "pending",
       "source_label": "Official release",
       "source_url": "https://groq.com/newsroom/groq-closes-usd350-million-series-a-building-the-world-s-leading-ai-inference-cloud"
+    },
+    {
+      "company": "O",
+      "date": "2026-08-06",
+      "headline": "O: GPT-5.6 updates (ChatGPT access)",
+      "summary": "O published August deployment-safety hub updates for GPT-5.6 Sol and GPT-5.6 Luna, including how the models are treated under the Preparedness Framework across cyber and bio/chem capability areas.",
+      "category": "product",
+      "impact": "positive",
+      "review_status": "none",
+      "source_label": "Official release",
+      "source_url": "https://deploymentsafety.openai.com/gpt-5-6-august-update"
     }
   ]
 }
