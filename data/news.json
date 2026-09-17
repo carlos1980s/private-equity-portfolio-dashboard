@@ -1,63 +1,52 @@
 {
-  "updated_at": "2026-09-16T01:24:34+00:00",
-  "last_attempt_at": "2026-09-16T01:24:34+00:00",
+  "updated_at": "2026-09-17T01:24:30+00:00",
+  "last_attempt_at": "2026-09-17T01:24:30+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
       "company": "V",
-      "date": "2026-09-16",
-      "headline": "V SBIR portfolio shows ongoing reentry manufacturing work",
-      "summary": "V appears in SBIR portfolio listings for hypersonic/reentry capsule and on-orbit manufacturing-related development work, evidencing continued R&D and test/integration milestones.",
+      "date": "2026-09-17",
+      "headline": "V: United Semiconductors multi-flight orbital semiconductor JV",
+      "summary": "V and United Semiconductors announce a multi-flight joint development agreement to produce semiconductors in orbit for Earth use, citing multiple pending/expected 2026 launches/returns. Potential capacity/revenue catalyst, but terms are undisclosed.",
       "category": "capacity",
-      "impact": "neutral",
-      "review_status": "none",
+      "impact": "positive",
+      "review_status": "pending",
       "source_label": "Official release",
-      "source_url": "https://www.sbir.gov/portfolio/1876073"
-    },
-    {
-      "company": "V",
-      "date": "2026-09-16",
-      "headline": "NASA Space Act Agreement: conformance tech transfer",
-      "summary": "NASA\u2019s funded Space Act Agreement PDF documents V\u2019s partnership for Conformal Pica (C-Pica) tech transfer and commercial production, supporting government-backed program activity.",
-      "category": "product",
-      "impact": "neutral",
-      "review_status": "none",
-      "source_label": "Official release",
-      "source_url": "https://www.nasa.gov/saa/domestic/39445_Varda_Signed_FSAA.pdf"
+      "source_url": "https://www.varda.com/announcements/varda-and-united-semiconductors-announce-joint-development-agreement"
     },
     {
       "company": "O",
-      "date": "2026-09-15",
-      "headline": "US AI labs trust/safety debate intensifies",
-      "summary": "Axios reports lawmakers and officials are pushing for AI safety oversight while discussions continue around how labs (including O) should comply. Potential near-term regulatory pressure remains a key risk factor.",
-      "category": "regulatory",
-      "impact": "mixed",
+      "date": "2026-09-12",
+      "headline": "O: IPO delayed on AI safety concerns",
+      "summary": "Altman says O will not go public this year, citing safety work still needed. Near-term IPO optionality decreases; longer-term could reflect higher governance/safety spend rather than operational deterioration.",
+      "category": "ipo",
+      "impact": "negative",
       "review_status": "pending",
       "source_label": "Credible press",
-      "source_url": "https://www.axios.com/2026/09/15/ai-trust-safety-anthropic-openai"
+      "source_url": "https://www.axios.com/2026/09/12/openai-public-ipo-delay-sam-altman"
     },
     {
-      "company": "O",
+      "company": "G",
       "date": "2026-09-10",
-      "headline": "GPT-6 Astra: next-gen for work",
-      "summary": "O introduced GPT-6 Astra, highlighting improvements across coding, research, computer use, and complex multi-step tasks. Limited org access is rolling out before broader availability.",
-      "category": "product",
-      "impact": "positive",
-      "review_status": "none",
-      "source_label": "Official release",
-      "source_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+      "headline": "G: DOJ probes Nvidia licensing deal",
+      "summary": "Axios reports DOJ is investigating Nvidia\u2019s non-exclusive licensing agreement with G for potential antitrust circumvention. This is a downside legal/regulatory overhang until outcomes are known.",
+      "category": "regulatory",
+      "impact": "negative",
+      "review_status": "pending",
+      "source_label": "Credible press",
+      "source_url": "https://www.axios.com/2026/09/10/doj-nvidia-groq-antitrust"
     },
     {
       "company": "O",
       "date": "2026-09-09",
-      "headline": "Paul Christiano joins O Foundation council",
-      "summary": "O posted that Paul Christiano will join the O Foundation council, adding additional senior safety research leadership to governance/oversight.",
+      "headline": "O: AI safety board addition",
+      "summary": "O adds an AI safety official (Paul Christiano) to the boards of both O and its nonprofit, with committee safety/security responsibilities. Conservative impact: signals governance focus, not yet measurable financial change.",
       "category": "regulatory",
       "impact": "neutral",
       "review_status": "none",
       "source_label": "Official release",
-      "source_url": "https://openai.com/es-419/news"
+      "source_url": "https://www.axios.com/2026/09/09/openai-adds-ai-safety-official-to-its-board"
     }
   ]
 }
