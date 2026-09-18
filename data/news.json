@@ -1,7 +1,7 @@
 {
   "updated_at": "2026-09-17T01:24:30+00:00",
-  "last_attempt_at": "2026-09-17T01:24:30+00:00",
-  "refresh_status": "current",
+  "last_attempt_at": "2026-09-18T01:16:58+00:00",
+  "refresh_status": "error",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
@@ -48,5 +48,6 @@
       "source_label": "Official release",
       "source_url": "https://www.axios.com/2026/09/09/openai-adds-ai-safety-official-to-its-board"
     }
-  ]
+  ],
+  "status_message": "Automated refresh was delayed; the previous digest remains visible."
 }

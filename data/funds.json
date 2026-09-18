@@ -1,7 +1,7 @@
 {
   "updated_at": "2026-09-14T01:02:58+00:00",
-  "last_attempt_at": "2026-09-17T01:23:54+00:00",
-  "refresh_status": "partial",
+  "last_attempt_at": "2026-09-18T01:16:47+00:00",
+  "refresh_status": "error",
   "policy": "Public NAVs may refresh automatically; share counts and cost basis remain owner-controlled.",
   "items": [
     {
@@ -79,5 +79,6 @@
       "source_label": "Allianz Global Investors (fund manager) - daily NAV/valuation page (Share class ",
       "source_url": "https://sg.allianzgi.com/en-sg/retail/products-solutions/recognised-fund/allianz-global-artificial-intelligence-at-h2-sgd-sgd?nav=dividends"
     }
-  ]
+  ],
+  "status_message": "NAV refresh was delayed; the last verified prices remain in use."
 }
