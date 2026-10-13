@@ -1,53 +1,63 @@
 {
-  "updated_at": "2026-09-17T01:24:30+00:00",
-  "last_attempt_at": "2026-10-12T02:22:57+00:00",
-  "refresh_status": "error",
+  "updated_at": "2026-10-13T03:32:59+00:00",
+  "last_attempt_at": "2026-10-13T03:32:59+00:00",
+  "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
-      "company": "V",
-      "date": "2026-09-17",
-      "headline": "V: United Semiconductors multi-flight orbital semiconductor JV",
-      "summary": "V and United Semiconductors announce a multi-flight joint development agreement to produce semiconductors in orbit for Earth use, citing multiple pending/expected 2026 launches/returns. Potential capacity/revenue catalyst, but terms are undisclosed.",
-      "category": "capacity",
+      "company": "O",
+      "date": "2026-10-08",
+      "headline": "O: Reported annualized revenue comes in nearer $50B than $70B",
+      "summary": "Reuters/FT reporting says O told investors annualized revenue was approaching ~$50B at end of September\u2014about $20B below earlier \u201c~$70B\u201d figures driven by a different comparison basis/accounting.",
+      "category": "valuation",
+      "impact": "mixed",
+      "review_status": "pending",
+      "source_label": "Credible press",
+      "source_url": "https://www.investing.com/news/stock-market-news/openais-annualized-revenue-20-billion-less-than-previously-signaled-ft-reports-4939854"
+    },
+    {
+      "company": "O",
+      "date": "2026-10-07",
+      "headline": "O: GPT-6 ships to more ChatGPT tiers via Intelligent UI",
+      "summary": "O rolled out GPT-6 with \u201cIntelligent UI\u201d in ChatGPT Plus/Pro/Business/Enterprise immediately, expanding to Free/Go the next day. Focus: interactive UI elements inside responses, with safety framing.",
+      "category": "product",
+      "impact": "positive",
+      "review_status": "none",
+      "source_label": "Official release",
+      "source_url": "https://openai.com/index/gpt-6-for-everyone"
+    },
+    {
+      "company": "O",
+      "date": "2026-10-05",
+      "headline": "O: ChatGPT expands ads with new visual format",
+      "summary": "O introduced a new visual ad format in ChatGPT, with expanded measurement tools and measurement/attribution integrations. Initial testing starts later in the month in the US with an advertiser group.",
+      "category": "product",
+      "impact": "positive",
+      "review_status": "none",
+      "source_label": "Official release",
+      "source_url": "https://openai.com/index/new-chatgpt-ads-format-and-measurement"
+    },
+    {
+      "company": "O",
+      "date": "2026-10-01",
+      "headline": "O: SoftBank executes O follow-on third tranche",
+      "summary": "SoftBank says it executed the third and final tranche of its O follow-on investment: $10.0B, completing $30.0B follow-on total. SBG cumulative O investment is $64.6B; ownership ~13%.",
+      "category": "funding",
       "impact": "positive",
       "review_status": "pending",
       "source_label": "Official release",
-      "source_url": "https://www.varda.com/announcements/varda-and-united-semiconductors-announce-joint-development-agreement"
+      "source_url": "https://group.softbank/en/news/press/20261001"
     },
     {
-      "company": "O",
-      "date": "2026-09-12",
-      "headline": "O: IPO delayed on AI safety concerns",
-      "summary": "Altman says O will not go public this year, citing safety work still needed. Near-term IPO optionality decreases; longer-term could reflect higher governance/safety spend rather than operational deterioration.",
-      "category": "ipo",
-      "impact": "negative",
+      "company": "V",
+      "date": "2026-09-30",
+      "headline": "V: Series D raises $250M at $1.6B valuation",
+      "summary": "Reuters-reported company update: V raised ~$250M in Series D at a $1.6B valuation to scale orbital drug manufacturing in microgravity, with round leadership cited by Reuters reporting.",
+      "category": "funding",
+      "impact": "positive",
       "review_status": "pending",
       "source_label": "Credible press",
-      "source_url": "https://www.axios.com/2026/09/12/openai-public-ipo-delay-sam-altman"
-    },
-    {
-      "company": "G",
-      "date": "2026-09-10",
-      "headline": "G: DOJ probes Nvidia licensing deal",
-      "summary": "Axios reports DOJ is investigating Nvidia\u2019s non-exclusive licensing agreement with G for potential antitrust circumvention. This is a downside legal/regulatory overhang until outcomes are known.",
-      "category": "regulatory",
-      "impact": "negative",
-      "review_status": "pending",
-      "source_label": "Credible press",
-      "source_url": "https://www.axios.com/2026/09/10/doj-nvidia-groq-antitrust"
-    },
-    {
-      "company": "O",
-      "date": "2026-09-09",
-      "headline": "O: AI safety board addition",
-      "summary": "O adds an AI safety official (Paul Christiano) to the boards of both O and its nonprofit, with committee safety/security responsibilities. Conservative impact: signals governance focus, not yet measurable financial change.",
-      "category": "regulatory",
-      "impact": "neutral",
-      "review_status": "none",
-      "source_label": "Official release",
-      "source_url": "https://www.axios.com/2026/09/09/openai-adds-ai-safety-official-to-its-board"
+      "source_url": "https://www.streetinsider.com/Reuters/Varda%2Braises%2B%24250%2Bmillion%2Bat%2B%241.6%2Bbillion%2Bvaluation%2Bto%2Bscale%2Borbital%2Bdrug%2Bmanufacturing/27124726.html"
     }
-  ],
-  "status_message": "Automated refresh was delayed; the previous digest remains visible."
+  ]
 }
