@@ -1,63 +1,30 @@
 {
-  "updated_at": "2026-10-13T03:32:59+00:00",
-  "last_attempt_at": "2026-10-13T03:32:59+00:00",
+  "updated_at": "2026-10-14T01:54:07+00:00",
+  "last_attempt_at": "2026-10-14T01:54:07+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
       "company": "O",
-      "date": "2026-10-08",
-      "headline": "O: Reported annualized revenue comes in nearer $50B than $70B",
-      "summary": "Reuters/FT reporting says O told investors annualized revenue was approaching ~$50B at end of September\u2014about $20B below earlier \u201c~$70B\u201d figures driven by a different comparison basis/accounting.",
-      "category": "valuation",
-      "impact": "mixed",
-      "review_status": "pending",
-      "source_label": "Credible press",
-      "source_url": "https://www.investing.com/news/stock-market-news/openais-annualized-revenue-20-billion-less-than-previously-signaled-ft-reports-4939854"
-    },
-    {
-      "company": "O",
-      "date": "2026-10-07",
-      "headline": "O: GPT-6 ships to more ChatGPT tiers via Intelligent UI",
-      "summary": "O rolled out GPT-6 with \u201cIntelligent UI\u201d in ChatGPT Plus/Pro/Business/Enterprise immediately, expanding to Free/Go the next day. Focus: interactive UI elements inside responses, with safety framing.",
-      "category": "product",
-      "impact": "positive",
+      "date": "2026-10-14",
+      "headline": "O API: GPT-4 series deprecation scheduled",
+      "summary": "O notified developers that certain GPT-4 series models will be deprecated/removed from the API on 2027-01-14. Short-term impact for integrators; may pressure migration plans and near-term demand for replacements.",
+      "category": "regulatory",
+      "impact": "neutral",
       "review_status": "none",
       "source_label": "Official release",
-      "source_url": "https://openai.com/index/gpt-6-for-everyone"
+      "source_url": "https://developers.openai.com/api/docs/deprecations"
     },
     {
       "company": "O",
-      "date": "2026-10-05",
-      "headline": "O: ChatGPT expands ads with new visual format",
-      "summary": "O introduced a new visual ad format in ChatGPT, with expanded measurement tools and measurement/attribution integrations. Initial testing starts later in the month in the US with an advertiser group.",
+      "date": "2026-10-09",
+      "headline": "O: ChatGPT release notes include new October updates",
+      "summary": "ChatGPT release notes list October 9, 2026 changes. Treat as incremental product evolution; without detailed revenue/capacity commitments, it mainly signals ongoing iteration rather than a step-change.",
       "category": "product",
-      "impact": "positive",
+      "impact": "neutral",
       "review_status": "none",
       "source_label": "Official release",
-      "source_url": "https://openai.com/index/new-chatgpt-ads-format-and-measurement"
-    },
-    {
-      "company": "O",
-      "date": "2026-10-01",
-      "headline": "O: SoftBank executes O follow-on third tranche",
-      "summary": "SoftBank says it executed the third and final tranche of its O follow-on investment: $10.0B, completing $30.0B follow-on total. SBG cumulative O investment is $64.6B; ownership ~13%.",
-      "category": "funding",
-      "impact": "positive",
-      "review_status": "pending",
-      "source_label": "Official release",
-      "source_url": "https://group.softbank/en/news/press/20261001"
-    },
-    {
-      "company": "V",
-      "date": "2026-09-30",
-      "headline": "V: Series D raises $250M at $1.6B valuation",
-      "summary": "Reuters-reported company update: V raised ~$250M in Series D at a $1.6B valuation to scale orbital drug manufacturing in microgravity, with round leadership cited by Reuters reporting.",
-      "category": "funding",
-      "impact": "positive",
-      "review_status": "pending",
-      "source_label": "Credible press",
-      "source_url": "https://www.streetinsider.com/Reuters/Varda%2Braises%2B%24250%2Bmillion%2Bat%2B%241.6%2Bbillion%2Bvaluation%2Bto%2Bscale%2Borbital%2Bdrug%2Bmanufacturing/27124726.html"
+      "source_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
     }
   ]
 }
