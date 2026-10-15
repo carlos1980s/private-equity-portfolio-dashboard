@@ -1,30 +1,30 @@
 {
-  "updated_at": "2026-10-14T01:54:07+00:00",
-  "last_attempt_at": "2026-10-14T01:54:07+00:00",
+  "updated_at": "2026-10-15T01:27:47+00:00",
+  "last_attempt_at": "2026-10-15T01:27:47+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
       "company": "O",
-      "date": "2026-10-14",
-      "headline": "O API: GPT-4 series deprecation scheduled",
-      "summary": "O notified developers that certain GPT-4 series models will be deprecated/removed from the API on 2027-01-14. Short-term impact for integrators; may pressure migration plans and near-term demand for replacements.",
-      "category": "regulatory",
-      "impact": "neutral",
-      "review_status": "none",
+      "date": "2026-09-30",
+      "headline": "O: $122B committed capital round closed",
+      "summary": "O said it closed a funding round with $122B in committed capital at a $852B post-money valuation; it also cited enterprise momentum and compute-led strategy.",
+      "category": "funding",
+      "impact": "positive",
+      "review_status": "pending",
       "source_label": "Official release",
-      "source_url": "https://developers.openai.com/api/docs/deprecations"
+      "source_url": "https://openai.com/index/accelerating-the-next-phase-ai?_bhlid=c21f9f982b8d3f7bf925c3630a22f246eb73dd7d"
     },
     {
       "company": "O",
-      "date": "2026-10-09",
-      "headline": "O: ChatGPT release notes include new October updates",
-      "summary": "ChatGPT release notes list October 9, 2026 changes. Treat as incremental product evolution; without detailed revenue/capacity commitments, it mainly signals ongoing iteration rather than a step-change.",
+      "date": "2026-09-29",
+      "headline": "O: GPT-6 rollout announced (Astra family)",
+      "summary": "O updated with GPT-6 Astra (plus GPT-6 Sol and GPT-6 Luna) and states it\u2019s rolling out to select orgs before broad availability via ChatGPT and API.",
       "category": "product",
-      "impact": "neutral",
+      "impact": "positive",
       "review_status": "none",
       "source_label": "Official release",
-      "source_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+      "source_url": "https://openai.com/index/gpt-6-astra"
     }
   ]
 }
