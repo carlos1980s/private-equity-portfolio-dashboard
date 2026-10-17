@@ -1,36 +1,25 @@
 {
-  "updated_at": "2026-10-16T01:19:46+00:00",
-  "last_attempt_at": "2026-10-16T01:19:46+00:00",
+  "updated_at": "2026-10-17T01:18:37+00:00",
+  "last_attempt_at": "2026-10-17T01:18:37+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
       "company": "O",
       "date": "2026-10-15",
-      "headline": "O: States sue over ChatGPT harms",
-      "summary": "Multiple states allege consumer-protection violations and claim ChatGPT \u201ccoached\u201d harmful behavior and created \u201ccyberhacking agents.\u201d Legal risk could increase compliance costs and constrain product/marketing.",
-      "category": "regulatory",
-      "impact": "negative",
-      "review_status": "pending",
-      "source_label": "Credible press",
-      "source_url": "https://apnews.com/article/openai-lawsuits-chatbot-chatgpt-artificial-intelligence-f29fa6c206cfe41d46ba38ee7be78218"
-    },
-    {
-      "company": "O",
-      "date": "2026-10-15",
-      "headline": "O: FTC subpoenas re consumer harms",
-      "summary": "Axios reports FTC subpoenas O (and Anthropic) as part of an investigation into alleged consumer harms. Subpoenas suggest potential enforcement exposure and further scrutiny of safety and disclosures.",
-      "category": "regulatory",
-      "impact": "negative",
-      "review_status": "pending",
-      "source_label": "Credible press",
-      "source_url": "https://www.axios.com/2026/10/15/ftc-openai-anthropic-ai-safety-investigation"
+      "headline": "GPT\u2011Rosalind Academic Plan announced",
+      "summary": "O introduced the Rosalind Academic Plan, offering eligible labs free sponsored seats and trusted-access enrollment for GPT\u2011Rosalind and Rosalind Workbench for life-sciences discovery.",
+      "category": "product",
+      "impact": "positive",
+      "review_status": "none",
+      "source_label": "Official release",
+      "source_url": "https://openai.com/index/introducing-the-rosalind-academic-plan"
     },
     {
       "company": "V",
       "date": "2026-10-13",
-      "headline": "V: 2 spacecraft in orbit; more launches",
-      "summary": "Space.com reports V is operating two spacecraft in orbit and expects another launch \u201cin the coming days,\u201d plus seven more next year\u2014supporting near-term operational cadence.",
+      "headline": "Multiple reentry spacecraft operations",
+      "summary": "Space.com reports V operating two reentry vehicles in orbit after a joint Transporter-18 launch, with another launch expected \u201cin the coming days\u201d and seven more next year.",
       "category": "capacity",
       "impact": "positive",
       "review_status": "none",
@@ -38,48 +27,26 @@
       "source_url": "https://www.space.com/space-exploration/launches-spacecraft/2-spacecraft-in-orbit-and-8-more-coming-soon-varda-has-big-plans-for-in-space-manufacturing"
     },
     {
+      "company": "O",
+      "date": "2026-10-07",
+      "headline": "GPT\u20116 and Intelligent UI for everyone",
+      "summary": "O announced broad availability of GPT\u20116 along with an \u201cIntelligent UI\u201d experience, positioning it as a general release rather than limited access.",
+      "category": "product",
+      "impact": "positive",
+      "review_status": "pending",
+      "source_label": "Official release",
+      "source_url": "https://openai.com/index/gpt-6-for-everyone"
+    },
+    {
       "company": "G",
-      "date": "2026-10-13",
-      "headline": "G: G 3 LPX mentioned in industry round-up",
-      "summary": "A Tom\u2019s Hardware industry weekly roundup references G 3 LPX shipping in H2 2026. This is indirect but supports ongoing hardware roadmap execution.",
+      "date": "2026-09-30",
+      "headline": "Series A valuation recap (in last 45 days window)",
+      "summary": "G\u2019s previously announced financing valued the company at $3.5B and described scaling plans tied to moving from ~54MW to 200+MW in 2027.",
       "category": "capacity",
-      "impact": "neutral",
+      "impact": "positive",
       "review_status": "none",
       "source_label": "Credible press",
-      "source_url": "https://www.tomshardware.com/tech-industry/this-week-on-toms-hardware-premium-october-10-2026-tencent-grabs-bargain-chips-qualcomm-huawei-ip-deal-groq-lawsuit-and-more"
-    },
-    {
-      "company": "G",
-      "date": "2026-10-01",
-      "headline": "G: GroqCloud MCP connectivity in docs",
-      "summary": "GroqDocs changelog indicates GroqCloud beta availability for connecting to external tools via MCP servers, which may expand agent workflows and demand for inference runs.",
-      "category": "product",
-      "impact": "positive",
-      "review_status": "none",
-      "source_label": "Official release",
-      "source_url": "https://console.groq.com/docs/changelog"
-    },
-    {
-      "company": "V",
-      "date": "2026-09-30",
-      "headline": "V: $251M Series D; ~$1.6B valuation",
-      "summary": "V announced a $251M Series D to scale space-based pharmaceutical processing, alongside reporting a $1.6B valuation, which is direct financing/valuation evidence for growth capacity.",
-      "category": "funding",
-      "impact": "positive",
-      "review_status": "pending",
-      "source_label": "Official release",
-      "source_url": "https://www.prnewswire.com/news-releases/varda-announces-251-million-series-d-to-scale-space-based-pharmaceutical-processing-302893651.html"
-    },
-    {
-      "company": "G",
-      "date": "2026-09-21",
-      "headline": "G: Compound/compound-mini deprecation",
-      "summary": "GroqDocs notes deprecation (Sep 21, 2026) of G/compound and G/compound-mini with no direct replacement, increasing migration work for customers using those systems.",
-      "category": "product",
-      "impact": "negative",
-      "review_status": "pending",
-      "source_label": "Official release",
-      "source_url": "https://console.groq.com/docs/deprecations"
+      "source_url": "https://groq.com/newsroom/groq-closes-usd350-million-series-a-building-the-world-s-leading-ai-inference-cloud"
     }
   ]
 }
