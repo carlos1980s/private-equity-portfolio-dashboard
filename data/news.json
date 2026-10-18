@@ -1,52 +1,52 @@
 {
-  "updated_at": "2026-10-17T01:18:37+00:00",
-  "last_attempt_at": "2026-10-17T01:18:37+00:00",
+  "updated_at": "2026-10-18T01:01:21+00:00",
+  "last_attempt_at": "2026-10-18T01:01:21+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
       "company": "O",
       "date": "2026-10-15",
-      "headline": "GPT\u2011Rosalind Academic Plan announced",
-      "summary": "O introduced the Rosalind Academic Plan, offering eligible labs free sponsored seats and trusted-access enrollment for GPT\u2011Rosalind and Rosalind Workbench for life-sciences discovery.",
+      "headline": "O: ChatGPT combines text, visuals, interactive tools",
+      "summary": "ChatGPT release notes add the ability to combine text with visuals and interactive elements (e.g., calculator-style tools) to answer questions more directly inside the chat.",
       "category": "product",
       "impact": "positive",
       "review_status": "none",
       "source_label": "Official release",
-      "source_url": "https://openai.com/index/introducing-the-rosalind-academic-plan"
+      "source_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
     },
     {
-      "company": "V",
-      "date": "2026-10-13",
-      "headline": "Multiple reentry spacecraft operations",
-      "summary": "Space.com reports V operating two reentry vehicles in orbit after a joint Transporter-18 launch, with another launch expected \u201cin the coming days\u201d and seven more next year.",
-      "category": "capacity",
+      "company": "G",
+      "date": "2026-10-15",
+      "headline": "G: Muse Spark Open on GroqCloud (limited preview)",
+      "summary": "G announces Meta\u2019s \u201cMuse Spark Open\u201d is available on GroqCloud in limited preview, highlighting model specs (parameters, context, throughput) and an agentic coding focus.",
+      "category": "product",
       "impact": "positive",
       "review_status": "none",
-      "source_label": "Credible press",
-      "source_url": "https://www.space.com/space-exploration/launches-spacecraft/2-spacecraft-in-orbit-and-8-more-coming-soon-varda-has-big-plans-for-in-space-manufacturing"
+      "source_label": "Official release",
+      "source_url": "https://groq.com/blog/meta-s-muse-spark-open-release-is-now-in-limited-preview-on-groqcloud"
     },
     {
       "company": "O",
       "date": "2026-10-07",
-      "headline": "GPT\u20116 and Intelligent UI for everyone",
-      "summary": "O announced broad availability of GPT\u20116 along with an \u201cIntelligent UI\u201d experience, positioning it as a general release rather than limited access.",
+      "headline": "O: GPT\u20116 Sol & Luna October update",
+      "summary": "O\u2019s deployment safety hub publishes an October update for GPT\u20116 Sol and GPT\u20116 Luna, describing safety categorization and prepared deployment changes for the new GPT\u20116 family.",
+      "category": "regulatory",
+      "impact": "neutral",
+      "review_status": "none",
+      "source_label": "Official release",
+      "source_url": "https://deploymentsafety.openai.com/gpt-6-october/broken-search-tool"
+    },
+    {
+      "company": "O",
+      "date": "2026-10-06",
+      "headline": "O: Atlassian partnership expansion",
+      "summary": "O reports an expansion with Atlassian to bring frontier GPT\u20116 family models across Atlassian\u2019s platform, aimed at turning enterprise knowledge into actionable workflows.",
       "category": "product",
       "impact": "positive",
       "review_status": "pending",
       "source_label": "Official release",
-      "source_url": "https://openai.com/index/gpt-6-for-everyone"
-    },
-    {
-      "company": "G",
-      "date": "2026-09-30",
-      "headline": "Series A valuation recap (in last 45 days window)",
-      "summary": "G\u2019s previously announced financing valued the company at $3.5B and described scaling plans tied to moving from ~54MW to 200+MW in 2027.",
-      "category": "capacity",
-      "impact": "positive",
-      "review_status": "none",
-      "source_label": "Credible press",
-      "source_url": "https://groq.com/newsroom/groq-closes-usd350-million-series-a-building-the-world-s-leading-ai-inference-cloud"
+      "source_url": "https://openai.com/index/atlassian-partnership"
     }
   ]
 }
