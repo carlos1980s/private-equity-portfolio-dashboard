@@ -1,52 +1,52 @@
 {
-  "updated_at": "2026-10-19T01:15:15+00:00",
-  "last_attempt_at": "2026-10-19T01:15:15+00:00",
+  "updated_at": "2026-10-20T01:49:21+00:00",
+  "last_attempt_at": "2026-10-20T01:49:21+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
-      "company": "O",
-      "date": "2026-10-16",
-      "headline": "ChatGPT release notes add \u201cTry on\u201d and security history",
-      "summary": "O\u2019s ChatGPT release notes (Oct 16, 2026) describe new shopping visual try-on and a \u201csecurity history\u201d view for recent account activity, aiming to improve user features and account oversight.",
+      "company": "G",
+      "date": "2026-10-20",
+      "headline": "G: model deprecation timeline update",
+      "summary": "G\u2019s deprecations docs show planned shutdown for specific G Compound model IDs (requests error after the stated date). This can affect developer workloads and near-term retention, but is manageable with migrations.",
       "category": "product",
-      "impact": "positive",
-      "review_status": "none",
-      "source_label": "Official release",
-      "source_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
-    },
-    {
-      "company": "O",
-      "date": "2026-10-07",
-      "headline": "GPT-6 Sol and Luna October 2026 safety update",
-      "summary": "O\u2019s Deployment Safety Hub posts an October 2026 update for GPT-6 Sol and GPT-6 Luna, updating preparedness classification for relevant risk domains and reinforcing controlled rollout/safeguards.",
-      "category": "regulatory",
       "impact": "neutral",
       "review_status": "none",
       "source_label": "Official release",
-      "source_url": "https://deploymentsafety.openai.com/gpt-6-october/broken-search-tool"
+      "source_url": "https://console.groq.com/docs/deprecations"
     },
     {
-      "company": "V",
-      "date": "2026-09-30",
-      "headline": "V announces $251M Series D to scale orbital drug processing",
-      "summary": "V announced a $251M Series D to scale space-based pharmaceutical processing, citing increased launch cadence and the need to scale return logistics and manufacturing capacity for in-orbit therapies.",
+      "company": "O",
+      "date": "2026-10-19",
+      "headline": "O: FTC subpoenas",
+      "summary": "AP reports multiple states allege O\u2019s chatbot violates consumer protection laws; the matter includes claims about deceptive behavior and harmful outputs, increasing legal/regulatory overhang near commercialization.",
+      "category": "regulatory",
+      "impact": "negative",
+      "review_status": "none",
+      "source_label": "Credible press",
+      "source_url": "https://apnews.com/article/openai-lawsuits-chatbot-chatgpt-artificial-intelligence-f29fa6c206cfe41d46ba38ee7be78218"
+    },
+    {
+      "company": "O",
+      "date": "2026-10-19",
+      "headline": "O: fundraising push at higher growth trajectory",
+      "summary": "Reuters (via Investing.com) says O is seeking to accelerate fundraising before Anthropic\u2019s IPO disclosures, citing GPT-6 Astra-driven acceleration and revenue expectations of $50B-$70B annualized.",
       "category": "funding",
       "impact": "positive",
       "review_status": "pending",
       "source_label": "Credible press",
-      "source_url": "https://www.prnewswire.com/news-releases/varda-announces-251-million-series-d-to-scale-space-based-pharmaceutical-processing-302893651.html"
+      "source_url": "https://www.investing.com/news/stock-market-news/exclusiveopenai-seeks-to-accelerate-fundraising-ahead-of-anthropic-ipo-sources-say-4958511"
     },
     {
-      "company": "G",
-      "date": "2026-09-27",
-      "headline": "GroqDocs model deprecations (Sept 21)",
-      "summary": "GroqDocs documents Sept 21, 2026 deprecations affecting specific model IDs, with guidance to migrate to replacement endpoints, potentially impacting developer workflows and integration continuity.",
+      "company": "O",
+      "date": "2026-10-07",
+      "headline": "O: GPT-6 for everyone",
+      "summary": "O released GPT-6 \u201cfor everyone,\u201d signaling continued product rollout and distribution expansion. This supports near-term usage growth assumptions, though it doesn\u2019t quantify revenue or margin impact in the release.",
       "category": "product",
-      "impact": "negative",
-      "review_status": "pending",
+      "impact": "positive",
+      "review_status": "none",
       "source_label": "Official release",
-      "source_url": "https://console.groq.com/docs/deprecations?erid=2W5zFJmrUKT"
+      "source_url": "https://openai.com/index/gpt-6-for-everyone"
     }
   ]
 }

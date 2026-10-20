@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-19T01:14:37+00:00",
-  "last_attempt_at": "2026-10-19T01:14:37+00:00",
+  "updated_at": "2026-10-20T01:48:54+00:00",
+  "last_attempt_at": "2026-10-20T01:48:54+00:00",
   "refresh_status": "partial",
   "policy": "Public NAVs may refresh automatically; share counts and cost basis remain owner-controlled.",
   "items": [
@@ -31,7 +31,7 @@
       "nav_scale": 1.0,
       "currency": "SGD",
       "nav_as_of": "2026-10-05",
-      "source_label": "Franklin Templeton - historical NAV table (LU1803068979)",
+      "source_label": "Provided last_nav (no newer dated NAV found/verified)",
       "source_url": "https://www.franklintempleton.com.sg/our-funds/price-and-performance/products/4916/Z5/franklin-technology-fund/LU1803068979"
     },
     {
