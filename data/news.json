@@ -1,52 +1,74 @@
 {
-  "updated_at": "2026-10-20T01:49:21+00:00",
-  "last_attempt_at": "2026-10-20T01:49:21+00:00",
+  "updated_at": "2026-10-21T01:34:10+00:00",
+  "last_attempt_at": "2026-10-21T01:34:10+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
-      "company": "G",
+      "company": "V",
       "date": "2026-10-20",
-      "headline": "G: model deprecation timeline update",
-      "summary": "G\u2019s deprecations docs show planned shutdown for specific G Compound model IDs (requests error after the stated date). This can affect developer workloads and near-term retention, but is manageable with migrations.",
+      "headline": "V launches W-7 cancer drug test mission (report)",
+      "summary": "Axios reports V launched a W-7 mission to test microgravity effects on next-gen cancer medicines (PROTAC crystallization) for potential improved absorption.",
+      "category": "capacity",
+      "impact": "neutral",
+      "review_status": "none",
+      "source_label": "Credible press",
+      "source_url": "https://www.axios.com/2026/10/20/cancer-drugs-space-varda"
+    },
+    {
+      "company": "O",
+      "date": "2026-10-20",
+      "headline": "O acquires Orchestra Bio",
+      "summary": "O announced acquisition of Orchestra Bio to advance AI-powered drug development, integrating Orchestra\u2019s platform/team with Rosalind and related models/tools for life sciences coordination.",
+      "category": "product",
+      "impact": "positive",
+      "review_status": "none",
+      "source_label": "Official release",
+      "source_url": "https://openai.com/index/openai-to-acquire-orchestra-bio"
+    },
+    {
+      "company": "O",
+      "date": "2026-10-19",
+      "headline": "O publishes low-resource coding research",
+      "summary": "O released research showing GPT\u20116 Astra/Luna improvements on MultiLangBench and COBOL migration tasks, including reported accuracy and cost deltas vs earlier models.",
       "category": "product",
       "impact": "neutral",
       "review_status": "none",
       "source_label": "Official release",
-      "source_url": "https://console.groq.com/docs/deprecations"
+      "source_url": "https://openai.com/index/low-resource-programming-languages"
     },
     {
       "company": "O",
-      "date": "2026-10-19",
-      "headline": "O: FTC subpoenas",
-      "summary": "AP reports multiple states allege O\u2019s chatbot violates consumer protection laws; the matter includes claims about deceptive behavior and harmful outputs, increasing legal/regulatory overhang near commercialization.",
+      "date": "2026-10-15",
+      "headline": "O faces FTC consumer-harms subpoenas (report)",
+      "summary": "Axios reports FTC subpoenas involving O and Anthropic tied to consumer harms/safety investigation\u2014potential regulatory overhang for consumer-facing usage and compliance costs.",
       "category": "regulatory",
       "impact": "negative",
-      "review_status": "none",
+      "review_status": "pending",
       "source_label": "Credible press",
-      "source_url": "https://apnews.com/article/openai-lawsuits-chatbot-chatgpt-artificial-intelligence-f29fa6c206cfe41d46ba38ee7be78218"
+      "source_url": "https://www.axios.com/2026/10/15/ftc-openai-anthropic-ai-safety-investigation"
     },
     {
-      "company": "O",
-      "date": "2026-10-19",
-      "headline": "O: fundraising push at higher growth trajectory",
-      "summary": "Reuters (via Investing.com) says O is seeking to accelerate fundraising before Anthropic\u2019s IPO disclosures, citing GPT-6 Astra-driven acceleration and revenue expectations of $50B-$70B annualized.",
+      "company": "G",
+      "date": "2026-10-01",
+      "headline": "No new last-45-day material filing found (constraints)",
+      "summary": "I did not find a clearly material G item within the last 45 days from an official release or direct regulatory/financing/valuation evidence using accessible sources.",
+      "category": "other",
+      "impact": "neutral",
+      "review_status": "none",
+      "source_label": "Credible press",
+      "source_url": "https://groq.com/newsroom/groq-raises-usd650m-to-scale-its-ai-inference-cloud-business"
+    },
+    {
+      "company": "V",
+      "date": "2026-09-30",
+      "headline": "V raises $251M Series D",
+      "summary": "V announced a $251M Series D to scale space-based pharmaceutical processing; total capital raised cited as $598M. Round led by Lux Capital and Natural Capital.",
       "category": "funding",
       "impact": "positive",
       "review_status": "pending",
-      "source_label": "Credible press",
-      "source_url": "https://www.investing.com/news/stock-market-news/exclusiveopenai-seeks-to-accelerate-fundraising-ahead-of-anthropic-ipo-sources-say-4958511"
-    },
-    {
-      "company": "O",
-      "date": "2026-10-07",
-      "headline": "O: GPT-6 for everyone",
-      "summary": "O released GPT-6 \u201cfor everyone,\u201d signaling continued product rollout and distribution expansion. This supports near-term usage growth assumptions, though it doesn\u2019t quantify revenue or margin impact in the release.",
-      "category": "product",
-      "impact": "positive",
-      "review_status": "none",
       "source_label": "Official release",
-      "source_url": "https://openai.com/index/gpt-6-for-everyone"
+      "source_url": "https://www.prnewswire.com/news-releases/varda-announces-251-million-series-d-to-scale-space-based-pharmaceutical-processing-302893651.html"
     }
   ]
 }
