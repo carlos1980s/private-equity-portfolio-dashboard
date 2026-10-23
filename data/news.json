@@ -1,41 +1,85 @@
 {
-  "updated_at": "2026-10-22T01:29:52+00:00",
-  "last_attempt_at": "2026-10-22T01:29:52+00:00",
+  "updated_at": "2026-10-23T01:29:51+00:00",
+  "last_attempt_at": "2026-10-23T01:29:51+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
       "company": "O",
-      "date": "2026-10-20",
-      "headline": "O acquires Orchestra Bio",
-      "summary": "O announced it has acquired Orchestra Bio, a platform for coordinating drug-development workflows. Potentially strengthens O\u2019s biopharma tooling and accelerates partner experimentation in drug discovery and development operations.",
+      "date": "2026-10-23",
+      "headline": "O API changelog: security/compliance improvements",
+      "summary": "O\u2019s API changelog shows October 2026 updates, including HIPAA compliance support and platform connectivity changes (e.g., IPv6). Continued API hardening can improve regulated-enterprise deployment confidence.",
       "category": "product",
       "impact": "positive",
       "review_status": "pending",
       "source_label": "Official release",
-      "source_url": "https://openai.com/index/openai-to-acquire-orchestra-bio"
-    },
-    {
-      "company": "O",
-      "date": "2026-10-20",
-      "headline": "O plans profit-sharing model ahead of IPO wave",
-      "summary": "AP reports executives at O and Anthropic discussing plans to share wealth as major AI IPOs approach. This is not a filing, but could affect future capital structure and public-market narrative.",
-      "category": "other",
-      "impact": "neutral",
-      "review_status": "none",
-      "source_label": "Credible press",
-      "source_url": "https://apnews.com/article/fc16c0ff997c8334dcd71e65d726aadc"
+      "source_url": "https://developers.openai.com/api/docs/changelog?mw_entry=2026-09-29-962e96e45069e83d"
     },
     {
       "company": "V",
-      "date": "2026-10-13",
-      "headline": "V has two spacecraft in orbit",
-      "summary": "Space.com reports V is operating two spacecraft in orbit and expects additional launches soon plus a larger next-year cadence, supporting continued in-space manufacturing capacity ramp.",
-      "category": "capacity",
+      "date": "2026-10-20",
+      "headline": "W-7 mission tests cancer medicine microgravity effects",
+      "summary": "V\u2019s W-7 mission page describes an Oct 2026 launch testing microgravity effects on a PROTAC cancer medicine (solubility improvements). Mission progress can de-risk the product pathway.",
+      "category": "product",
       "impact": "positive",
       "review_status": "none",
       "source_label": "Credible press",
-      "source_url": "https://www.space.com/space-exploration/launches-spacecraft/2-spacecraft-in-orbit-and-8-more-coming-soon-varda-has-big-plans-for-in-space-manufacturing"
+      "source_url": "https://www.varda.com/mission/w-7"
+    },
+    {
+      "company": "O",
+      "date": "2026-10-16",
+      "headline": "ChatGPT release notes add retail-facing features",
+      "summary": "O\u2019s ChatGPT release notes for October 16, 2026 include new consumer UX (e.g., \u201cTry on\u201d for clothing/accessories). Product iteration can support usage retention and enterprise adoption via improved interfaces.",
+      "category": "product",
+      "impact": "positive",
+      "review_status": "pending",
+      "source_label": "Official release",
+      "source_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+    },
+    {
+      "company": "O",
+      "date": "2026-10-07",
+      "headline": "GPT-6 Astra updated rollout",
+      "summary": "O posted an update page for GPT-6 Astra (GPT-6.1 Sol) with the latest release context. This supports continued model deployment and roadmap execution into October.",
+      "category": "product",
+      "impact": "positive",
+      "review_status": "pending",
+      "source_label": "Official release",
+      "source_url": "https://openai.com/index/gpt-6-astra"
+    },
+    {
+      "company": "O",
+      "date": "2026-10-01",
+      "headline": "O/partner regulatory filing exhibits reference partnership",
+      "summary": "An SEC-hosted annual report PDF includes language referencing a long-term strategic partnership with O. This is conservative evidence of ongoing enterprise/go-to-market alignment (not new capacity directly).",
+      "category": "regulatory",
+      "impact": "neutral",
+      "review_status": "none",
+      "source_label": "Regulatory filing",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526427876/d62902dars.pdf"
+    },
+    {
+      "company": "V",
+      "date": "2026-09-30",
+      "headline": "V $251M Series D for orbital pharma processing",
+      "summary": "V announced a $251M Series D to scale space-based pharmaceutical processing, describing W-Series vehicles and repeatable reentry/data return. The round supports forward capacity and commercialization runway.",
+      "category": "funding",
+      "impact": "positive",
+      "review_status": "pending",
+      "source_label": "Official release",
+      "source_url": "https://www.prnewswire.com/news-releases/varda-announces-251-million-series-d-to-scale-space-based-pharmaceutical-processing-302893651.html"
+    },
+    {
+      "company": "G",
+      "date": "2026-09-21",
+      "headline": "G deprecates older hosted models",
+      "summary": "G published API/model deprecation documentation, including a September 21, 2026 notice for specific hosted models. Deprecations can be operationally negative for some customers, but also signal ongoing model/service churn.",
+      "category": "product",
+      "impact": "mixed",
+      "review_status": "pending",
+      "source_label": "Official release",
+      "source_url": "https://console.groq.com/docs/deprecations"
     }
   ]
 }
