@@ -1,63 +1,63 @@
 {
-  "updated_at": "2026-10-24T01:34:50+00:00",
-  "last_attempt_at": "2026-10-24T01:34:50+00:00",
+  "updated_at": "2026-10-25T01:09:11+00:00",
+  "last_attempt_at": "2026-10-25T01:09:11+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
-      "company": "O",
-      "date": "2026-10-21",
-      "headline": "O: models come to Google Cloud",
-      "summary": "O and Google Cloud announced frontier models and Codex workflows coming to Google Cloud Marketplace. This expands distribution channels for model/API usage and could broaden enterprise adoption and partner-led deployments.",
-      "category": "product",
-      "impact": "positive",
-      "review_status": "pending",
-      "source_label": "Official release",
-      "source_url": "https://openai.com/news/openai-models-are-coming-to-google-cloud"
-    },
-    {
-      "company": "O",
-      "date": "2026-10-21",
-      "headline": "O: Patch the Planet security coordination",
-      "summary": "O described \u201cPatch the Planet\u201d efforts where agents/researchers uncover critical vulnerabilities and coordinate remediation. Material for risk-reputation and indicates ongoing model-assisted security research and program operationalization.",
-      "category": "capacity",
-      "impact": "neutral",
-      "review_status": "none",
-      "source_label": "Official release",
-      "source_url": "https://openai.com/news/patch-the-planet-global-response-coordination-as-agents-uncover-critical-vulnerabilities"
-    },
-    {
       "company": "V",
       "date": "2026-10-20",
-      "headline": "V: W-7 PROTAC microgravity experiment launched",
-      "summary": "V\u2019s W-7 mission page says it launched a PROTAC cancer medicine to test whether microgravity yields crystal forms with improved solubility. Supports in-space manufacturing/R&D track for harder-to-formulate therapeutics.",
-      "category": "product",
-      "impact": "mixed",
-      "review_status": "none",
+      "headline": "V launches W-7 for cancer drug crystallization",
+      "summary": "V announced launch of W-7 to study microgravity effects on cancer drug crystallization (PROTAC solubility). A new mission extends its in-space manufacturing evidence pipeline and could de-risk future drug development pathways.",
+      "category": "capacity",
+      "impact": "positive",
+      "review_status": "pending",
       "source_label": "Official release",
       "source_url": "https://www.varda.com/mission/w-7"
     },
     {
       "company": "O",
-      "date": "2026-10-07",
-      "headline": "GPT-6 + Intelligent UI roll out",
-      "summary": "O began globally rolling out GPT-6 in ChatGPT with \u201cIntelligent UI,\u201d combining text, visuals, and interactive elements. Update also supports partial answers and tool use during generation, expanding product capability surface.",
+      "date": "2026-10-20",
+      "headline": "O acquires Orchestra Bio",
+      "summary": "O announced acquisition of Orchestra Bio, which coordinates biopharma drug development workflows. This expands O\u2019s drug-development tooling within its Rosalind life-sciences platform.",
       "category": "product",
       "impact": "positive",
       "review_status": "none",
       "source_label": "Official release",
-      "source_url": "https://openai.com/news/gpt-6-and-intelligent-ui-for-everyone"
+      "source_url": "https://openai.com/index/openai-to-acquire-orchestra-bio"
     },
     {
-      "company": "V",
-      "date": "2026-10-01",
-      "headline": "V: W-9 launched with dual-vehicle mission",
-      "summary": "V\u2019s W-9 mission page states launch status and describes operating two vehicles on the same launch vehicle to \u201cnormalize\u201d reentry cadence/low cost per mission; includes payload partners context.",
-      "category": "capacity",
-      "impact": "positive",
-      "review_status": "pending",
+      "company": "O",
+      "date": "2026-10-20",
+      "headline": "O enterprise roadmap adds GPT-scope partners",
+      "summary": "O published partnership materials expanding how GPT-6 family models are delivered into enterprise workflows (e.g., Atlassian expansion). Such ecosystem updates can support sustained API/app revenue through distribution.",
+      "category": "product",
+      "impact": "neutral",
+      "review_status": "none",
       "source_label": "Official release",
-      "source_url": "https://www.varda.com/mission/w-9"
+      "source_url": "https://openai.com/index/atlassian-partnership"
+    },
+    {
+      "company": "O",
+      "date": "2026-10-19",
+      "headline": "O fundraising accelerates ahead of rival IPO",
+      "summary": "Reuters reports O is racing to secure investor commitments before Anthropic\u2019s expected mid-November debut, with possible valuation above $1.4T, citing sources. It also references annualized revenue targets of ~$50B to ~$70B.",
+      "category": "valuation",
+      "impact": "mixed",
+      "review_status": "pending",
+      "source_label": "Credible press",
+      "source_url": "https://www.investing.com/news/stock-market-news/exclusiveopenai-seeks-to-accelerate-fundraising-ahead-of-anthropic-ipo-sources-say-4958511"
+    },
+    {
+      "company": "G",
+      "date": "2026-10-01",
+      "headline": "G Nvidia cloud partnership signals scaling path",
+      "summary": "G\u2019s newsroom previously disclosed becoming an NVIDIA cloud partner (in-market execution continues). For a private watchlist, this supports inference about inference demand availability even without new funding in-window.",
+      "category": "capacity",
+      "impact": "neutral",
+      "review_status": "none",
+      "source_label": "Credible press",
+      "source_url": "https://groq.com/newsroom/groq-becomes-an-nvidia-cloud-partner"
     }
   ]
 }
