@@ -1,15 +1,26 @@
 {
-  "updated_at": "2026-10-26T01:08:46+00:00",
-  "last_attempt_at": "2026-10-26T01:08:46+00:00",
+  "updated_at": "2026-10-27T02:04:32+00:00",
+  "last_attempt_at": "2026-10-27T02:04:32+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
+      "company": "O",
+      "date": "2026-10-21",
+      "headline": "O / GPT-6.1 Sol in Patch the Planet: critical PHP flaws",
+      "summary": "O says GPT-5.6 Sol helped uncover critical PHP vulnerabilities affecting a large share of websites, as part of its Patch the Planet initiative.",
+      "category": "product",
+      "impact": "positive",
+      "review_status": "none",
+      "source_label": "Official release",
+      "source_url": "https://www.tomshardware.com/tech-industry/cyber-security/openai-says-gpt-5-6-sol-helped-uncover-critical-php-flaws-that-could-affect-70-percent-of-websites-ai-assisted-researchers-turned-two-year-old-bug-that-stumped-human-developers-into-working-exploits-in-two-weeks"
+    },
+    {
       "company": "V",
       "date": "2026-10-20",
-      "headline": "W-7 tests PROTAC crystallization in microgravity",
-      "summary": "V launched W-7 to test microgravity effects on PROTAC solubility by enabling different crystal forms; V framed results as potentially unlocking better formulation paths for clinical use.",
-      "category": "product",
+      "headline": "V / W-7 launched to test cancer drug crystallization in microgravity",
+      "summary": "V reports W-7 launched Oct 20, sending a PROTAC cancer medicine experiment to test whether microgravity can improve solubility via different crystal forms.",
+      "category": "capacity",
       "impact": "positive",
       "review_status": "none",
       "source_label": "Official release",
@@ -17,69 +28,14 @@
     },
     {
       "company": "O",
-      "date": "2026-10-20",
-      "headline": "GPT-6 rollout with Intelligent UI expands",
-      "summary": "O announced global rollout of GPT-6 in ChatGPT with \u201cIntelligent UI,\u201d adding faster responses with visuals and interactive experiences for users and builders.",
-      "category": "product",
-      "impact": "positive",
-      "review_status": "none",
-      "source_label": "Official release",
-      "source_url": "https://openai.com/index/gpt-6-and-intelligent-ui-for-everyone"
-    },
-    {
-      "company": "O",
-      "date": "2026-10-19",
-      "headline": "Fundraising acceleration ahead of comps",
-      "summary": "Reporting says O pushed faster fundraising meetings to lock capital before broader investor comparisons tied to Anthropic\u2019s IPO window, with discussions focused on growth and valuation positioning.",
-      "category": "funding",
-      "impact": "mixed",
-      "review_status": "pending",
-      "source_label": "Credible press",
-      "source_url": "https://www.marketscreener.com/news/openai-seeks-to-accelerate-fundraising-ahead-of-anthropic-ipo-sources-say-ce785cdbdf8cf321"
-    },
-    {
-      "company": "O",
-      "date": "2026-10-15",
-      "headline": "Math releases continue with community funding",
-      "summary": "O published an update on sharing AI progress in mathematics and said it will fund workshops/conferences and continue improving release quality for the math community.",
-      "category": "product",
-      "impact": "neutral",
-      "review_status": "none",
-      "source_label": "Official release",
-      "source_url": "https://openai.com/index/sharing-ai-progress-in-mathematics"
-    },
-    {
-      "company": "V",
-      "date": "2026-10-13",
-      "headline": "V operates multiple spacecraft; more launches pending",
-      "summary": "Coverage says V had two spacecraft operating in orbit and planned additional launches \u201cin the coming days,\u201d supporting throughput and milestone cadence for in-space manufacturing.",
-      "category": "capacity",
-      "impact": "positive",
-      "review_status": "none",
-      "source_label": "Credible press",
-      "source_url": "https://www.space.com/space-exploration/launches-spacecraft/2-spacecraft-in-orbit-and-8-more-coming-soon-varda-has-big-plans-for-in-space-manufacturing"
-    },
-    {
-      "company": "V",
-      "date": "2026-09-30",
-      "headline": "Series D funds orbital drug manufacturing scaling",
-      "summary": "Reporting indicates V raised about $250M (Series D) at a ~$1.6B valuation to scale in-orbit pharmaceutical manufacturing and advance toward first medicines.",
+      "date": "2026-10-01",
+      "headline": "O / SoftBank completes $10B third tranche follow-on",
+      "summary": "SoftBank reports executing the third and final $10.0B tranche of its follow-on investment in O, bringing cumulative investment to $64.6B and ~13% ownership.",
       "category": "funding",
       "impact": "positive",
-      "review_status": "pending",
-      "source_label": "Credible press",
-      "source_url": "https://finance.yahoo.com/healthcare/articles/varda-raises-250-million-1-100413718.html"
-    },
-    {
-      "company": "G",
-      "date": "2026-09-21",
-      "headline": "Model deprecations signal shifting product roadmap",
-      "summary": "GroqDocs listed deprecations for `G/compound` and `G/compound-mini` scheduled for September 21, 2026, implying migration needs for developers relying on these models.",
-      "category": "product",
-      "impact": "negative",
-      "review_status": "pending",
-      "source_label": "Official release",
-      "source_url": "https://console.groq.com/docs/deprecations"
+      "review_status": "none",
+      "source_label": "Regulatory filing",
+      "source_url": "https://links.sgx.com/FileOpen/SBG%20261001.ashx?App=Announcement&FileID=905664"
     }
   ]
 }
