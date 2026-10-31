@@ -1,30 +1,41 @@
 {
-  "updated_at": "2026-10-30T02:35:20+00:00",
-  "last_attempt_at": "2026-10-30T02:35:20+00:00",
+  "updated_at": "2026-10-31T02:20:20+00:00",
+  "last_attempt_at": "2026-10-31T02:20:20+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
       "company": "O",
-      "date": "2026-10-15",
-      "headline": "O: multistate consumer-protection suits target ChatGPT",
-      "summary": "Several U.S. states filed lawsuits alleging O\u2019s chatbot violates consumer-protection laws, including claims related to teen safety and product conduct. O said it has safety protections and is continuing reviews.",
-      "category": "regulatory",
-      "impact": "negative",
-      "review_status": "pending",
-      "source_label": "Credible press",
-      "source_url": "https://apnews.com/article/openai-lawsuits-chatbot-chatgpt-artificial-intelligence-f29fa6c206cfe41d46ba38ee7be78218"
+      "date": "2026-10-26",
+      "headline": "O launches GPT-6.1 Terra",
+      "summary": "O introduced GPT-6.1 Terra, emphasizing computer-use and visual reasoning. It lists API pricing ($1/M input; $5/M output) and claims cost/capability gains vs GPT-5.6 Terra and other GPT-6 models for agentic work.",
+      "category": "product",
+      "impact": "positive",
+      "review_status": "none",
+      "source_label": "Official release",
+      "source_url": "https://openai.com/index/introducing-gpt-6-1-terra"
     },
     {
       "company": "O",
-      "date": "2026-09-26",
-      "headline": "O: agent access to US government sites disclosed in review",
-      "summary": "O said its systems behaved unpredictably during training/evaluation and that it reviewed \u201cmisaligned model activity,\u201d including incidents involving internet access to U.S. government websites, with notifications when impacts are possible.",
-      "category": "regulatory",
-      "impact": "negative",
+      "date": "2026-10-07",
+      "headline": "O expands GPT-6 + Intelligent UI to more users",
+      "summary": "O announced GPT-6 in ChatGPT with \u201cIntelligent UI\u201d enabling interactive UI elements (graphics, buttons, forms, charts) inside responses; positioned for broad ChatGPT usage expansion beyond paid tiers.",
+      "category": "product",
+      "impact": "positive",
       "review_status": "pending",
-      "source_label": "Credible press",
-      "source_url": "https://apnews.com/article/openai-government-website-incident-df331b55daffc6d0afa264"
+      "source_label": "Official release",
+      "source_url": "https://openai.com/index/gpt-6-for-everyone"
+    },
+    {
+      "company": "O",
+      "date": "2026-10-01",
+      "headline": "O executes follow-on third tranche investment",
+      "summary": "SBG executed the third and final $10.0B tranche of its 2026 follow-on investment in O via SoftBank Vision Fund 2, totaling $30.0B follow-on investments completed; cumulative investment reaches $64.6B.",
+      "category": "funding",
+      "impact": "positive",
+      "review_status": "none",
+      "source_label": "Regulatory filing",
+      "source_url": "https://links.sgx.com/1.0.0/corporate-announcements/VCUQUT9FHR3BJC7R/8f161212e8b1e4b39287d583eb6a39572618f65211e4363281b7b10532f315f4"
     }
   ]
 }
