@@ -1,41 +1,52 @@
 {
-  "updated_at": "2026-10-31T02:20:20+00:00",
-  "last_attempt_at": "2026-10-31T02:20:20+00:00",
+  "updated_at": "2026-11-01T02:13:05+00:00",
+  "last_attempt_at": "2026-11-01T02:13:05+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
       "company": "O",
-      "date": "2026-10-26",
-      "headline": "O launches GPT-6.1 Terra",
-      "summary": "O introduced GPT-6.1 Terra, emphasizing computer-use and visual reasoning. It lists API pricing ($1/M input; $5/M output) and claims cost/capability gains vs GPT-5.6 Terra and other GPT-6 models for agentic work.",
-      "category": "product",
-      "impact": "positive",
-      "review_status": "none",
-      "source_label": "Official release",
-      "source_url": "https://openai.com/index/introducing-gpt-6-1-terra"
-    },
-    {
-      "company": "O",
-      "date": "2026-10-07",
-      "headline": "O expands GPT-6 + Intelligent UI to more users",
-      "summary": "O announced GPT-6 in ChatGPT with \u201cIntelligent UI\u201d enabling interactive UI elements (graphics, buttons, forms, charts) inside responses; positioned for broad ChatGPT usage expansion beyond paid tiers.",
+      "date": "2026-10-28",
+      "headline": "O expands partnership with ServiceNow",
+      "summary": "ServiceNow will integrate O models/agents into workflows from development to security, including a new integration bringing context and workflow actions into ChatGPT. Reinforces enterprise distribution and ongoing agentic deployment efforts.",
       "category": "product",
       "impact": "positive",
       "review_status": "pending",
       "source_label": "Official release",
-      "source_url": "https://openai.com/index/gpt-6-for-everyone"
+      "source_url": "https://openai.com/index/openai-servicenow-partnership-expansion?from=bd_signal"
     },
     {
       "company": "O",
-      "date": "2026-10-01",
-      "headline": "O executes follow-on third tranche investment",
-      "summary": "SBG executed the third and final $10.0B tranche of its 2026 follow-on investment in O via SoftBank Vision Fund 2, totaling $30.0B follow-on investments completed; cumulative investment reaches $64.6B.",
-      "category": "funding",
+      "date": "2026-10-28",
+      "headline": "O launches atlassian partnership expansion",
+      "summary": "Atlassian and O expanded their partnership to bring GPT\u20116 family models into the Atlassian platform, aiming to power AI experiences for teams planning/building/delivering work\u2014another enterprise embedding signal.",
+      "category": "product",
       "impact": "positive",
       "review_status": "none",
-      "source_label": "Regulatory filing",
-      "source_url": "https://links.sgx.com/1.0.0/corporate-announcements/VCUQUT9FHR3BJC7R/8f161212e8b1e4b39287d583eb6a39572618f65211e4363281b7b10532f315f4"
+      "source_label": "Official release",
+      "source_url": "https://openai.com/index/atlassian-partnership?trk=public_post_comment-text"
+    },
+    {
+      "company": "O",
+      "date": "2026-10-27",
+      "headline": "O expands partnership with Oracle",
+      "summary": "O and Oracle expanded efforts to bring Oracle apps/data into ChatGPT and to power new Oracle offerings using O models. Cites Oracle\u2019s active ChatGPT/Codex user counts, implying continued enterprise demand momentum.",
+      "category": "product",
+      "impact": "positive",
+      "review_status": "pending",
+      "source_label": "Official release",
+      "source_url": "https://openai.com/index/oracle-apps-in-chatgpt?trk=article-ssr-frontend-pulse_little-text-block"
+    },
+    {
+      "company": "G",
+      "date": "2026-10-15",
+      "headline": "G adds limited preview for Muse Spark Open",
+      "summary": "GroqCloud limited preview now includes Meta\u2019s Muse Spark Open via G-hosted deployment docs, signaling ongoing inference platform expansion for new open-weight models.",
+      "category": "product",
+      "impact": "positive",
+      "review_status": "none",
+      "source_label": "Official release",
+      "source_url": "https://console.groq.com/docs/model/meta-models/muse-spark-open?trk=article-ssr-frontend-pulse_little-text-block"
     }
   ]
 }
