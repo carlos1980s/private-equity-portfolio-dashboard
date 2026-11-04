@@ -1,41 +1,63 @@
 {
-  "updated_at": "2026-11-03T03:55:44+00:00",
-  "last_attempt_at": "2026-11-03T03:55:44+00:00",
+  "updated_at": "2026-11-04T03:00:27+00:00",
+  "last_attempt_at": "2026-11-04T03:00:27+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
       "company": "O",
-      "date": "2026-10-26",
-      "headline": "O: GPT-6.1 Terra rollout to API and Work/Codex",
-      "summary": "O rolled out GPT-6.1 Terra in the O API (gpt-6.1-terra) and in ChatGPT Work and Codex, with stated pricing and capability notes for visual reasoning, computer use, and writing.",
+      "date": "2026-11-02",
+      "headline": "O explores power cuts pledges via compute \u201ccampuses\u201d",
+      "summary": "Report says O is considering reframing data centers as \u201cAI compute campuses\u201d amid backlash, alongside pledges to reduce grid impact and avoid shifting costs to ratepayers.",
+      "category": "capacity",
+      "impact": "mixed",
+      "review_status": "pending",
+      "source_label": "Credible press",
+      "source_url": "https://www.axios.com/2026/11/02/openai-data-center-power-cuts"
+    },
+    {
+      "company": "O",
+      "date": "2026-10-29",
+      "headline": "O Model Release Notes update",
+      "summary": "O published Model Release Notes update (Oct 29, 2026) covering changes to model spec/behavior for current releases, relevant for enterprise output reliability and risk posture.",
       "category": "product",
-      "impact": "positive",
+      "impact": "neutral",
       "review_status": "none",
       "source_label": "Official release",
       "source_url": "https://help.openai.com/en/articles/9624314-model-release-notes"
     },
     {
       "company": "V",
-      "date": "2026-10-20",
-      "headline": "V: W-7 mission advances in-orbit manufacturing testing",
-      "summary": "Reporting around V\u2019s W-7 launch highlights continued in-orbit work for microgravity manufacturing (including drug-candidate objectives) and progress toward next operational capacity.",
-      "category": "capacity",
+      "date": "2026-10-13",
+      "headline": "V W-7 mission highlights in-orbit pharma testing",
+      "summary": "Credible report says V launched W-7 to test microgravity effects on an innovative cancer treatment, reinforcing progress and near-term flight throughput for V\u2019s re-entry/in-space manufacturing pathway.",
+      "category": "product",
       "impact": "positive",
-      "review_status": "pending",
+      "review_status": "none",
       "source_label": "Credible press",
       "source_url": "https://www.axios.com/2026/10/20/cancer-drugs-space-varda"
     },
     {
+      "company": "V",
+      "date": "2026-10-13",
+      "headline": "V operates 2 craft in orbit; more scheduled",
+      "summary": "Report says V currently has two spacecraft in orbit and expects additional launches \u201cin coming days\u201d plus multiple next-year missions, pointing to scaling cadence for its program.",
+      "category": "capacity",
+      "impact": "positive",
+      "review_status": "none",
+      "source_label": "Credible press",
+      "source_url": "https://space.com/space-exploration/launches-spacecraft/2-spacecraft-in-orbit-and-8-more-coming-soon-varda-has-big-plans-for-in-space-manufacturing"
+    },
+    {
       "company": "O",
       "date": "2026-10-07",
-      "headline": "O: GPT-6 expands to more users",
-      "summary": "O announced GPT-6 availability expanding beyond its initial paid launch, framing broader access for ChatGPT users and a larger deployment scope for GPT-6 model family.",
+      "headline": "O ChatGPT release notes rolling changes",
+      "summary": "O\u2019s ChatGPT release notes (Oct 7, 2026 entry and related notes) document model retirement/sunset timing and feature changes that can affect downstream app behavior.",
       "category": "product",
-      "impact": "positive",
-      "review_status": "pending",
+      "impact": "neutral",
+      "review_status": "none",
       "source_label": "Official release",
-      "source_url": "https://openai.com/index/gpt-6-for-everyone?trk=article-ssr-frontend-pulse_little-text-block"
+      "source_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
     }
   ]
 }
