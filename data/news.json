@@ -1,85 +1,41 @@
 {
-  "updated_at": "2026-11-05T03:29:12+00:00",
-  "last_attempt_at": "2026-11-05T03:29:12+00:00",
+  "updated_at": "2026-11-06T03:25:50+00:00",
+  "last_attempt_at": "2026-11-06T03:25:50+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
       "company": "O",
-      "date": "2026-11-03",
-      "headline": "O: bug bounty payouts set to increase up to 4x",
-      "summary": "O said it will raise rewards for security researchers for critical findings, with expectations to quadruple payouts for high-severity issues. Signals stronger security posture and increased researcher incentives.",
-      "category": "regulatory",
-      "impact": "positive",
-      "review_status": "none",
-      "source_label": "Credible press",
-      "source_url": "https://www.techradar.com/pro/security/traditional-cyber-defenses-alone-are-no-long-sufficient-openai-is-raising-its-bug-bounty-rewards-for-security-researchers-as-ai-attack-worries-grow"
-    },
-    {
-      "company": "O",
-      "date": "2026-11-02",
-      "headline": "O: power-cut pledges for data centers",
-      "summary": "O pledged actions to reduce data-center power strain on the grid and mitigate ratepayer impacts, framed as \u201cgood grid citizen\u201d behavior. Potentially reduces regulatory and community risk while supporting future buildout.",
-      "category": "regulatory",
-      "impact": "positive",
-      "review_status": "pending",
-      "source_label": "Credible press",
-      "source_url": "https://www.axios.com/2026/11/02/openai-data-center-power-cuts"
-    },
-    {
-      "company": "O",
-      "date": "2026-10-29",
-      "headline": "O: model release notes update (spec changes)",
-      "summary": "O published updates to its model specification (Oct 29, 2026). Release-note type evidence for ongoing model iteration that can affect capabilities, safety, and developer-facing performance.",
+      "date": "2026-11-05",
+      "headline": "O: GPT-6 Cyber Thursday rollout",
+      "summary": "O released a new GPT-6 \u201cCyber\u201d model to a subset of verified users, citing its highest cybersecurity capability rating for the release. Signals continued frontier model expansion in security-focused tooling.",
       "category": "product",
-      "impact": "neutral",
+      "impact": "positive",
       "review_status": "none",
-      "source_label": "Official release",
-      "source_url": "https://help.openai.com/en/articles/9624314-model-release-notes"
+      "source_label": "Credible press",
+      "source_url": "https://www.axios.com/2026/11/05/openai-linux-cyber-model"
     },
     {
       "company": "O",
-      "date": "2026-10-23",
-      "headline": "O: resumes frontier training after security overhaul",
-      "summary": "O resumed advanced frontier AI training after a security overhaul following a prior issue, and disclosed a flaw found by agents that was fixed before training restarted. Indicates continuity of frontier roadmap and fewer operational blockers.",
+      "date": "2026-10-26",
+      "headline": "O: 100,000 academic access expansion",
+      "summary": "O posted a release expanding ChatGPT access for academic researchers, describing 100,000 academics receiving free access to its most advanced models for scientific discovery, collaboration, and research workflows.",
       "category": "capacity",
       "impact": "positive",
       "review_status": "pending",
-      "source_label": "Credible press",
-      "source_url": "https://www.investing.com/news/stock-market-news/openai-resumes-frontier-ai-training-after-security-overhaul-discloses-flaw-in-widely-used-software-4970304"
+      "source_label": "Official release",
+      "source_url": "https://openai.com/research/index/release?page=2"
     },
     {
       "company": "V",
       "date": "2026-10-20",
-      "headline": "V: W-7 launch for space-made cancer drugs",
-      "summary": "Credible press reports V launched W-7 on Oct 20, 2026, targeting space-based manufacturing of cancer drugs. Indicates additional manufacturing capacity coming online and expanded application scope.",
-      "category": "capacity",
-      "impact": "positive",
-      "review_status": "pending",
-      "source_label": "Credible press",
-      "source_url": "https://www.axios.com/2026/10/20/cancer-drugs-space-varda"
-    },
-    {
-      "company": "V",
-      "date": "2026-10-13",
-      "headline": "V: multiple spacecraft active; more launches expected",
-      "summary": "Space.com reports V is operating two spacecraft in orbit and expects additional launches soon (another in coming days and several next year). Supports evidence of cadence and scaling of in-space manufacturing.",
-      "category": "capacity",
-      "impact": "positive",
-      "review_status": "pending",
-      "source_label": "Credible press",
-      "source_url": "https://www.space.com/space-exploration/launches-spacecraft/2-spacecraft-in-orbit-and-8-more-coming-soon-varda-has-big-plans-for-in-space-manufacturing"
-    },
-    {
-      "company": "V",
-      "date": "2026-09-30",
-      "headline": "V: Series D raises $251M to scale space-based pharma",
-      "summary": "V announced a $251M Series D (reported Sep 30/announced in late Sep 2026) to scale its space-based pharmaceutical processing, bringing total capital raised to $598M. Direct financing evidence for scaling runway.",
-      "category": "funding",
+      "headline": "V: W-7 cancer drug crystallization launch",
+      "summary": "V announced launch of W-7 to study cancer drug crystallization in orbit, supporting its microgravity-enabled pharmaceutical processing and in-space manufacturing platform validation.",
+      "category": "product",
       "impact": "positive",
       "review_status": "none",
       "source_label": "Official release",
-      "source_url": "https://www.prnewswire.com/news-releases/varda-announces-251-million-series-d-to-scale-space-based-pharmaceutical-processing-302893651.html"
+      "source_url": "https://www.varda.com/mission/w-7"
     }
   ]
 }
