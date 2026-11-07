@@ -1,41 +1,52 @@
 {
-  "updated_at": "2026-11-06T03:25:50+00:00",
-  "last_attempt_at": "2026-11-06T03:25:50+00:00",
+  "updated_at": "2026-11-07T02:47:02+00:00",
+  "last_attempt_at": "2026-11-07T02:47:02+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
-      "company": "O",
-      "date": "2026-11-05",
-      "headline": "O: GPT-6 Cyber Thursday rollout",
-      "summary": "O released a new GPT-6 \u201cCyber\u201d model to a subset of verified users, citing its highest cybersecurity capability rating for the release. Signals continued frontier model expansion in security-focused tooling.",
-      "category": "product",
+      "company": "G",
+      "date": "2026-11-06",
+      "headline": "G seeks $8B valuation in new funding round (Bloomberg)",
+      "summary": "Reporting indicates G is seeking an $8B valuation in a new funding round, implying a valuation reset higher versus prior tracked levels.",
+      "category": "valuation",
       "impact": "positive",
-      "review_status": "none",
+      "review_status": "pending",
       "source_label": "Credible press",
-      "source_url": "https://www.axios.com/2026/11/05/openai-linux-cyber-model"
+      "source_url": "https://ca.investing.com/news/stock-market-news/nvidiabacked-groq-seeks-8-billion-valuation-in-new-funding-round--bloomberg-4940538"
     },
     {
       "company": "O",
-      "date": "2026-10-26",
-      "headline": "O: 100,000 academic access expansion",
-      "summary": "O posted a release expanding ChatGPT access for academic researchers, describing 100,000 academics receiving free access to its most advanced models for scientific discovery, collaboration, and research workflows.",
-      "category": "capacity",
+      "date": "2026-11-03",
+      "headline": "Bug bounty: O prepared to quadruple rewards for critical findings",
+      "summary": "Credible reporting says O is raising bug bounty rewards for security researchers and is prepared to quadruple payouts for critical findings, reflecting heightened security focus around model/agent risk.",
+      "category": "product",
+      "impact": "positive",
+      "review_status": "pending",
+      "source_label": "Credible press",
+      "source_url": "https://www.techradar.com/pro/security/traditional-cyber-defenses-alone-are-no-longer-sufficient-openai-is-raising-its-bug-bounty-rewards-for-security-researchers-as-ai-attack-worries-grow"
+    },
+    {
+      "company": "O",
+      "date": "2026-10-15",
+      "headline": "GPT-6 Sol & Luna October update strengthens jailbreak resistance",
+      "summary": "O published an October 2026 safety/system-card update stating GPT-6 Sol and GPT-6 Luna replace prior ChatGPT versions. It reports stronger resistance to jailbreaks (notably adaptive, multi-turn) and describes applied safeguards.",
+      "category": "product",
       "impact": "positive",
       "review_status": "pending",
       "source_label": "Official release",
-      "source_url": "https://openai.com/research/index/release?page=2"
+      "source_url": "https://deploymentsafety.openai.com/gpt-6-october/references"
     },
     {
       "company": "V",
-      "date": "2026-10-20",
-      "headline": "V: W-7 cancer drug crystallization launch",
-      "summary": "V announced launch of W-7 to study cancer drug crystallization in orbit, supporting its microgravity-enabled pharmaceutical processing and in-space manufacturing platform validation.",
-      "category": "product",
+      "date": "2026-09-30",
+      "headline": "V Series D: $250M raised at ~$1.6B valuation",
+      "summary": "Reuters-reported financing states V raised about $250M at a $1.6B valuation, aimed at scaling microgravity orbital drug manufacturing cadence and partnerships.",
+      "category": "funding",
       "impact": "positive",
-      "review_status": "none",
-      "source_label": "Official release",
-      "source_url": "https://www.varda.com/mission/w-7"
+      "review_status": "pending",
+      "source_label": "Credible press",
+      "source_url": "https://finance.yahoo.com/healthcare/articles/varda-raises-250-million-1-100413718.html"
     }
   ]
 }

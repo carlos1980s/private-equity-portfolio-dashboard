@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-04T02:59:54+00:00",
-  "last_attempt_at": "2026-11-06T03:25:26+00:00",
+  "updated_at": "2026-11-07T02:46:37+00:00",
+  "last_attempt_at": "2026-11-07T02:46:37+00:00",
   "refresh_status": "partial",
   "policy": "Public NAVs may refresh automatically; share counts and cost basis remain owner-controlled.",
   "items": [
@@ -27,11 +27,11 @@
       "isin": "LU1803068979",
       "shares": 5812.034,
       "cost_nav": 22.5655,
-      "nav": 39.76,
+      "nav": 33.74,
       "nav_scale": 1.0,
       "currency": "SGD",
-      "nav_as_of": "2026-10-05",
-      "source_label": "Franklin Templeton (issuer)",
+      "nav_as_of": "2026-11-04",
+      "source_label": "Franklin Templeton (issuer) - LU1803068979 page",
       "source_url": "https://www.franklintempleton.com.sg/our-funds/price-and-performance/products/4916/Z5/franklin-technology-fund/LU1803068979"
     },
     {
