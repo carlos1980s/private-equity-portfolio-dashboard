@@ -1,52 +1,85 @@
 {
-  "updated_at": "2026-11-07T02:47:02+00:00",
-  "last_attempt_at": "2026-11-07T02:47:02+00:00",
+  "updated_at": "2026-11-08T02:28:02+00:00",
+  "last_attempt_at": "2026-11-08T02:28:02+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
       "company": "G",
+      "date": "2026-11-08",
+      "headline": "G: no material item found in last 45 days (search results insufficient)",
+      "summary": "I did not find any credible press or official G releases in the last 45 days matching your prioritization criteria with verifiable direct URLs.",
+      "category": "other",
+      "impact": "neutral",
+      "review_status": "none",
+      "source_label": "Credible press",
+      "source_url": "https://example.com/no-data-found"
+    },
+    {
+      "company": "O",
       "date": "2026-11-06",
-      "headline": "G seeks $8B valuation in new funding round (Bloomberg)",
-      "summary": "Reporting indicates G is seeking an $8B valuation in a new funding round, implying a valuation reset higher versus prior tracked levels.",
-      "category": "valuation",
-      "impact": "positive",
-      "review_status": "pending",
+      "headline": "O: data-center electricity commitments",
+      "summary": "O publicly pledged to support a national effort to provide \u201caffordable, reliable electricity\u201d for communities near its data centers, reflecting an operational and regulatory posture for capacity buildouts.",
+      "category": "regulatory",
+      "impact": "neutral",
+      "review_status": "none",
       "source_label": "Credible press",
-      "source_url": "https://ca.investing.com/news/stock-market-news/nvidiabacked-groq-seeks-8-billion-valuation-in-new-funding-round--bloomberg-4940538"
+      "source_url": "https://apnews.com/article/63b33be8884d867d3ac831040d683a2c"
     },
     {
       "company": "O",
-      "date": "2026-11-03",
-      "headline": "Bug bounty: O prepared to quadruple rewards for critical findings",
-      "summary": "Credible reporting says O is raising bug bounty rewards for security researchers and is prepared to quadruple payouts for critical findings, reflecting heightened security focus around model/agent risk.",
-      "category": "product",
-      "impact": "positive",
-      "review_status": "pending",
-      "source_label": "Credible press",
-      "source_url": "https://www.techradar.com/pro/security/traditional-cyber-defenses-alone-are-no-longer-sufficient-openai-is-raising-its-bug-bounty-rewards-for-security-researchers-as-ai-attack-worries-grow"
-    },
-    {
-      "company": "O",
-      "date": "2026-10-15",
-      "headline": "GPT-6 Sol & Luna October update strengthens jailbreak resistance",
-      "summary": "O published an October 2026 safety/system-card update stating GPT-6 Sol and GPT-6 Luna replace prior ChatGPT versions. It reports stronger resistance to jailbreaks (notably adaptive, multi-turn) and describes applied safeguards.",
+      "date": "2026-11-04",
+      "headline": "O: acquire Pierre to expand Codex Git workflows",
+      "summary": "O announced it will acquire Pierre Computer, citing Codex usage of Pierre\u2019s Trees/Diffs libraries and aiming to adapt Git workflows for coding agents. Closing is subject to customary conditions and regulatory approvals.",
       "category": "product",
       "impact": "positive",
       "review_status": "pending",
       "source_label": "Official release",
-      "source_url": "https://deploymentsafety.openai.com/gpt-6-october/references"
+      "source_url": "https://openai.com/index/openai-to-acquire-pierre"
+    },
+    {
+      "company": "O",
+      "date": "2026-10-20",
+      "headline": "O: fundraising reportedly targets far-higher valuation ahead of IPO",
+      "summary": "Reports cite O attempting to accelerate fundraising ahead of a potential IPO window, with investor discussions around a valuation far above prior marks; O reportedly declined to comment. This is valuation/funding-signal only.",
+      "category": "valuation",
+      "impact": "mixed",
+      "review_status": "pending",
+      "source_label": "Credible press",
+      "source_url": "https://live.euronext.com/en/financial-news/exclusive-openai-seeks-accelerate-fundraising-ahead-anthropic-ipo-sources-say"
+    },
+    {
+      "company": "V",
+      "date": "2026-10-13",
+      "headline": "V: 2 in orbit; more launches planned",
+      "summary": "V reportedly had two spacecraft operating in orbit, with an additional launch \u201cin the coming days\u201d and seven more next year, alongside scaling plans and hiring, supporting capacity ramp visibility.",
+      "category": "capacity",
+      "impact": "positive",
+      "review_status": "pending",
+      "source_label": "Credible press",
+      "source_url": "https://www.space.com/space-exploration/launches-spacecraft/2-spacecraft-in-orbit-and-8-more-coming-soon-varda-has-big-plans-for-in-space-manufacturing"
+    },
+    {
+      "company": "V",
+      "date": "2026-10-01",
+      "headline": "V: Australian authorization variation includes additional W-Series returns",
+      "summary": "An Australian space-agency document indicates a variation to V\u2019s return authorization to include additional W-Series capsule returns to Koonibba Test Range, supporting regulatory/operations continuity for reentry activity.",
+      "category": "regulatory",
+      "impact": "neutral",
+      "review_status": "none",
+      "source_label": "Regulatory filing",
+      "source_url": "https://www.space.gov.au/sites/default/files/media-documents/2026-10/Decisions%20about%20space%20activities%20%28October%202026%29.pdf"
     },
     {
       "company": "V",
       "date": "2026-09-30",
-      "headline": "V Series D: $250M raised at ~$1.6B valuation",
-      "summary": "Reuters-reported financing states V raised about $250M at a $1.6B valuation, aimed at scaling microgravity orbital drug manufacturing cadence and partnerships.",
+      "headline": "V: Series D $251M to scale orbital pharma processing",
+      "summary": "V announced a $251M Series D (led by Lux Capital, Natural Capital) to scale in-space pharmaceutical processing, citing increased flight cadence and ongoing reentry/return capability.",
       "category": "funding",
       "impact": "positive",
       "review_status": "pending",
-      "source_label": "Credible press",
-      "source_url": "https://finance.yahoo.com/healthcare/articles/varda-raises-250-million-1-100413718.html"
+      "source_label": "Official release",
+      "source_url": "https://www.prnewswire.com/news-releases/varda-announces-251-million-series-d-to-scale-space-based-pharmaceutical-processing-302893651.html"
     }
   ]
 }
