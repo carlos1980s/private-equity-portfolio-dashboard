@@ -1,85 +1,118 @@
 {
-  "updated_at": "2026-11-08T02:28:02+00:00",
-  "last_attempt_at": "2026-11-08T02:28:02+00:00",
+  "updated_at": "2026-11-09T02:39:29+00:00",
+  "last_attempt_at": "2026-11-09T02:39:29+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
-      "company": "G",
-      "date": "2026-11-08",
-      "headline": "G: no material item found in last 45 days (search results insufficient)",
-      "summary": "I did not find any credible press or official G releases in the last 45 days matching your prioritization criteria with verifiable direct URLs.",
-      "category": "other",
+      "company": "O",
+      "date": "2026-11-06",
+      "headline": "O commits to data-center grid support program",
+      "summary": "O pledged participation in a \u201cGrid Protectors Program\u201d to help support affordable, reliable electricity for communities near data centers, alongside testing for peak-hour energy demand reduction.",
+      "category": "capacity",
       "impact": "neutral",
       "review_status": "none",
       "source_label": "Credible press",
-      "source_url": "https://example.com/no-data-found"
+      "source_url": "https://www.techradar.com/pro/families-need-reliable-electricity-openai-pledges-to-try-and-provide-a-national-effort-to-support-affordable-reliable-electricity-for-families-and-businesses-living-near-its-data-centers"
+    },
+    {
+      "company": "V",
+      "date": "2026-11-05",
+      "headline": "V W-6 mission: autonomous navigation & thermal protection payload tests",
+      "summary": "V\u2019s W-6 mission description highlights autonomous hypersonic flight foundations and next-gen thermal protection tests, including an AutoNav-focused payload integration.",
+      "category": "product",
+      "impact": "positive",
+      "review_status": "none",
+      "source_label": "Official release",
+      "source_url": "https://www.varda.com/mission/w-6"
     },
     {
       "company": "O",
-      "date": "2026-11-06",
-      "headline": "O: data-center electricity commitments",
-      "summary": "O publicly pledged to support a national effort to provide \u201caffordable, reliable electricity\u201d for communities near its data centers, reflecting an operational and regulatory posture for capacity buildouts.",
-      "category": "regulatory",
-      "impact": "neutral",
+      "date": "2026-11-05",
+      "headline": "O releases GPT-6 Cyber (critical cyber rating)",
+      "summary": "O released GPT-6 Cyber to a subset of verified users, claiming its strongest cybersecurity capability rating (\u201ccritical\u201d) and improved vulnerability finding/exploitation behavior under defined boundaries.",
+      "category": "product",
+      "impact": "positive",
       "review_status": "none",
       "source_label": "Credible press",
-      "source_url": "https://apnews.com/article/63b33be8884d867d3ac831040d683a2c"
+      "source_url": "https://www.axios.com/2026/11/05/openai-linux-cyber-model"
     },
     {
       "company": "O",
       "date": "2026-11-04",
-      "headline": "O: acquire Pierre to expand Codex Git workflows",
-      "summary": "O announced it will acquire Pierre Computer, citing Codex usage of Pierre\u2019s Trees/Diffs libraries and aiming to adapt Git workflows for coding agents. Closing is subject to customary conditions and regulatory approvals.",
+      "headline": "O targets GitHub via Codex integration deal",
+      "summary": "O reportedly plans to integrate Pierre\u2019s code-storage function into Codex, potentially strengthening repository-aware coding workflows in Microsoft\u2019s GitHub ecosystem.",
       "category": "product",
       "impact": "positive",
       "review_status": "pending",
-      "source_label": "Official release",
-      "source_url": "https://openai.com/index/openai-to-acquire-pierre"
+      "source_label": "Credible press",
+      "source_url": "https://www.axios.com/2026/11/04/openai-pierre-computer-github"
     },
     {
       "company": "O",
-      "date": "2026-10-20",
-      "headline": "O: fundraising reportedly targets far-higher valuation ahead of IPO",
-      "summary": "Reports cite O attempting to accelerate fundraising ahead of a potential IPO window, with investor discussions around a valuation far above prior marks; O reportedly declined to comment. This is valuation/funding-signal only.",
-      "category": "valuation",
-      "impact": "mixed",
-      "review_status": "pending",
+      "date": "2026-11-03",
+      "headline": "O raises bug-bounty payouts for critical findings",
+      "summary": "O increased bug-bounty rewards, indicating readiness to quadruple payouts for \u201ccritical\u201d security findings as AI attack risks grow.",
+      "category": "regulatory",
+      "impact": "neutral",
+      "review_status": "none",
       "source_label": "Credible press",
-      "source_url": "https://live.euronext.com/en/financial-news/exclusive-openai-seeks-accelerate-fundraising-ahead-anthropic-ipo-sources-say"
+      "source_url": "https://www.techradar.com/pro/security/traditional-cyber-defenses-alone-are-no-longer-sufficient-openai-is-raising-its-bug-bounty-rewards-for-security-researchers-as-ai-attack-worries-grow"
     },
     {
-      "company": "V",
-      "date": "2026-10-13",
-      "headline": "V: 2 in orbit; more launches planned",
-      "summary": "V reportedly had two spacecraft operating in orbit, with an additional launch \u201cin the coming days\u201d and seven more next year, alongside scaling plans and hiring, supporting capacity ramp visibility.",
-      "category": "capacity",
+      "company": "G",
+      "date": "2026-11-02",
+      "headline": "G re-valuation bid: $8B target highlighted",
+      "summary": "Reporting says a G executive is pursuing a valuation target near $8B within about three months amid comments about inference-demand momentum and debt-market reliance.",
+      "category": "valuation",
       "impact": "positive",
       "review_status": "pending",
       "source_label": "Credible press",
-      "source_url": "https://www.space.com/space-exploration/launches-spacecraft/2-spacecraft-in-orbit-and-8-more-coming-soon-varda-has-big-plans-for-in-space-manufacturing"
+      "source_url": "https://finance.yahoo.com/technology/ai/articles/neocloud-groq-aims-double-value-231345463.html"
+    },
+    {
+      "company": "V",
+      "date": "2026-10-30",
+      "headline": "V Series D: $251M to scale space-based processing",
+      "summary": "PR coverage says V announced a $251M Series D to scale space-based pharmaceutical processing, citing total raised to $598M\u2014direct financing evidence supporting growth plans.",
+      "category": "funding",
+      "impact": "positive",
+      "review_status": "pending",
+      "source_label": "Credible press",
+      "source_url": "https://www.prnewswire.com/news-releases/varda-announces-251-million-series-d-to-scale-space-based-pharmaceutical-processing-302893651.html"
+    },
+    {
+      "company": "G",
+      "date": "2026-10-18",
+      "headline": "G docs update: model deprecations & endpoint changes",
+      "summary": "GroqDocs console deprecations page records recent model deprecations/endpoint changes (including Sep/Oct 2026 entries), indicating product surface evolution that can affect deployments.",
+      "category": "product",
+      "impact": "neutral",
+      "review_status": "none",
+      "source_label": "Official release",
+      "source_url": "https://console.groq.com/docs/deprecations?erid=2W5zFJmrUKT"
+    },
+    {
+      "company": "G",
+      "date": "2026-10-10",
+      "headline": "G public-sector/model-provider momentum noted amid industry chatter",
+      "summary": "Industry coverage references G-related positioning (e.g., ecosystem and product timelines) alongside broader market developments; useful context but not a discrete fundamental change.",
+      "category": "other",
+      "impact": "neutral",
+      "review_status": "none",
+      "source_label": "Credible press",
+      "source_url": "https://www.tomshardware.com/tech-industry/this-week-on-toms-hardware-premium-october-10-2026-tencent-grabs-bargain-chips-qualcomm-huawei-ip-deal-groq-lawsuit-and-more"
     },
     {
       "company": "V",
       "date": "2026-10-01",
-      "headline": "V: Australian authorization variation includes additional W-Series returns",
-      "summary": "An Australian space-agency document indicates a variation to V\u2019s return authorization to include additional W-Series capsule returns to Koonibba Test Range, supporting regulatory/operations continuity for reentry activity.",
-      "category": "regulatory",
-      "impact": "neutral",
-      "review_status": "none",
-      "source_label": "Regulatory filing",
-      "source_url": "https://www.space.gov.au/sites/default/files/media-documents/2026-10/Decisions%20about%20space%20activities%20%28October%202026%29.pdf"
-    },
-    {
-      "company": "V",
-      "date": "2026-09-30",
-      "headline": "V: Series D $251M to scale orbital pharma processing",
-      "summary": "V announced a $251M Series D (led by Lux Capital, Natural Capital) to scale in-space pharmaceutical processing, citing increased flight cadence and ongoing reentry/return capability.",
-      "category": "funding",
+      "headline": "V W-9 mission page: annual launches & reentries trend",
+      "summary": "V\u2019s W-9 mission details emphasize scaled operational cadence and \u201cnumber of annual launches and reentries\u201d increasing, supporting capacity-growth expectations.",
+      "category": "capacity",
       "impact": "positive",
       "review_status": "pending",
       "source_label": "Official release",
-      "source_url": "https://www.prnewswire.com/news-releases/varda-announces-251-million-series-d-to-scale-space-based-pharmaceutical-processing-302893651.html"
+      "source_url": "https://www.varda.com/mission/w-9"
     }
   ]
 }
