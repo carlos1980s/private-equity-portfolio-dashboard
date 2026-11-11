@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-07T02:46:37+00:00",
-  "last_attempt_at": "2026-11-10T04:37:06+00:00",
+  "updated_at": "2026-11-11T02:46:12+00:00",
+  "last_attempt_at": "2026-11-11T02:46:12+00:00",
   "refresh_status": "partial",
   "policy": "Public NAVs may refresh automatically; share counts and cost basis remain owner-controlled.",
   "items": [
@@ -31,7 +31,7 @@
       "nav_scale": 1.0,
       "currency": "SGD",
       "nav_as_of": "2026-11-04",
-      "source_label": "Franklin Templeton (issuer) - LU1803068979 page",
+      "source_label": "Franklin Templeton Singapore (A (acc) SGD-H1 - LU1803068979)",
       "source_url": "https://www.franklintempleton.com.sg/our-funds/price-and-performance/products/4916/Z5/franklin-technology-fund/LU1803068979"
     },
     {

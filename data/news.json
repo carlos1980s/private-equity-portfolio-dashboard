@@ -1,85 +1,63 @@
 {
-  "updated_at": "2026-11-10T04:37:44+00:00",
-  "last_attempt_at": "2026-11-10T04:37:44+00:00",
+  "updated_at": "2026-11-11T02:46:55+00:00",
+  "last_attempt_at": "2026-11-11T02:46:55+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
       "company": "O",
-      "date": "2026-11-04",
-      "headline": "O acquisition of Pierre Computer Company, Inc.",
-      "summary": "O announced an acquisition of Pierre Computer Company to expand Codex\u2019s tools for building, understanding, and reviewing code. Signals continued product expansion in developer tooling and code workflows.",
-      "category": "product",
-      "impact": "positive",
-      "review_status": "none",
-      "source_label": "Official release",
-      "source_url": "https://openai.com/news/openai-to-acquire-pierre-computer-company-inc"
-    },
-    {
-      "company": "O",
-      "date": "2026-10-30",
-      "headline": "O honor robots.txt AI training preferences",
-      "summary": "O said it will honor a shared robots.txt signal for participating providers, improving how websites communicate AI training preferences. Could reduce legal friction and increase publisher participation.",
-      "category": "regulatory",
-      "impact": "positive",
-      "review_status": "pending",
-      "source_label": "Official release",
-      "source_url": "https://openai.com/news/making-it-easier-for-websites-to-express-ai-training-preferences"
-    },
-    {
-      "company": "O",
-      "date": "2026-10-30",
-      "headline": "O Model Spec update",
-      "summary": "O updated its Model Spec to clarify behavior around five values, including faithfulness to human intent, harm minimization, and human agency/oversight guidance. Mostly governance/safety positioning rather than direct financial effects.",
-      "category": "regulatory",
-      "impact": "neutral",
-      "review_status": "none",
-      "source_label": "Official release",
-      "source_url": "https://help.openai.com/en/articles/9624314-model-release-notes"
-    },
-    {
-      "company": "O",
-      "date": "2026-10-26",
-      "headline": "O GPT-6.1 Terra rollout",
-      "summary": "O launched GPT-6.1 Terra, including faster professional work and API pricing details ($1/M input, $0.05/M cached input, $5/M output). Supports visual reasoning, computer use, and writing, indicating capacity for enterprise workloads.",
-      "category": "product",
-      "impact": "positive",
-      "review_status": "none",
-      "source_label": "Official release",
-      "source_url": "https://openai.com/news/introducing-gpt-6-1-terra"
-    },
-    {
-      "company": "G",
-      "date": "2026-10-15",
-      "headline": "G GroqCloud preview for Meta Muse Spark Open",
-      "summary": "G announced a limited preview availability of Meta\u2019s Muse Spark Open on GroqCloud, highlighting strong inference throughput (e.g., claimed tokens/sec per user) and long-context support (context window specified). Signals ongoing demand and partner ecosystem momentum.",
-      "category": "product",
-      "impact": "positive",
-      "review_status": "none",
-      "source_label": "Official release",
-      "source_url": "https://groq.com/blog/meta-s-muse-spark-open-release-is-now-in-limited-preview-on-groqcloud"
-    },
-    {
-      "company": "V",
-      "date": "2026-10-13",
-      "headline": "V hiring + W-Series expansion outlook",
-      "summary": "Space.com reported V\u2019s September Series D ($251M) and plans to hire 100 people by end of 2027, alongside its W-Series manufacturing cadence. Suggests scaling capacity and operational runway, supporting growth assumptions.",
-      "category": "capacity",
+      "date": "2026-11-06",
+      "headline": "O: Reports $11B raised at $1.25T valuation",
+      "summary": "TechCrunch reports O is raising an additional $11B in a private round, valuing the company at about $1.25T. The same reporting frames it as an effort to stay ahead of a near-term peer listing.",
+      "category": "valuation",
       "impact": "positive",
       "review_status": "pending",
       "source_label": "Credible press",
-      "source_url": "https://www.space.com/space-exploration/launches-spacecraft/2-spacecraft-in-orbit-and-8-more-coming-soon-varda-has-big-plans-for-in-space-manufacturing"
+      "source_url": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation?source=newscura"
+    },
+    {
+      "company": "O",
+      "date": "2026-11-05",
+      "headline": "O: GPT-6 Cyber for verified users",
+      "summary": "Axios reports O released a GPT-6 \u201cCyber\u201d model to a subset of verified users, citing its top cybersecurity capability rating (\u201ccritical\u201d). Product capability signals incremental competitive strength in security workloads.",
+      "category": "product",
+      "impact": "positive",
+      "review_status": "none",
+      "source_label": "Credible press",
+      "source_url": "https://www.axios.com/2026/11/05/openai-linux-cyber-model"
+    },
+    {
+      "company": "O",
+      "date": "2026-11-05",
+      "headline": "O: Data center power commitments via framework",
+      "summary": "AP reports O published a framework describing new commitments for communities near its data centers, and ties this to expectations of a tougher AI/data-center regulatory environment after the midterms.",
+      "category": "regulatory",
+      "impact": "neutral",
+      "review_status": "none",
+      "source_label": "Credible press",
+      "source_url": "https://apnews.com/article/63b33be8884d867d3ac831040d683a2c"
     },
     {
       "company": "V",
-      "date": "2026-10-01",
-      "headline": "V W-6 mission page updated",
-      "summary": "V\u2019s mission page for W-6 references payload/materials and includes an AFRL public affairs approval code, indicating continued government-facing mission activity. Mostly operational transparency; limited direct financial/valuation signal.",
-      "category": "capacity",
-      "impact": "neutral",
+      "date": "2026-09-30",
+      "headline": "V: W-6 reentry validates AutoNav",
+      "summary": "V\u2019s mission page describes W-6 carrying payloads to advance autonomous navigation and thermal protection, including validation of its AutoNav system during hypersonic reentry conditions.",
+      "category": "product",
+      "impact": "positive",
       "review_status": "none",
       "source_label": "Official release",
       "source_url": "https://www.varda.com/mission/w-6"
+    },
+    {
+      "company": "V",
+      "date": "2026-09-30",
+      "headline": "V: $251M Series D for in-space pharma processing",
+      "summary": "PRNewswire reports V announced a $251M Series D to scale space-based pharmaceutical processing, citing total capital raised of $598M and referencing increased mission cadence through 2028.",
+      "category": "funding",
+      "impact": "positive",
+      "review_status": "pending",
+      "source_label": "Credible press",
+      "source_url": "https://www.prnewswire.com/news-releases/varda-announces-251-million-series-d-to-scale-space-based-pharmaceutical-processing-302893651.html"
     }
   ]
 }
