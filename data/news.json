@@ -1,25 +1,25 @@
 {
-  "updated_at": "2026-11-11T02:46:55+00:00",
-  "last_attempt_at": "2026-11-11T02:46:55+00:00",
+  "updated_at": "2026-11-12T03:48:11+00:00",
+  "last_attempt_at": "2026-11-12T03:48:11+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
       "company": "O",
-      "date": "2026-11-06",
-      "headline": "O: Reports $11B raised at $1.25T valuation",
-      "summary": "TechCrunch reports O is raising an additional $11B in a private round, valuing the company at about $1.25T. The same reporting frames it as an effort to stay ahead of a near-term peer listing.",
-      "category": "valuation",
-      "impact": "positive",
+      "date": "2026-11-10",
+      "headline": "O: Australia to create AI safety regulator after portal breach",
+      "summary": "Australia accepted an inquiry\u2019s recommendations after an O-related breach of a government portal, including possible criminal-law changes and steps toward stronger safety oversight. Adds compliance and operational risk.",
+      "category": "regulatory",
+      "impact": "negative",
       "review_status": "pending",
       "source_label": "Credible press",
-      "source_url": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation?source=newscura"
+      "source_url": "https://apnews.com/article/a5dfe5379c0f7458e44b72a9073833c6"
     },
     {
       "company": "O",
       "date": "2026-11-05",
-      "headline": "O: GPT-6 Cyber for verified users",
-      "summary": "Axios reports O released a GPT-6 \u201cCyber\u201d model to a subset of verified users, citing its top cybersecurity capability rating (\u201ccritical\u201d). Product capability signals incremental competitive strength in security workloads.",
+      "headline": "O: GPT-6 Cyber hits \u201ccritical\u201d rating in cyber release",
+      "summary": "O released GPT-6 Cyber to a subset of verified users, stating it reached its highest \u201ccritical\u201d cybersecurity capability rating, and expanded its Daybreak program access. Potentially improves security tooling and enterprise adoption.",
       "category": "product",
       "impact": "positive",
       "review_status": "none",
@@ -27,37 +27,48 @@
       "source_url": "https://www.axios.com/2026/11/05/openai-linux-cyber-model"
     },
     {
-      "company": "O",
-      "date": "2026-11-05",
-      "headline": "O: Data center power commitments via framework",
-      "summary": "AP reports O published a framework describing new commitments for communities near its data centers, and ties this to expectations of a tougher AI/data-center regulatory environment after the midterms.",
-      "category": "regulatory",
-      "impact": "neutral",
+      "company": "V",
+      "date": "2026-10-01",
+      "headline": "V: Multiple reentry vehicles in orbit; more launches planned",
+      "summary": "Space.com reported V operating two vehicles in orbit after Oct 1, 2026 launches (W-8/W-9) with another expected soon and additional launches into next year, reinforcing near-term capacity and manufacturing cadence.",
+      "category": "capacity",
+      "impact": "positive",
       "review_status": "none",
       "source_label": "Credible press",
-      "source_url": "https://apnews.com/article/63b33be8884d867d3ac831040d683a2c"
+      "source_url": "https://www.space.com/space-exploration/launches-spacecraft/2-spacecraft-in-orbit-and-8-more-coming-soon-varda-has-big-plans-for-in-space-manufacturing"
     },
     {
-      "company": "V",
-      "date": "2026-09-30",
-      "headline": "V: W-6 reentry validates AutoNav",
-      "summary": "V\u2019s mission page describes W-6 carrying payloads to advance autonomous navigation and thermal protection, including validation of its AutoNav system during hypersonic reentry conditions.",
-      "category": "product",
+      "company": "O",
+      "date": "2026-10-01",
+      "headline": "O: SoftBank executes final $10B follow-on tranche",
+      "summary": "SoftBank disclosed execution of the third/final O follow-on tranche of $10.0B on Oct 1, 2026. Also notes cancellation of remaining $10B undrawn bridge capacity and repayment of borrowings\u2014funding clarity.",
+      "category": "funding",
       "impact": "positive",
       "review_status": "none",
       "source_label": "Official release",
-      "source_url": "https://www.varda.com/mission/w-6"
+      "source_url": "https://links.sgx.com/FileOpen/SBG%20261001.ashx?App=Announcement&FileID=905664"
     },
     {
       "company": "V",
       "date": "2026-09-30",
-      "headline": "V: $251M Series D for in-space pharma processing",
-      "summary": "PRNewswire reports V announced a $251M Series D to scale space-based pharmaceutical processing, citing total capital raised of $598M and referencing increased mission cadence through 2028.",
+      "headline": "V: Series D $251M to scale space pharma processing",
+      "summary": "V announced a $251M Series D, stating total capital raised of $598M and expansion of cadence plus deeper pharmaceutical partnerships. Also cited six reentry missions completed and more planned through 2028.",
       "category": "funding",
       "impact": "positive",
-      "review_status": "pending",
-      "source_label": "Credible press",
+      "review_status": "none",
+      "source_label": "Official release",
       "source_url": "https://www.prnewswire.com/news-releases/varda-announces-251-million-series-d-to-scale-space-based-pharmaceutical-processing-302893651.html"
+    },
+    {
+      "company": "V",
+      "date": "2026-09-30",
+      "headline": "V: Valuation cited at $1.6B in Series D reporting",
+      "summary": "Reuters coverage (via StreetInsider) reported V raised $250M Series D at a $1.6B valuation while ramping microgravity pharmaceutical manufacturing. Supports valuation and financing momentum evidence.",
+      "category": "valuation",
+      "impact": "positive",
+      "review_status": "none",
+      "source_label": "Credible press",
+      "source_url": "https://www.streetinsider.com/Reuters/Varda%2Braises%2B%24250%2Bmillion%2Bat%2B%241.6%2Bbillion%2Bvaluation%2Bto%2Bscale%2Borbital%2Bdrug%2Bmanufacturing/27124726.html"
     }
   ]
 }
