@@ -1,74 +1,52 @@
 {
-  "updated_at": "2026-11-12T03:48:11+00:00",
-  "last_attempt_at": "2026-11-12T03:48:11+00:00",
+  "updated_at": "2026-11-13T03:24:32+00:00",
+  "last_attempt_at": "2026-11-13T03:24:32+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
       "company": "O",
-      "date": "2026-11-10",
-      "headline": "O: Australia to create AI safety regulator after portal breach",
-      "summary": "Australia accepted an inquiry\u2019s recommendations after an O-related breach of a government portal, including possible criminal-law changes and steps toward stronger safety oversight. Adds compliance and operational risk.",
+      "date": "2026-11-12",
+      "headline": "O: lawsuit seeks halt on new AI models",
+      "summary": "Advocacy groups filed to freeze new model development/deployment, naming O alongside multiple AI labs. Potential impact is uncertainty around future releases and regulatory/operational constraints.",
       "category": "regulatory",
-      "impact": "negative",
+      "impact": "mixed",
       "review_status": "pending",
       "source_label": "Credible press",
-      "source_url": "https://apnews.com/article/a5dfe5379c0f7458e44b72a9073833c6"
+      "source_url": "https://apnews.com/article/03ece37b96979fe834f60976648504ba"
     },
     {
       "company": "O",
-      "date": "2026-11-05",
-      "headline": "O: GPT-6 Cyber hits \u201ccritical\u201d rating in cyber release",
-      "summary": "O released GPT-6 Cyber to a subset of verified users, stating it reached its highest \u201ccritical\u201d cybersecurity capability rating, and expanded its Daybreak program access. Potentially improves security tooling and enterprise adoption.",
+      "date": "2026-11-06",
+      "headline": "O: developers changelog adds Agent SDK capabilities",
+      "summary": "O\u2019s API changelog notes Agent sandboxes now include the Artifact SDK and tools for creating/editing spreadsheets, presentations, and Word documents. This supports broader agent workflows and faster product iteration.",
       "category": "product",
       "impact": "positive",
       "review_status": "none",
-      "source_label": "Credible press",
-      "source_url": "https://www.axios.com/2026/11/05/openai-linux-cyber-model"
-    },
-    {
-      "company": "V",
-      "date": "2026-10-01",
-      "headline": "V: Multiple reentry vehicles in orbit; more launches planned",
-      "summary": "Space.com reported V operating two vehicles in orbit after Oct 1, 2026 launches (W-8/W-9) with another expected soon and additional launches into next year, reinforcing near-term capacity and manufacturing cadence.",
-      "category": "capacity",
-      "impact": "positive",
-      "review_status": "none",
-      "source_label": "Credible press",
-      "source_url": "https://www.space.com/space-exploration/launches-spacecraft/2-spacecraft-in-orbit-and-8-more-coming-soon-varda-has-big-plans-for-in-space-manufacturing"
-    },
-    {
-      "company": "O",
-      "date": "2026-10-01",
-      "headline": "O: SoftBank executes final $10B follow-on tranche",
-      "summary": "SoftBank disclosed execution of the third/final O follow-on tranche of $10.0B on Oct 1, 2026. Also notes cancellation of remaining $10B undrawn bridge capacity and repayment of borrowings\u2014funding clarity.",
-      "category": "funding",
-      "impact": "positive",
-      "review_status": "none",
       "source_label": "Official release",
-      "source_url": "https://links.sgx.com/FileOpen/SBG%20261001.ashx?App=Announcement&FileID=905664"
+      "source_url": "https://developers.openai.com/api/docs/changelog?mw_entry=2026-09-10-f35b72a1a7114c5e"
     },
     {
-      "company": "V",
-      "date": "2026-09-30",
-      "headline": "V: Series D $251M to scale space pharma processing",
-      "summary": "V announced a $251M Series D, stating total capital raised of $598M and expansion of cadence plus deeper pharmaceutical partnerships. Also cited six reentry missions completed and more planned through 2028.",
-      "category": "funding",
-      "impact": "positive",
-      "review_status": "none",
-      "source_label": "Official release",
-      "source_url": "https://www.prnewswire.com/news-releases/varda-announces-251-million-series-d-to-scale-space-based-pharmaceutical-processing-302893651.html"
-    },
-    {
-      "company": "V",
-      "date": "2026-09-30",
-      "headline": "V: Valuation cited at $1.6B in Series D reporting",
-      "summary": "Reuters coverage (via StreetInsider) reported V raised $250M Series D at a $1.6B valuation while ramping microgravity pharmaceutical manufacturing. Supports valuation and financing momentum evidence.",
+      "company": "G",
+      "date": "2026-11-06",
+      "headline": "G: seeks ~$8B valuation in new round",
+      "summary": "Bloomberg reports G is seeking funding at about an $8B valuation, with a plan to expand revenue and ramp economics over coming years. Implies fresh capital access and valuation support amid AI selloff.",
       "category": "valuation",
       "impact": "positive",
-      "review_status": "none",
+      "review_status": "pending",
       "source_label": "Credible press",
-      "source_url": "https://www.streetinsider.com/Reuters/Varda%2Braises%2B%24250%2Bmillion%2Bat%2B%241.6%2Bbillion%2Bvaluation%2Bto%2Bscale%2Borbital%2Bdrug%2Bmanufacturing/27124726.html"
+      "source_url": "https://bloomberg.com/news/articles/2026-11-06/neocloud-groq-aims-to-double-value-to-8-billion-amid-ai-selloff"
+    },
+    {
+      "company": "V",
+      "date": "2026-10-30",
+      "headline": "V: $251M Series D to scale space pharma processing",
+      "summary": "V announced a $251M Series D to scale space-based pharmaceutical processing, stating total capital raised of $598M. Signals capacity scaling and increased ability to serve future in-orbit manufacturing demand.",
+      "category": "capacity",
+      "impact": "positive",
+      "review_status": "pending",
+      "source_label": "Official release",
+      "source_url": "https://www.prnewswire.com/news-releases/varda-announces-251-million-series-d-to-scale-space-based-pharmaceutical-processing-302893651.html"
     }
   ]
 }
