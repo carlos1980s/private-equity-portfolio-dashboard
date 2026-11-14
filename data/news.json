@@ -1,52 +1,52 @@
 {
-  "updated_at": "2026-11-13T03:24:32+00:00",
-  "last_attempt_at": "2026-11-13T03:24:32+00:00",
+  "updated_at": "2026-11-14T03:12:25+00:00",
+  "last_attempt_at": "2026-11-14T03:12:25+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
       "company": "O",
       "date": "2026-11-12",
-      "headline": "O: lawsuit seeks halt on new AI models",
-      "summary": "Advocacy groups filed to freeze new model development/deployment, naming O alongside multiple AI labs. Potential impact is uncertainty around future releases and regulatory/operational constraints.",
+      "headline": "O faces RICO-style suit tied to data-center expansion",
+      "summary": "A lawsuit alleges a coordinated scheme to secure approval for O\u2019s large Georgia AI data-center project, including racketeering-type claims. Material downside risk is reputational and potentially regulatory/cost timing.",
       "category": "regulatory",
-      "impact": "mixed",
+      "impact": "negative",
       "review_status": "pending",
       "source_label": "Credible press",
-      "source_url": "https://apnews.com/article/03ece37b96979fe834f60976648504ba"
+      "source_url": "https://www.tomshardware.com/tech-industry/data-centers/georgia-politicians-openai-slapped-with-racketeering-lawsuit-over-3-2-gigawatt-ai-data-centers-plaintiffs-allege-multiple-violations-were-part-of-a-coordinated-scheme-to-get-project-camellia-approved"
     },
     {
       "company": "O",
       "date": "2026-11-06",
-      "headline": "O: developers changelog adds Agent SDK capabilities",
-      "summary": "O\u2019s API changelog notes Agent sandboxes now include the Artifact SDK and tools for creating/editing spreadsheets, presentations, and Word documents. This supports broader agent workflows and faster product iteration.",
-      "category": "product",
+      "headline": "O secures further funding at $1.25T value",
+      "summary": "O completed an $11B portion of a larger private funding at a reported $1.25T valuation, with marquee backers participating. Reinforces IPO-capital runway and ongoing investor appetite for late-stage AI scale.",
+      "category": "funding",
       "impact": "positive",
       "review_status": "none",
-      "source_label": "Official release",
-      "source_url": "https://developers.openai.com/api/docs/changelog?mw_entry=2026-09-10-f35b72a1a7114c5e"
-    },
-    {
-      "company": "G",
-      "date": "2026-11-06",
-      "headline": "G: seeks ~$8B valuation in new round",
-      "summary": "Bloomberg reports G is seeking funding at about an $8B valuation, with a plan to expand revenue and ramp economics over coming years. Implies fresh capital access and valuation support amid AI selloff.",
-      "category": "valuation",
-      "impact": "positive",
-      "review_status": "pending",
       "source_label": "Credible press",
-      "source_url": "https://bloomberg.com/news/articles/2026-11-06/neocloud-groq-aims-to-double-value-to-8-billion-amid-ai-selloff"
+      "source_url": "https://bloomberg.com/news/articles/2026-11-06/openai-completes-11-billion-portion-of-funding-at-1-25-trillion-value"
     },
     {
       "company": "V",
       "date": "2026-10-30",
-      "headline": "V: $251M Series D to scale space pharma processing",
-      "summary": "V announced a $251M Series D to scale space-based pharmaceutical processing, stating total capital raised of $598M. Signals capacity scaling and increased ability to serve future in-orbit manufacturing demand.",
+      "headline": "V announces $251M Series D to scale W-Series returns",
+      "summary": "V announced a $251M Series D to expand its microgravity-enabled life-sciences processing and space-to-Earth return capability, citing a total ~$598M capital raised to date. Strengthens capacity and commercial traction prospects.",
       "category": "capacity",
       "impact": "positive",
       "review_status": "pending",
       "source_label": "Official release",
       "source_url": "https://www.prnewswire.com/news-releases/varda-announces-251-million-series-d-to-scale-space-based-pharmaceutical-processing-302893651.html"
+    },
+    {
+      "company": "G",
+      "date": "2026-10-29",
+      "headline": "G IPO SEC form-d style capital raise posted",
+      "summary": "A Form D for G was filed/posted for a June 2026 sale of securities. While not a new round in this window, it\u2019s a primary-source indicator of ongoing fundraising cadence for the inference-cloud buildout.",
+      "category": "funding",
+      "impact": "neutral",
+      "review_status": "none",
+      "source_label": "Regulatory filing",
+      "source_url": "https://app.edgar.tools/filing/1686725/0001686725-26-000003/formd"
     }
   ]
 }
