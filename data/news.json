@@ -1,52 +1,41 @@
 {
-  "updated_at": "2026-11-14T03:12:25+00:00",
-  "last_attempt_at": "2026-11-14T03:12:25+00:00",
+  "updated_at": "2026-11-15T02:38:31+00:00",
+  "last_attempt_at": "2026-11-15T02:38:31+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
       "company": "O",
       "date": "2026-11-12",
-      "headline": "O faces RICO-style suit tied to data-center expansion",
-      "summary": "A lawsuit alleges a coordinated scheme to secure approval for O\u2019s large Georgia AI data-center project, including racketeering-type claims. Material downside risk is reputational and potentially regulatory/cost timing.",
+      "headline": "O: lawsuit seeks freeze on frontier AI development",
+      "summary": "AP reports advocacy groups filed a motion seeking a halt on new frontier AI model development, naming O among defendants.",
       "category": "regulatory",
       "impact": "negative",
       "review_status": "pending",
       "source_label": "Credible press",
-      "source_url": "https://www.tomshardware.com/tech-industry/data-centers/georgia-politicians-openai-slapped-with-racketeering-lawsuit-over-3-2-gigawatt-ai-data-centers-plaintiffs-allege-multiple-violations-were-part-of-a-coordinated-scheme-to-get-project-camellia-approved"
+      "source_url": "https://apnews.com/article/03ece37b96979fe834f60976648504ba"
     },
     {
       "company": "O",
-      "date": "2026-11-06",
-      "headline": "O secures further funding at $1.25T value",
-      "summary": "O completed an $11B portion of a larger private funding at a reported $1.25T valuation, with marquee backers participating. Reinforces IPO-capital runway and ongoing investor appetite for late-stage AI scale.",
-      "category": "funding",
+      "date": "2026-11-04",
+      "headline": "O: 100,000 researchers gain GPT access",
+      "summary": "O announced free access for 100,000 academic researchers to its most advanced models via ChatGPT to accelerate scientific research and discovery.",
+      "category": "product",
       "impact": "positive",
       "review_status": "none",
-      "source_label": "Credible press",
-      "source_url": "https://bloomberg.com/news/articles/2026-11-06/openai-completes-11-billion-portion-of-funding-at-1-25-trillion-value"
-    },
-    {
-      "company": "V",
-      "date": "2026-10-30",
-      "headline": "V announces $251M Series D to scale W-Series returns",
-      "summary": "V announced a $251M Series D to expand its microgravity-enabled life-sciences processing and space-to-Earth return capability, citing a total ~$598M capital raised to date. Strengthens capacity and commercial traction prospects.",
-      "category": "capacity",
-      "impact": "positive",
-      "review_status": "pending",
       "source_label": "Official release",
-      "source_url": "https://www.prnewswire.com/news-releases/varda-announces-251-million-series-d-to-scale-space-based-pharmaceutical-processing-302893651.html"
+      "source_url": "https://openai.com/research/index/release?page=2"
     },
     {
       "company": "G",
-      "date": "2026-10-29",
-      "headline": "G IPO SEC form-d style capital raise posted",
-      "summary": "A Form D for G was filed/posted for a June 2026 sale of securities. While not a new round in this window, it\u2019s a primary-source indicator of ongoing fundraising cadence for the inference-cloud buildout.",
-      "category": "funding",
-      "impact": "neutral",
+      "date": "2026-10-15",
+      "headline": "G: Muse Spark open-weight limited preview",
+      "summary": "G announced that Meta\u2019s Muse Spark open-weight model is available in limited preview on GroqCloud on launch day.",
+      "category": "product",
+      "impact": "positive",
       "review_status": "none",
-      "source_label": "Regulatory filing",
-      "source_url": "https://app.edgar.tools/filing/1686725/0001686725-26-000003/formd"
+      "source_label": "Official release",
+      "source_url": "https://groq.com/blog/meta-s-muse-spark-open-release-is-now-in-limited-preview-on-groqcloud"
     }
   ]
 }
