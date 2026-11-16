@@ -1,41 +1,52 @@
 {
-  "updated_at": "2026-11-15T02:38:31+00:00",
-  "last_attempt_at": "2026-11-15T02:38:31+00:00",
+  "updated_at": "2026-11-16T02:43:47+00:00",
+  "last_attempt_at": "2026-11-16T02:43:47+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
       "company": "O",
-      "date": "2026-11-12",
-      "headline": "O: lawsuit seeks freeze on frontier AI development",
-      "summary": "AP reports advocacy groups filed a motion seeking a halt on new frontier AI model development, naming O among defendants.",
-      "category": "regulatory",
-      "impact": "negative",
+      "date": "2026-11-08",
+      "headline": "O: GPT-6 Cyber claims large Linux security benchmark gains",
+      "summary": "O reported GPT-6 Cyber performance improvements on cybersecurity benchmarks and referenced major gains vs prior cyber variants, signaling product/model capability momentum.",
+      "category": "product",
+      "impact": "positive",
       "review_status": "pending",
       "source_label": "Credible press",
-      "source_url": "https://apnews.com/article/03ece37b96979fe834f60976648504ba"
+      "source_url": "https://www.itpro.com/security/openai-says-its-new-cyber-focused-ai-model-found-thousands-of-linux-kernel-vulnerabilities"
+    },
+    {
+      "company": "V",
+      "date": "2026-11-06",
+      "headline": "V: W-8 capsule re-enters and touches down",
+      "summary": "South Australia\u2019s space agency reported V\u2019s W-8 capsule returned to Earth, with recovery operations and regulatory approvals executed, supporting near-term reentry execution cadence.",
+      "category": "capacity",
+      "impact": "positive",
+      "review_status": "none",
+      "source_label": "Official release",
+      "source_url": "https://sasic.sa.gov.au/news/south-australia-set-for-triple-spacecraft-return"
     },
     {
       "company": "O",
-      "date": "2026-11-04",
-      "headline": "O: 100,000 researchers gain GPT access",
-      "summary": "O announced free access for 100,000 academic researchers to its most advanced models via ChatGPT to accelerate scientific research and discovery.",
-      "category": "product",
+      "date": "2026-11-06",
+      "headline": "O: $11B tranche completed at ~$1.25T valuation",
+      "summary": "Coverage indicates O completed an $11B portion of a larger funding effort with a reported post-money valuation around $1.25T, reinforcing current private valuation levels.",
+      "category": "valuation",
       "impact": "positive",
-      "review_status": "none",
-      "source_label": "Official release",
-      "source_url": "https://openai.com/research/index/release?page=2"
+      "review_status": "pending",
+      "source_label": "Credible press",
+      "source_url": "https://bloomberg.com/news/articles/2026-11-06/openai-completes-11-billion-portion-of-funding-at-1-25-trillion-value"
     },
     {
-      "company": "G",
-      "date": "2026-10-15",
-      "headline": "G: Muse Spark open-weight limited preview",
-      "summary": "G announced that Meta\u2019s Muse Spark open-weight model is available in limited preview on GroqCloud on launch day.",
-      "category": "product",
+      "company": "O",
+      "date": "2026-11-06",
+      "headline": "O: follow-on investment documentation shows staged commitments",
+      "summary": "An SGX filing tied to SoftBank\u2019s O follow-on investment describes a $10B third tranche executed on 2026-10-01, supporting ongoing capital formation for O.",
+      "category": "funding",
       "impact": "positive",
       "review_status": "none",
-      "source_label": "Official release",
-      "source_url": "https://groq.com/blog/meta-s-muse-spark-open-release-is-now-in-limited-preview-on-groqcloud"
+      "source_label": "Regulatory filing",
+      "source_url": "https://links.sgx.com/FileOpen/SBG%20261001.ashx?App=Announcement&FileID=905664"
     }
   ]
 }
