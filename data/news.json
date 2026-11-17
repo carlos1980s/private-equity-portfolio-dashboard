@@ -1,25 +1,47 @@
 {
-  "updated_at": "2026-11-16T02:43:47+00:00",
-  "last_attempt_at": "2026-11-16T02:43:47+00:00",
+  "updated_at": "2026-11-17T05:04:20+00:00",
+  "last_attempt_at": "2026-11-17T05:04:20+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
       "company": "O",
-      "date": "2026-11-08",
-      "headline": "O: GPT-6 Cyber claims large Linux security benchmark gains",
-      "summary": "O reported GPT-6 Cyber performance improvements on cybersecurity benchmarks and referenced major gains vs prior cyber variants, signaling product/model capability momentum.",
+      "date": "2026-11-16",
+      "headline": "O: Model Release Notes updated for Nov 16, 2026",
+      "summary": "O published updated model release notes (Nov 16, 2026), reflecting changes/capability updates across model releases and the Model Spec.",
       "category": "product",
       "impact": "positive",
+      "review_status": "none",
+      "source_label": "Official release",
+      "source_url": "https://help-lb.openai.com/en/articles/9624314-model-release-notes"
+    },
+    {
+      "company": "O",
+      "date": "2026-11-16",
+      "headline": "O: CA lawsuit seeks court-ordered changes after alleged safeguard failures",
+      "summary": "A California lawsuit alleges O misled and endangered the public by developing advanced models without necessary safeguards; could drive compliance costs and constrain rollout timelines.",
+      "category": "regulatory",
+      "impact": "negative",
       "review_status": "pending",
       "source_label": "Credible press",
-      "source_url": "https://www.itpro.com/security/openai-says-its-new-cyber-focused-ai-model-found-thousands-of-linux-kernel-vulnerabilities"
+      "source_url": "https://apnews.com/article/1dd7be56134b4f09fb2fb974803edc69"
     },
     {
       "company": "V",
       "date": "2026-11-06",
-      "headline": "V: W-8 capsule re-enters and touches down",
-      "summary": "South Australia\u2019s space agency reported V\u2019s W-8 capsule returned to Earth, with recovery operations and regulatory approvals executed, supporting near-term reentry execution cadence.",
+      "headline": "V: W-8 capsule reenters/recovers; 3 vehicles in-space",
+      "summary": "V announced successful reentry and recovery of W-8 after 35 days in orbit, with three vehicles operating. Demonstrates repeatable reentry/cadence\u2014capacity execution evidence.",
+      "category": "capacity",
+      "impact": "positive",
+      "review_status": "none",
+      "source_label": "Official release",
+      "source_url": "https://www.prnewswire.com/news-releases/vardas-w-8-capsule-returns-safely-from-orbit-as-three-vehicles-operate-in-space-302931173.html?tc=eml_cleartime"
+    },
+    {
+      "company": "V",
+      "date": "2026-11-05",
+      "headline": "V: South Australia reports successful triple-spacecraft return milestone",
+      "summary": "SASIC reports V\u2019s W-8 return/touchdown at Koonibba and notes regulatory/range operations oversight. Confirms execution of an additional return in a tight timeframe.",
       "category": "capacity",
       "impact": "positive",
       "review_status": "none",
@@ -27,26 +49,37 @@
       "source_url": "https://sasic.sa.gov.au/news/south-australia-set-for-triple-spacecraft-return"
     },
     {
-      "company": "O",
-      "date": "2026-11-06",
-      "headline": "O: $11B tranche completed at ~$1.25T valuation",
-      "summary": "Coverage indicates O completed an $11B portion of a larger funding effort with a reported post-money valuation around $1.25T, reinforcing current private valuation levels.",
-      "category": "valuation",
+      "company": "V",
+      "date": "2026-10-30",
+      "headline": "V: Announces $251M Series D to scale space-based pharma processing",
+      "summary": "V announced a $251M Series D to scale space-based pharmaceutical processing, bringing total capital raised to $598M. Strong financing runway for missions and throughput.",
+      "category": "funding",
       "impact": "positive",
       "review_status": "pending",
       "source_label": "Credible press",
-      "source_url": "https://bloomberg.com/news/articles/2026-11-06/openai-completes-11-billion-portion-of-funding-at-1-25-trillion-value"
+      "source_url": "https://www.prnewswire.com/news-releases/varda-announces-251-million-series-d-to-scale-space-based-pharmaceutical-processing-302893651.html"
     },
     {
       "company": "O",
-      "date": "2026-11-06",
-      "headline": "O: follow-on investment documentation shows staged commitments",
-      "summary": "An SGX filing tied to SoftBank\u2019s O follow-on investment describes a $10B third tranche executed on 2026-10-01, supporting ongoing capital formation for O.",
-      "category": "funding",
+      "date": "2026-10-29",
+      "headline": "O: DevDay 2026 recap highlights GPT-6 Astra availability in API/ChatGPT Work/Codex",
+      "summary": "O\u2019s DevDay 2026 recap states GPT-6 Astra Ultrafast is available today via API and in ChatGPT Work/Codex, supporting production deployment and developer demand.",
+      "category": "product",
       "impact": "positive",
       "review_status": "none",
-      "source_label": "Regulatory filing",
-      "source_url": "https://links.sgx.com/FileOpen/SBG%20261001.ashx?App=Announcement&FileID=905664"
+      "source_label": "Official release",
+      "source_url": "https://openai.com/index/devday-2026-recap?trk=article-ssr-frontend-pulse-little-text-block"
+    },
+    {
+      "company": "V",
+      "date": "2026-10-20",
+      "headline": "V: W-7 mission page indicates new cancer-drug crystallization-in-orbit test",
+      "summary": "V\u2019s W-7 mission page describes an in-orbit mission to study cancer drug crystallization, supporting pipeline progress toward commercially valuable in-space manufacturing.",
+      "category": "product",
+      "impact": "positive",
+      "review_status": "none",
+      "source_label": "Official release",
+      "source_url": "https://www.varda.com/mission/w-7"
     }
   ]
 }
