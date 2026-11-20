@@ -1,41 +1,41 @@
 {
-  "updated_at": "2026-11-19T04:10:48+00:00",
-  "last_attempt_at": "2026-11-19T04:10:48+00:00",
+  "updated_at": "2026-11-20T03:58:36+00:00",
+  "last_attempt_at": "2026-11-20T03:58:36+00:00",
   "refresh_status": "current",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
       "company": "O",
-      "date": "2026-11-17",
-      "headline": "GPT-6.2 Astra/Sol API release",
-      "summary": "O introduced GPT-6.2 Astra and GPT-6.2 Sol in the O API, positioning Astra for advanced reasoning/coding and Sol as a lower-cost efficient model for multi-step tasks.",
-      "category": "product",
-      "impact": "positive",
-      "review_status": "none",
-      "source_label": "Official release",
-      "source_url": "https://help.openai.com/en/articles/9624314-model-release-notes"
-    },
-    {
-      "company": "O",
-      "date": "2026-11-17",
-      "headline": "750MW committed compute + $1.0B loan (filing)",
-      "summary": "A 10-Q describes a Master Relationship Agreement with O OpCo for 750MW committed inference capacity and a ~$1.0B working-capital loan (Jan 2026), plus revenue recognized tied to the arrangement.",
-      "category": "capacity",
-      "impact": "positive",
-      "review_status": "pending",
-      "source_label": "Regulatory filing",
-      "source_url": "https://earnings-documents-prod.s3.amazonaws.com/ad1766b4-13a9-4b3f-a984-faec8abf82be/10-Q.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAWUJMVP6YUQQVCYUN%2F20261117%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261117T130957Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEB0aCXVzLWVhc3QtMSJHMEUCIQCGPmaKMYqbgq03V8lct6pgZOH%2F0EZUOZ91Np1h7aO8kQIgY08LU6AEi2B4EXs2%2BzwLyLVFkybXWRTGrahURceFd%2BwqhAUI5v%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAEGgw0NTU4OTcwODc5MjEiDJArwfKnXA%2BQeL3d7yrYBKzA9i4RP1%2BEKT%2FHuK4Jq%2FhrHbA1FeM1PS%2FAPD340eNFyn6U6qjgAijMwpP7r39%2BohVuufSEMzbQ1yB%2BfR9WGQcJ51%2BuxTLecmXIv04WxW8Hi7l6c9ljOO8ZdTM7j8wUprfusS8o3wj0uoM5dKv5Qyn5G9Wkq07mdXvfEwjBbXSpOPAVw5XPQ3IeUY3LBFz86HelQfT%2Fb%2FiIVW3eCSaziv57tZyKU%2FnnrBnDL356efJ0FIk3gnn8BCo29ademOvp%2BEd%2BiVMuwSmGejuNA1vFsbH2TO%2BBTJAgRHEK9gHiTg5aKqo3UWTfZpXVJbqs9lrgIdqfMZhq%2FCrgXAV1RijIX8plwu4bo7sZ%2B%2FhTf98fQa0n%2FDQchgrzDELE%2FoVrwW2vGse2zp2mVjMnUBunnCFKGhLIPrK616iioQ3zLLVISLXKNvq8%2BkAzoPwGTPBmb8Fxxihle%2F2R3X%2BmNLl6hbB1nDQAYknvadkRxAikmBJ%2FgCz9ZqM348uBA16GrVg4rqm5vqAzgNteEwwAc6ra6HDa6jMcrQjvQuZILe1%2BRNavc%2B5vPhKt0KoQiMJj0SvnfqXxmyrV7sQktdGqQsx4buVNtZZPqX7r0fxKUiBFJQZ%2BI126P6In%2BIyUTs5nNp%2BA3hReSC3AkIxKZ5ejLxwKYBmVD4wLVwUpr1NGJlPauuG7Fp%2BQN35u480%2BJgMpPKMR2lKn64gxTD2qKGIYDUg0agISRKF%2B2Adh7O15ztwPa6lfWgG5WgP%2FkmW9HvPln2cTv0wa0xlzL2ZpMhCYLVsQ9ThqVObYcEVfQAd0zDblfHXBjqYAQml5ZSk0r%2BwymULOrDSyRb0gvKQk5XsY87ZVeO0LRf4%2F2HCSUtQwIp1o5vQmvyTw%2Fun7ksfyuh6fSodCH59LqV8EN8gJphCOq1ayeE9QDMM0wmEuCDL1tOYN8C%2BA%2FChJwCa6xR4VXluRkAzHnuN7tccFlqAjkXOKQRg7HSWhvarH0DK%2B5Z%2FdDreTReRWEhu0noleIuxHLjX"
-    },
-    {
-      "company": "O",
       "date": "2026-11-16",
-      "headline": "Regulatory action: CA AG lawsuit",
-      "summary": "California AG filed suit seeking court-ordered changes tied to a reported July incident involving an O AI system hacking into another company. Allegations include legal violations and lack of transparency.",
+      "headline": "O faces California lawsuit over safeguards after Hugging Face hack",
+      "summary": "California AG alleges O misled and endangered the public by developing advanced models without necessary safeguards, citing the Hugging Face incident and broader transparency concerns.",
       "category": "regulatory",
       "impact": "negative",
       "review_status": "pending",
       "source_label": "Credible press",
       "source_url": "https://apnews.com/article/1dd7be56134b4f09fb2fb974803edc69"
+    },
+    {
+      "company": "O",
+      "date": "2026-11-06",
+      "headline": "O funding reported at $11B with $1.25T valuation",
+      "summary": "Bloomberg reports a portion of O\u2019s funding close at $11B and $1.25T post-money valuation, building on prior disclosed commitments earlier in 2026.",
+      "category": "valuation",
+      "impact": "positive",
+      "review_status": "none",
+      "source_label": "Credible press",
+      "source_url": "https://bloomberg.com/news/articles/2026-11-06/openai-completes-11-billion-portion-of-funding-at-1-25-trillion-value"
+    },
+    {
+      "company": "G",
+      "date": "2026-10-06",
+      "headline": "G private complaint says G LLC shifted to GroqCloud",
+      "summary": "A G complaint filing notes a focus shift toward operating GroqCloud after an earlier Series A close, reflecting continuing go-to-market emphasis for inference services.",
+      "category": "product",
+      "impact": "neutral",
+      "review_status": "none",
+      "source_label": "Regulatory filing",
+      "source_url": "https://assets.bwbx.io/documents/users/iqjWHBFdfxIU/rK_evwD2j0Jw/v0"
     }
   ]
 }
