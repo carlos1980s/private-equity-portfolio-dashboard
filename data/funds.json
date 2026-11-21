@@ -1,7 +1,7 @@
 {
   "updated_at": "2026-11-18T04:17:12+00:00",
-  "last_attempt_at": "2026-11-20T03:58:12+00:00",
-  "refresh_status": "partial",
+  "last_attempt_at": "2026-11-21T03:57:28+00:00",
+  "refresh_status": "error",
   "policy": "Public NAVs may refresh automatically; share counts and cost basis remain owner-controlled.",
   "items": [
     {
@@ -79,5 +79,6 @@
       "source_label": "Allianz Global Investors Singapore - Class AT (H2-SGD) Acc. (ISIN match)",
       "source_url": "https://sg.allianzgi.com/en-sg/retail/products-solutions/recognised-fund/allianz-global-artificial-intelligence-at-h2-sgd-sgd"
     }
-  ]
+  ],
+  "status_message": "NAV refresh was delayed; the last verified prices remain in use."
 }

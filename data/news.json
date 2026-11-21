@@ -1,7 +1,7 @@
 {
   "updated_at": "2026-11-20T03:58:36+00:00",
-  "last_attempt_at": "2026-11-20T03:58:36+00:00",
-  "refresh_status": "current",
+  "last_attempt_at": "2026-11-21T03:57:38+00:00",
+  "refresh_status": "error",
   "policy": "Verified positive and negative news feeds a bounded, time-decaying simulation overlay; base assumptions remain owner-controlled.",
   "items": [
     {
@@ -37,5 +37,6 @@
       "source_label": "Regulatory filing",
       "source_url": "https://assets.bwbx.io/documents/users/iqjWHBFdfxIU/rK_evwD2j0Jw/v0"
     }
-  ]
+  ],
+  "status_message": "Automated refresh was delayed; the previous digest remains visible."
 }
